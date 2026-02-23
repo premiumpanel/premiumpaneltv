@@ -21,19 +21,21 @@ import avatar04 from '@/assets/images/avatars/04.png'
 import avatar06 from '@/assets/images/avatars/06.png'
 import avatar07 from '@/assets/images/avatars/07.png'
 
+import { StaticImageData } from 'next/image';
+
 interface BlogDataType {
-    id: number;
-    title: string;
-    category: string;
-    image: string;
-    author: {
-        name: string;
-        avatar: string;
-        link: string;
-    };
-    date: string;
+  id: number;
+  title: string;
+  category: string;
+  image: StaticImageData | string;
+  author: {
+    name: string;
+    avatar: StaticImageData | string;
     link: string;
-}[]
+  };
+  date: string;
+  link: string;
+}
 
 
 // page-author

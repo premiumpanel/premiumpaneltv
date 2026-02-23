@@ -9,15 +9,17 @@ import team_avatar_6 from "@/assets/images/template/team-06.jpg";
 import team_avatar_7 from "@/assets/images/template/team-07.jpg";
 import team_avatar_8 from "@/assets/images/template/team-08.jpg";
 
+import { StaticImageData } from 'next/image';
+
 interface teamDataType {
-    img: string;
-    name: string;
-    role: string;
-}[]
+  img: StaticImageData | string;
+  name: string;
+  role: string;
+}
 
 
 
-const team_data:teamDataType[] = [
+const team_data: teamDataType[] = [
   {
     img: team_avatar_1,
     name: "Mark Zellers",

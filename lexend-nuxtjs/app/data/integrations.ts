@@ -6,16 +6,18 @@ import integrations_img_4 from "@/assets/images/template/tool-paypal.svg";
 import integrations_img_5 from "@/assets/images/template/tool-hubspot.svg";
 import integrations_img_6 from "@/assets/images/template/tool-zapier.svg";
 
+import { StaticImageData } from 'next/image';
+
 interface IntegrationDataType {
-    name: string;
-    category: string;
-    description: string;
-    image: string;
-    link: string;
-}[]
+  name: string;
+  category: string;
+  description: string;
+  image: StaticImageData | string;
+  link: string;
+}
 
 
-export const integrations_data:IntegrationDataType[] = [
+export const integrations_data: IntegrationDataType[] = [
   {
     name: "Slack",
     category: "Productivity",

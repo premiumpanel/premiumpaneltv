@@ -12,19 +12,21 @@ import avatar_img_2 from "~/assets/images/avatars/06.png";
 import avatar_img_3 from "~/assets/images/avatars/01.png";
 
 
+import { StaticImageData } from 'next/image';
+
 interface BlogDataType {
   category: string;
   categoryLink: string;
-  image: string;
+  image: StaticImageData | string;
   title: string;
   link: string;
   author: {
     name: string;
-    avatar: string;
+    avatar: StaticImageData | string;
     link: string;
   };
   date: string;
-}[]
+}
 
 
 const blog_data: BlogDataType[] = [

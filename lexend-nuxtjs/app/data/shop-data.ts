@@ -1,4 +1,4 @@
- 
+
 import img01 from '@/assets/images/common/products/img-01.jpg'
 import img02 from '@/assets/images/common/products/img-02.jpg'
 import img03 from '@/assets/images/common/products/img-03.jpg'
@@ -16,21 +16,23 @@ import img14 from '@/assets/images/common/products/img-14.jpg'
 import img15 from '@/assets/images/common/products/img-15.jpg'
 import img16 from '@/assets/images/common/products/img-16.jpg'
 
+import { StaticImageData } from 'next/image';
+
 interface ShopDataType {
-    id: number;
-    name: string;
-    image: string;
-    price: number;
-    old_price: number | string;
-    discount: string;
-    rating: number | string;
-    has_discount: boolean;
-    link:  string ;
+  id: number;
+  name: string;
+  image: StaticImageData | string;
+  price: number;
+  old_price: number | string;
+  discount: string;
+  rating: number | string;
+  has_discount: boolean;
+  link: string;
 
-}[]
+}
 
 
-const shop_data:ShopDataType[] = [
+const shop_data: ShopDataType[] = [
   {
     id: 1,
     name: "Elegant Watch",

@@ -8,16 +8,18 @@ import testimonial_avatar_7 from "@/assets/images/avatars/07.png";
 import testimonial_avatar_8 from "@/assets/images/avatars/10.png";
 import testimonial_avatar_9 from "@/assets/images/avatars/11.png";
 
+import { StaticImageData } from 'next/image';
+
 interface TestimonialType {
 	name: string;
-	image: string;
+	image: StaticImageData | string;
 	text: string;
 	rating: number;
 	left: number;
 	top: number;
-} 
- 
- const testimonial_data: TestimonialType[] = [
+}
+
+const testimonial_data: TestimonialType[] = [
 	{
 		name: "Mark Zellers",
 		image: testimonial_avatar_1,

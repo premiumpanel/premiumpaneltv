@@ -32,10 +32,12 @@ import feature_img_28 from "@/assets/images/integrations/bitbucket.png";
 import feature_img_29 from "@/assets/images/integrations/asana.png";
 import feature_img_30 from "@/assets/images/integrations/monday.png";
 
+import { StaticImageData } from 'next/image';
+
 export default interface Integration {
   name: string;
   description: string;
-  image: string;
+  image: StaticImageData | string;
   link: string;
 }
 
