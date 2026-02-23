@@ -1,26 +1,199 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-poppins: "Poppins", "sans-serif";
+  --color-primary: #d5900a;
+  --color-accent: #d5900a;
+  --color-highlight: #d5900a;
+  --color-secondary: #ffffff;
+  --color-paragraph: #262129;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-spin-reverse-slow: spin-reverse 20s linear infinite;
+  --animate-gradient-x: gradient-x 5s ease infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes gradient-x {
+
+    0%,
+    100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --foreground: #f5f5f5;
+  /* Neutral 100 */
+  --background: #0a0a0a;
+  /* Neutral 950 */
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-poppins);
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff !important;
+    font-weight: 800;
+    /* Extra Bold */
+    font-style: italic;
+  }
+
+  /* Minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #171717;
+    /* Neutral 900 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #404040;
+    /* Neutral 700 */
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #525252;
+    /* Neutral 600 */
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #fce28a 0%, #d4af37 50%, #997b19 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .rotate-x-1 {
+    transform: rotateX(1deg);
+  }
+
+  .clip-star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+  /* Uiverse Animated Button - Clean & Flat */
+  .uiverse-btn {
+    --border-right: 3px;
+    --text-color: #ffffff;
+    --animation-color: #d5900a;
+    --fs-size: 0.85rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: inherit;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 800;
+    overflow: hidden;
+  }
+
+  .uiverse-btn .actual-text {
+    white-space: nowrap;
+    position: relative;
+    visibility: visible;
+    padding: 4px 0;
+    text-shadow: none;
+    -webkit-text-stroke: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .uiverse-btn .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    /* content: attr(data-text); */
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    padding: 4px 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Start from left to match the reveal animation */
+    text-shadow: none;
+    -webkit-text-stroke: 0px;
+  }
+
+  .uiverse-btn:hover .hover-text {
+    width: 100%;
+  }
+
+  .shimmer-main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer-main::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: linear-gradient(to right,
+        transparent,
+        rgba(255, 255, 255, 0.05),
+        transparent);
+    transform: rotate(30deg);
+    transition: none;
+    pointer-events: none;
+  }
+
+  .shimmer-main:hover::after {
+    left: 120%;
+    transition: all 0.7s ease-in-out;
+  }
 }

@@ -1,0 +1,26 @@
+.scroll-reveal-wrapper {
+  margin: 0;
+  display: block;
+}
+
+.word {
+  display: inline-block;
+  white-space: pre;
+  color: inherit;
+  vertical-align: bottom;
+  padding-bottom: 0.15em;
+  padding-top: 0.15em;
+  line-height: inherit;
+}
+
+/* Fix for gradient text (bg-clip-text, gold-gradient) inside ScrollReveal */
+.bg-clip-text .word,
+.gold-gradient .word,
+[class*="clip-text"] .word {
+  background: inherit;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  animation: inherit;
+}

@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Premium IPTV Reseller Paneli
 
-## Getting Started
+Bu proje, yüksek performanslı ve SEO uyumlu bir IPTV bayilik satış sitesidir.
 
-First, run the development server:
+## Kurulum ve Çalıştırma
+
+Gerekli bağımlılıkları yükleyin ve projeyi başlatın:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Prodüksiyon build'i almak için:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Yapılandırma
 
-## Learn More
+### WhatsApp Numarası Değiştirme
+Tüm sitedeki WhatsApp yönlendirmeleri `components/Header.tsx`, `components/Hero.tsx`, `components/Footer.tsx`, `app/iletisim/page.tsx` ve `app/paketler/page.tsx` dosyalarında bulunmaktadır.
+Hızlı bir arama (Ctrl+Shift+F) ile `wa.me` veya `YOUR_PHONE_NUMBER` araması yaparak kendi numaranızla değiştirebilirsiniz.
 
-To learn more about Next.js, take a look at the following resources:
+### Renk Paleti
+`tailwind.config.ts` dosyası üzerinden ana renkleri güncelleyebilirsiniz:
+- `primary`: Koyu lacivert tonları (Slate 900-950)
+- `accent`: Altın rengi (Yellow 500)
+- `highlight`: Mavi tonları (Blue 500)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Blog Yazısı Ekleme
+Blog yazıları statik olarak `lib/blog.ts` dosyasında tutulmaktadır. Yeni bir yazı eklemek için `blogPosts` dizisine yeni bir obje eklemeniz yeterlidir. HTML formatında içerik ekleyebilirsiniz.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## SEO ve Performans
 
-## Deploy on Vercel
+- **Metadata:** Her sayfanın başında `metadata` objesi özelleştirilebilir.
+- **Sitemap:** `app/sitemap.ts` dosyası otomatik olarak sitemap.xml üretir. Yeni statik sayfalar eklerseniz buraya da eklemeyi unutmayın.
+- **Resimler:** `next/image` kullanılmıştır. Yeni görselleri `public/` klasörüne atıp kullanabilirsiniz.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## İletişim Formu
+`app/iletisim/page.tsx` dosyasında yer alan form şu an sadece arayüz olarak çalışmaktadır (mock). Gerçek bir gönderim için backend API'nize veya bir form servisine (ör: Formspree) bağlamanız gerekir.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lisans
+Bu proje özel kullanım içindir.

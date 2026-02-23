@@ -1,0 +1,96 @@
+
+/* Header Fixed css */
+.headerFixed {
+    position: fixed !important;
+    top: 0;
+    width: 100% !important;
+    margin-top: 0;
+}
+
+ 
+ 
+.ms-n2, [dir=ltr] .ltr\:ms-n2 {
+    margin-left: -1rem !important;
+}
+
+.home-6-bg{
+    background-image: url('../images/template/pricing-06-bg-masked.png') !important;
+}
+
+.pricing-6-bg{
+    background-image: url('../images/template/pricing-06-bg-masked.png') !important;
+}
+
+ 
+.is-typed{ 
+    color: rgba(var(--bs-tertiary-rgb), var(--bs-text-opacity)) !important;
+    display: inline-block; 
+}
+
+.menu-color-style li > a{
+    color: black !important;
+}
+
+.home11-bg{
+    background-image: url('../images/template/hero-11-bg.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* home 12 tab */
+
+.uc-subnav>.uk-active>a {
+  color: #fff !important
+}
+
+.products .custom-scrollspy>li>a {
+  color: #000
+}
+
+.products .custom-scrollspy>li>a:where(.uc-dark),
+:where(.uc-dark) .products .custom-scrollspy>li>a {
+  color: #fff
+}
+
+.products .custom-scrollspy>li.uk-active {
+  border: none;
+  background-color: var(--color-gray-800)
+}
+
+.products .custom-scrollspy>li.uk-active:where(.uc-dark),
+:where(.uc-dark) .products .custom-scrollspy>li.uk-active {
+  background-color: #fff
+}
+
+.products .custom-scrollspy>li.uk-active>a {
+  color: #fff
+}
+
+.products .custom-scrollspy>li.uk-active>a:where(.uc-dark),
+:where(.uc-dark) .products .custom-scrollspy>li.uk-active>a {
+  color: var(--color-gray-900)
+}
+
+.solutions .main-solutions-nav>li.uk-active {
+  border: none;
+  background-color: var(--color-gray-800) !important;
+}
+
+.solutions .main-solutions-nav>li.uk-active:where(.uc-dark),
+:where(.uc-dark) .solutions .main-solutions-nav>li.uk-active {
+  background-color: #fff
+}
+
+.solutions .main-solutions-nav>li.uk-active>a {
+  color: #fff
+}
+
+.solutions .main-solutions-nav>li.uk-active>a:where(.uc-dark),
+:where(.uc-dark) .solutions .main-solutions-nav>li.uk-active>a {
+  color: var(--color-gray-900)
+}
+
+
+ 
+ 
