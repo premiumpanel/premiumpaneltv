@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FeatureGrid from "@/components/FeatureGrid";
+import MasonryGallery from "@/components/MasonryGallery";
 import { Monitor, Smartphone, Tablet, Terminal, Globe, Shield, Wifi } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -30,6 +31,8 @@ export default function FeaturesPage() {
             </section>
 
             <FeatureGrid showCTA={false} />
+
+            <MasonryGallery />
 
             {/* Device Support Section */}
             <section className="py-24 bg-slate-950 relative overflow-hidden">
