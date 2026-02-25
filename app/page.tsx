@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import FeatureGrid from "@/components/FeatureGrid";
 import PricingCards from "@/components/PricingCards";
 import HowItWorks from "@/components/HowItWorks";
+import MasonryGallery from "@/components/MasonryGallery";
 import Testimonials from "@/components/Testimonials";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTAButton from "@/components/CTAButton";
@@ -71,6 +72,8 @@ export default function Home() {
       <Hero />
 
       <FeatureGrid />
+
+      <MasonryGallery />
 
       <HowItWorks />
 
