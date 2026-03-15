@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Premium Panel",
     default: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
   },
-  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 1500 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
+  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
   metadataBase: new URL("https://premiumpanel.com"),
   keywords: ["iptv bayilik", "iptv bayi paneli", "iptv reseller", "kredili iptv", "iptv alt bayi"],
   authors: [{ name: "Premium Panel Team" }],

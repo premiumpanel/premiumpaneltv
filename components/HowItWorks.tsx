@@ -4,8 +4,8 @@ import ScrollReveal from "./ScrollReveal";
 export default function HowItWorks() {
     const steps = [
         {
-            title: "1. 1500 Kredi Yükleyin",
-            description: "Hiçbir kurulum bedeli ödemeden, yalnızca satacağınız ürünün sermayesi olan 1500 krediyi satın alarak hesabınızı aktif hale getirin.",
+            title: "1. 120 Kredi Yükleyin",
+            description: "Hiçbir kurulum bedeli ödemeden, yalnızca satacağınız ürünün sermayesi olan 120 krediyi satın alarak hesabınızı aktif hale getirin.",
             icon: User,
             color: "bg-[#d5900a]",
         },
@@ -16,8 +16,8 @@ export default function HowItWorks() {
             color: "bg-[#d5900a]/90",
         },
         {
-            title: "3. 12 Aylık Satış (150 Kredi Düşer)",
-            description: "Müşterilerinize abonelik açın. Yaptığınız her 1 yıllık (12 ay) satış için bakiyenizden yalnızca 150 kredi eksilir. Kalan kredileriniz silinmez.",
+            title: "3. 12 Aylık Satış (12 Kredi Düşer)",
+            description: "Müşterilerinize abonelik açın. Yaptığınız her 1 yıllık (12 ay) satış için bakiyenizden yalnızca 12 kredi eksilir. Kalan kredileriniz silinmez.",
             icon: UserCheck,
             color: "bg-[#d5900a]/80",
         },

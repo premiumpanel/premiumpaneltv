@@ -2,7 +2,7 @@ import { Check, X, Minus } from "lucide-react";
 
 export default function CompareTable() {
     const features = [
-        { name: "Kredi Limiti", starter: "10 Kredi", pro: "50 Kredi", elite: "Sınırsız*" },
+        { name: "Bayilik Kredisi", starter: "120 Kredi", pro: "500 Kredi", elite: "1200 Kredi" },
         { name: "Panel Erişimi", starter: true, pro: true, elite: true },
         { name: "7/24 Teknik Destek", starter: "E-Posta", pro: "WhatsApp & Ticket", elite: "Özel Temsilci" },
         { name: "White Label (Markasız)", starter: false, pro: true, elite: true },

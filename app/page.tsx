@@ -13,14 +13,14 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
-  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 1500 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
+  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
   keywords: "iptv bayilik, reseller panel, iptv panel kiralama, ucuz iptv bayilik, kredili iptv",
   alternates: {
     canonical: "https://premiumpanel.com",
   },
   openGraph: {
     title: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
-    description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 1500 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
+    description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
     url: "https://premiumpanel.com",
     siteName: "Premium Panel",
     images: [

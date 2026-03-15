@@ -64,12 +64,12 @@ export default function Hero() {
                         <ScrollReveal
                             textClassName="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed drop-shadow-md"
                         >
-                            Bayilik ücretsizdir. Paneli aktif etmek için minimum 1500 kredi yüklemeniz yeterlidir. Sistem tamamen ön ödemeli ve şeffaftır: Oluşturduğunuz her 12 aylık üyelik için yalnızca 150 kredi düşer. 1500 kredi ile 10 adet yıllık satış yapabilir, fiyat politikanızı kendiniz belirleyerek kârınızı kontrol edebilirsiniz.
+                            Bayilik ücretsizdir. Paneli aktif etmek için minimum 120 kredi yüklemeniz yeterlidir. Sistem tamamen ön ödemeli ve şeffaftır: Oluşturduğunuz her 12 aylık üyelik için yalnızca 12 kredi düşer. 120 kredi ile 10 adet yıllık satış yapabilir, fiyat politikanızı kendiniz belirleyerek kârınızı kontrol edebilirsiniz.
                         </ScrollReveal>
 
                         <div className="flex flex-col sm:flex-row items-center lg:items-start justify-start gap-4 mb-8">
                             <CTAButton href="https://wa.me/491632680219" variant="primary" className="w-full sm:w-auto shadow-xl shadow-blue-600/20">
-                                1500 Kredi ile Başla
+                                120 Kredi ile Başla
                             </CTAButton>
                             <CTAButton href="#demo" variant="outline" className="w-full sm:w-auto shadow-xl shadow-white/10" icon={false}>
                                 Paneli Demo İncele

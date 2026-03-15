@@ -5,7 +5,7 @@ const BentoGrid = () => {
     const features = [
         {
             title: "Bayi Olmak Ücretsizdir",
-            description: "Premium Panel ile ücretsiz IPTV satabilir, bayi ol sürecini herhangi bir başlangıç ücreti ödemeden tamamlayabilirsin. Sistemimiz kredili altyapı ile çalışır. Satış yapabilmek için panele minimum 1500 kredi yüklemen gerekir. Örneğin 12 aylık bir üyelik satışı yalnızca 150 kredi düşer. Böylece kredi bakiyeni kontrol ederek planlı ve sürdürülebilir bir IPTV reseller sistemi kurarsın. Ücretsiz bayi ol, kredini yükle ve satışa başla.",
+            description: "Premium Panel ile ücretsiz IPTV satabilir, bayi ol sürecini herhangi bir başlangıç ücreti ödemeden tamamlayabilirsin. Sistemimiz kredili altyapı ile çalışır. Satış yapabilmek için panele minimum 120 kredi yüklemen gerekir. Örneğin 12 aylık bir üyelik satışı yalnızca 12 kredi düşer. Böylece kredi bakiyeni kontrol ederek planlı ve sürdürülebilir bir IPTV reseller sistemi kurarsın. Ücretsiz bayi ol, kredini yükle ve satışa başla.",
             icon: <UserPlus className="w-8 h-8 text-[#d5900a]" />,
             className: "lg:col-span-8 lg:row-span-2 bg-gradient-to-br from-slate-900 to-slate-800",
             image: "/assets/images/media/dashboard-mockup.png" // Placeholder or will be updated

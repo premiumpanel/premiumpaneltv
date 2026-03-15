@@ -8,7 +8,7 @@ const plans = [
     {
         name: "Başlangıç Bayi",
         description: "Piyasayı test etmek ve ilk kazancını sağlamak isteyenler için.",
-        credits: "1500",
+        credits: "120",
         mathText: "10 Adet 1 Yıllık Satış",
         features: [
             "Ücretsiz Gelişmiş IPTV Paneli",
@@ -19,14 +19,14 @@ const plans = [
         popular: false,
         bonus: "Yeni Başlayanlar İçin İdeal",
         color: "slate",
-        ctaText: "1500 Kredi Yükle & Başla"
+        ctaText: "120 Kredi Yükle & Başla"
     },
     {
         name: "Pro Reseller",
         description: "Kendi alt bayilerini kurmak ve markalaşmak isteyenler için.",
-        credits: "3500",
-        mathText: "23 Adet 1 Yıllık Satış Planlanabilir",
-        bonus: "500 Kredi Hediye Dahil",
+        credits: "500",
+        mathText: "40 Adet 1 Yıllık Satış Planlanabilir",
+        bonus: "Özel Bayi Avantajları",
         features: [
             "Alt Bayi (Subreseller) Oluşturma",
             "Kendi Alan Adınızla Panel Girişi",
@@ -40,9 +40,9 @@ const plans = [
     {
         name: "Master Toptancı",
         description: "Çok sayıda satış yapan ana toptancılar için.",
-        credits: "6500",
-        mathText: "43 Adet 1 Yıllık Satış Planlanabilir",
-        bonus: "1500 Kredi Hediye Dahil",
+        credits: "1200",
+        mathText: "100 Adet 1 Yıllık Satış Planlanabilir",
+        bonus: "VIP Toptancı Ayrıcalıkları",
         features: [
             "En Düşük Birim Kredi Maliyeti",
             "Öncelikli VIP Teknik Destek",
@@ -160,7 +160,7 @@ export default function PricingCards() {
                 <div className="mt-16 text-center">
                     <ScrollReveal textClassName="text-slate-400 text-lg font-medium">
                         <p>
-                            <strong className="text-white block sm:inline">Maliyetini Çıkar, Kârını Katla!</strong> <span className="opacity-90">İlk 1500 Kredini Hemen Yükle.</span>
+                            <strong className="text-white block sm:inline">Maliyetini Çıkar, Kârını Katla!</strong> <span className="opacity-90">İlk 120 Kredini Hemen Yükle.</span>
                         </p>
                     </ScrollReveal>
                 </div>
