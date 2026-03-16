@@ -5,16 +5,18 @@ import ScrollReveal from "./ScrollReveal";
 import { X, ZoomIn } from "lucide-react";
 
 const images = [
-    { src: "/assets/images/gallery/dashboard.jpg", alt: "Dashboard Genel Bakış", className: "col-span-2 row-span-2" },
-    { src: "/assets/images/gallery/user-management.jpg", alt: "Kullanıcı Yönetim Ekranı", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/streams.jpg", alt: "Yayın Yönetimi", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/packages.jpg", alt: "Paket Ayarları", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/activity-log.jpg", alt: "Aktivite Kayıtları", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/ticket.jpg", alt: "Destek Talebi Yönetimi", className: "col-span-2 row-span-1" },
-    { src: "/assets/images/gallery/easy-panel.jpg", alt: "Kullanıcı Dostu Arayüz", className: "col-span-1 row-span-2" },
-    { src: "/assets/images/gallery/user-credit.jpg", alt: "Kredi ve Bakiye Sistemi", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/applications.jpg", alt: "Uygulama Entegrasyonları", className: "col-span-2 row-span-1" },
-    { src: "/assets/images/gallery/user-left-panel.jpg", alt: "Hızlı Erişim Menüsü", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/dashboard.jpg", alt: "Panel Genel Görünümü", className: "col-span-2 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-1.jpg", alt: "Mobil Uygulama Arayüzü", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-2.jpg", alt: "Kategori Listesi", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-3.jpg", alt: "Canlı TV Oynatıcı", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-4.jpg", alt: "Film & Dizi Arşivi", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/ticket.jpg", alt: "Destek Yönetimi", className: "col-span-2 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-5.jpg", alt: "Kullanıcı Profili", className: "col-span-1 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-6.jpg", alt: "EPG ve Program Rehberi", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-7.jpg", alt: "Ayarlar Menüsü", className: "col-span-2 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-8.jpg", alt: "Çoklu Ekran Desteği", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-9.jpg", alt: "Dizi Detay Ekranı", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-10.jpg", alt: "Smart TV Senkronizasyonu", className: "col-span-1 row-span-1" },
 ];
 
 export default function MasonryGallery() {

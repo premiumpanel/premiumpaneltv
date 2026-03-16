@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PricingCards from "@/components/PricingCards";
-import CompareTable from "@/components/CompareTable";
+import MasonryGallery from "@/components/MasonryGallery";
 import CTAButton from "@/components/CTAButton";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -33,7 +33,7 @@ export default function PricingPage() {
 
             <PricingCards />
 
-            <CompareTable />
+            <MasonryGallery />
 
             <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-950 text-center border-t border-slate-800">
                 <div className="container mx-auto px-4">
