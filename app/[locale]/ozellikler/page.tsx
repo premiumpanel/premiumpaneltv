@@ -6,6 +6,8 @@ import MasonryGallery from "@/components/MasonryGallery";
 import { Monitor, Smartphone, Tablet, Terminal, Globe, Shield, Wifi } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
+import { useTranslations } from "next-intl";
+
 export const metadata = {
     title: "Gelişmiş IPTV Özellikleri | Premium Panel",
     description: "Yüksek performanslı panel, %99 uptime, 7/24 destek ve global altyapı özelliklerimizi keşfedin.",
@@ -15,6 +17,8 @@ export const metadata = {
 };
 
 export default function FeaturesPage() {
+    const t = useTranslations("feature_page");
+
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">
             <Header />
@@ -22,10 +26,10 @@ export default function FeaturesPage() {
             <section className="pt-32 pb-20 bg-slate-900 border-b border-slate-800">
                 <div className="container mx-auto px-4 text-center">
                     <ScrollReveal textClassName="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400 pb-2">
-                        <h1>Rakipsiz Özellikler</h1>
+                        <h1>{t("title")}</h1>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-xl text-slate-400 max-w-2xl mx-auto">
-                        Sadece bir panel değil, işinizi yönetmeniz için eksiksiz bir ekosistem sunuyoruz.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
             </section>
@@ -41,20 +45,20 @@ export default function FeaturesPage() {
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/20 bg-[#d5900a]/5 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6">
-                            Geniş Cihaz Desteği
+                            {t("device_badge")}
                         </span>
                         <ScrollReveal textClassName="text-3xl md:text-5xl font-extrabold italic text-white mb-6">
-                            <h2>Her Cihazda Kesintisiz Deneyim</h2>
+                            <h2>{t("device_title")}</h2>
                         </ScrollReveal>
                         <ScrollReveal textClassName="text-slate-400 text-lg">
-                            IPTV servisimiz, kullandığınız tüm teknolojik cihazlarla tam uyumlu çalışacak şekilde optimize edilmiştir.
+                            {t("device_sub")}
                         </ScrollReveal>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { name: "Smart", sub: "TV", desc: "Samsung, LG, Android TV", icon: "/assets/images/common/smart-tv.svg" },
-                            { name: "Mobil", sub: "CEP", desc: "iOS & Android Uygulamalar", icon: "/assets/images/common/tablet-telefon.svg" },
+                            { name: "Mobil", sub: "CEP", desc: "iOS & Android", icon: "/assets/images/common/tablet-telefon.svg" },
                             { name: "TV", sub: "BOX", desc: "Xiaomi, MAG, Formuler", icon: "/assets/images/common/tv-box.svg" },
                             { name: "PC", sub: "WEB", desc: "Tarayıcı & Player", icon: "/assets/images/common/bilgisayar.svg" }
                         ].map((device, i) => (
@@ -95,20 +99,20 @@ export default function FeaturesPage() {
                 <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-12">
                     <div className="md:w-1/2">
                         <ScrollReveal textClassName="text-3xl font-bold mb-6 text-white text-left">
-                            <h2>Güçlü Altyapı, Kesintisiz Hizmet</h2>
+                            <h2>{t("infra_title")}</h2>
                         </ScrollReveal>
                         <ul className="space-y-4">
                             <li className="flex items-center text-slate-300">
                                 <Shield className="w-6 h-6 text-green-400 mr-3" />
-                                <span>Gelişmiş DDoS ve Firewall Koruması</span>
+                                <span>{t("infra_item1")}</span>
                             </li>
                             <li className="flex items-center text-slate-300">
                                 <Wifi className="w-6 h-6 text-blue-400 mr-3" />
-                                <span>10 Gbps Port Hızı ve Yük Dengeleme</span>
+                                <span>{t("infra_item2")}</span>
                             </li>
                             <li className="flex items-center text-slate-300">
                                 <Globe className="w-6 h-6 text-amber-400 mr-3" />
-                                <span>Avrupa ve Amerika Lokasyonlu Sunucular</span>
+                                <span>{t("infra_item3")}</span>
                             </li>
                         </ul>
                     </div>

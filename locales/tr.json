@@ -18,8 +18,7 @@
     "cta_secondary": "Ücretsiz Test İste"
   },
   "features": {
-    "badge": "Neden Premium Panel?",
-    "title": "Rakiplerinize fark atmanızı sağlayacak en gelişmiş bayilik özellikleri.",
+    "badge": "ÖZELLİKLER",
     "f1_title": "Gelişmiş Bayi Paneli",
     "f1_desc": "Müşterilerinizi tek bir ekrandan kolayca yönetin.",
     "f2_title": "%99.9 Uptime Garantisi",
@@ -31,7 +30,10 @@
     "f5_title": "Tüm Cihazlara Uyumluluk",
     "f5_desc": "Smart TV, mobil, tablet, bilgisayar, MAG cihazları.",
     "f6_title": "Yüksek Kar Marjı",
-    "f6_desc": "Toptan fiyatına alıp dilediğiniz fiyata satın."
+    "f6_desc": "Toptan fiyatına alıp dilediğiniz fiyata satın.",
+    "title1": "İşinizi büyütmek için",
+    "title2": "ihtiyacınız olan her şey",
+    "subtitle": "Sadece satışa odaklanın, teknik detayları ve altyapıyı bize bırakın."
   },
   "pricing": {
     "badge": "Fiyatlandırma",
@@ -45,5 +47,35 @@
     "support": "Destek",
     "legal": "Yasal",
     "rights": "Tüm Hakları Saklıdır."
+  },
+  "feature_page": {
+    "title": "Rakipsiz Özellikler",
+    "subtitle": "Sadece bir panel değil, işinizi yönetmeniz için eksiksiz bir ekosistem sunuyoruz.",
+    "device_badge": "Geniş Cihaz Desteği",
+    "device_title": "Her Cihazda Kesintisiz Deneyim",
+    "device_sub": "IPTV servisimiz, kullandığınız tüm teknolojik cihazlarla tam uyumlu çalışacak şekilde optimize edilmiştir.",
+    "infra_title": "Güçlü Altyapı, Kesintisiz Hizmet",
+    "infra_item1": "Gelişmiş DDoS ve Firewall Koruması",
+    "infra_item2": "10 Gbps Port Hızı ve Yük Dengeleme",
+    "infra_item3": "Avrupa ve Amerika Lokasyonlu Sunucular"
+  },
+  "pricing_page": {
+    "title": "Bayilik Paketleri",
+    "subtitle": "Sürpriz maliyetler yok. Şeffaf fiyatlandırma ve esnek ödeme seçenekleri ile hemen işinizi büyütün.",
+    "offer_title": "Özel Bir Teklif mi Arıyorsunuz?",
+    "offer_subtitle": "100+ üzeri toplu kredi alımları ve kurumsal işbirlikleri için size özel fiyat teklifi hazırlayabiliriz.",
+    "offer_cta": "WhatsApp'tan Teklif Alın"
+  },
+  "contact_page": {
+    "title": "Bizimle İletişime Geçin",
+    "subtitle": "Aklınızdaki sorular için 7/24 kesintisiz destek sunuyoruz.",
+    "box1_title": "Canlı Destek",
+    "box1_desc": "Hızlı çözüm için anında destek hattı.",
+    "box2_title": "E-Posta Desteği",
+    "box2_desc": "Kurumsal ve detaylı talepler için."
+  },
+  "faq_page": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Aklınızdaki soruların yanıtları burada. IPTV bayiliği hakkında merak ettiklerinizi inceleyin."
   }
 }

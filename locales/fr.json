@@ -18,8 +18,7 @@
     "cta_secondary": "Demander un test gratuit"
   },
   "features": {
-    "badge": "Pourquoi Premium Panel?",
-    "title": "Les fonctionnalités de revente les plus avancées pour devancer vos concurrents.",
+    "badge": "CARACTÉRISTIQUES",
     "f1_title": "Panel Revendeur Avancé",
     "f1_desc": "Gérez facilement vos clients depuis un seul écran.",
     "f2_title": "Garantie 99.9% Uptime",
@@ -31,7 +30,10 @@
     "f5_title": "Compatible tous appareils",
     "f5_desc": "Smart TV, mobile, tablette, ordinateur, appareils MAG.",
     "f6_title": "Marges bénéficiaires élevées",
-    "f6_desc": "Achetez au prix de gros et vendez au prix de votre choix."
+    "f6_desc": "Achetez au prix de gros et vendez au prix de votre choix.",
+    "title1": "Tout ce dont vous avez besoin",
+    "title2": "pour développer votre entreprise",
+    "subtitle": "Concentrez-vous uniquement sur les ventes, laissez-nous les détails techniques et l'infrastructure."
   },
   "pricing": {
     "badge": "Tarification",
@@ -45,5 +47,35 @@
     "support": "Support",
     "legal": "Légal",
     "rights": "Tous droits réservés."
+  },
+  "feature_page": {
+    "title": "Caractéristiques Inégalées",
+    "subtitle": "Nous n'offrons pas seulement un panel, mais un écosystème complet.",
+    "device_badge": "Large Prise en Charge Matérielle",
+    "device_title": "Expérience Fluide sur Chaque Appareil",
+    "device_sub": "Notre service IPTV est optimisé pour fonctionner avec tous vos appareils.",
+    "infra_title": "Infrastructure Solide, Service Ininterrompu",
+    "infra_item1": "Protection Avancée contre les DDoS et Pare-feu",
+    "infra_item2": "Vitesse de Port 10 Gbps et Équilibrage de Charge",
+    "infra_item3": "Serveurs Basés en Europe et en Amérique"
+  },
+  "pricing_page": {
+    "title": "Forfaits Revendeurs",
+    "subtitle": "Aucun coût caché. Développez immédiatement votre entreprise.",
+    "offer_title": "Vous cherchez une offre personnalisée?",
+    "offer_subtitle": "Nous pouvons préparer une offre sur mesure pour des achats groupés de 100+ crédits.",
+    "offer_cta": "Obtenir une offre via WhatsApp"
+  },
+  "contact_page": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous offrons un support 24/7 pour toute question.",
+    "box1_title": "Support en Direct",
+    "box1_desc": "Ligne de support instantanée pour des solutions rapides.",
+    "box2_title": "Support par Email",
+    "box2_desc": "Pour les demandes d'entreprise et détaillées."
+  },
+  "faq_page": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Les réponses à vos questions. Découvrez tout sur notre programme revendeur."
   }
 }

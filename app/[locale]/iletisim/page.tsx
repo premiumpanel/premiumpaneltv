@@ -6,10 +6,12 @@ import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
 import { Mail, MapPin, Send, MessageCircle, AlertCircle, Phone } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+    const t = useTranslations("contact_page");
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -33,10 +35,10 @@ export default function ContactPage() {
             <section className="pt-32 pb-20 bg-slate-900 border-b border-slate-800">
                 <div className="container mx-auto px-4 text-center">
                     <ScrollReveal textClassName="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400 pb-2">
-                        <h1>İletişime Geçin</h1>
+                        <h1>{t("title")}</h1>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-xl text-slate-400 max-w-2xl mx-auto">
-                        Bayilik başvurusu, teknik destek veya diğer sorularınız için bize ulaşın.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
             </section>
@@ -52,8 +54,8 @@ export default function ContactPage() {
                                 <MessageCircle className="w-6 h-6 text-green-500" />
                             </div>
                             <div>
-                                <h4 className="font-bold text-white mb-1">WhatsApp Hattı</h4>
-                                <p className="text-slate-400 text-sm mb-2">7/24 Anlık Destek</p>
+                                <h4 className="font-bold text-white mb-1">{t("box1_title")}</h4>
+                                <p className="text-slate-400 text-sm mb-2">{t("box1_desc")}</p>
                                 <a href="https://wa.me/491632680219" target="_blank" className="text-green-400 hover:text-green-300 font-semibold transition-colors">+49 163 2680219</a>
                             </div>
                         </div>
@@ -63,8 +65,8 @@ export default function ContactPage() {
                                 <Mail className="w-6 h-6 text-blue-500" />
                             </div>
                             <div>
-                                <h4 className="font-bold text-white mb-1">E-Posta</h4>
-                                <p className="text-slate-400 text-sm mb-2">Genel Sorular & İş Ortaklığı</p>
+                                <h4 className="font-bold text-white mb-1">{t("box2_title")}</h4>
+                                <p className="text-slate-400 text-sm mb-2">{t("box2_desc")}</p>
                                 <a href="mailto:info@premiumpanel.com" className="text-blue-400 hover:text-blue-300 font-semibold transition-colors">info@premiumpanel.com</a>
                             </div>
                         </div>

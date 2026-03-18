@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -45,6 +46,7 @@ const faqs = [
 ];
 
 export default function FAQPage() {
+    const t = useTranslations("faq_page");
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -65,10 +67,10 @@ export default function FAQPage() {
             <section className="pt-32 pb-12 text-center bg-slate-900 border-b border-slate-800">
                 <div className="container mx-auto px-4">
                     <ScrollReveal textClassName="text-4xl md:text-5xl font-bold mb-4 text-white">
-                        <h1>Sıkça Sorulan Sorular</h1>
+                        <h1>{t("title")}</h1>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 max-w-2xl mx-auto text-lg">
-                        Hizmetlerimizle ilgili aklınıza takılan tüm soruların cevapları.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
             </section>

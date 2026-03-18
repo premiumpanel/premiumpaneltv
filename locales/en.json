@@ -18,8 +18,7 @@
     "cta_secondary": "Request Free Trial"
   },
   "features": {
-    "badge": "Why Premium Panel?",
-    "title": "The most advanced reseller features to put you ahead of competitors.",
+    "badge": "FEATURES",
     "f1_title": "Advanced Reseller Panel",
     "f1_desc": "Easily manage your customers from a single dashboard.",
     "f2_title": "99.9% Uptime Guarantee",
@@ -31,7 +30,10 @@
     "f5_title": "All Devices Compatible",
     "f5_desc": "Smart TV, mobile, tablet, PC, and MAG devices.",
     "f6_title": "High Profit Margins",
-    "f6_desc": "Buy at wholesale prices and sell at your own rate."
+    "f6_desc": "Buy at wholesale prices and sell at your own rate.",
+    "title1": "Everything you need",
+    "title2": "to grow your business",
+    "subtitle": "Focus purely on sales, leave the technical details and infrastructure to us."
   },
   "pricing": {
     "badge": "Pricing",
@@ -45,5 +47,35 @@
     "support": "Support",
     "legal": "Legal",
     "rights": "All Rights Reserved."
+  },
+  "feature_page": {
+    "title": "Unrivaled Features",
+    "subtitle": "We offer not just a panel, but a complete ecosystem to manage your business.",
+    "device_badge": "Wide Device Support",
+    "device_title": "Seamless Experience on Every Device",
+    "device_sub": "Our IPTV service is optimized to work seamlessly with all your technological devices.",
+    "infra_title": "Strong Infrastructure, Uninterrupted Service",
+    "infra_item1": "Advanced DDoS and Firewall Protection",
+    "infra_item2": "10 Gbps Port Speed and Load Balancing",
+    "infra_item3": "Servers Located in Europe and America"
+  },
+  "pricing_page": {
+    "title": "Reseller Packages",
+    "subtitle": "No hidden costs. Grow your business instantly with transparent pricing and flexible payment options.",
+    "offer_title": "Looking for a Custom Offer?",
+    "offer_subtitle": "We can prepare custom quotes for 100+ credit bulk purchases and corporate collaborations.",
+    "offer_cta": "Get an Quote on WhatsApp"
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "subtitle": "We offer 24/7 continuous support for any questions.",
+    "box1_title": "Live Support",
+    "box1_desc": "Instant support line for fast resolutions.",
+    "box2_title": "Email Support",
+    "box2_desc": "For corporate and detailed requests."
+  },
+  "faq_page": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your questions are here. Find out everything about our IPTV reseller program."
   }
 }

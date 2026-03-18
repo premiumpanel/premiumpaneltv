@@ -18,8 +18,7 @@
     "cta_secondary": "Kostenlosen Test anfordern"
   },
   "features": {
-    "badge": "Warum Premium Panel?",
-    "title": "Die fortschrittlichsten Reseller-Funktionen für Ihren Vorsprung.",
+    "badge": "EIGENSCHAFTEN",
     "f1_title": "Erweitertes Reseller-Panel",
     "f1_desc": "Verwalten Sie Ihre Kunden einfach auf einem einzigen Bildschirm.",
     "f2_title": "99.9% Uptime Garantie",
@@ -31,7 +30,10 @@
     "f5_title": "Geeignet für alle Geräte",
     "f5_desc": "Smart TV, Smartphone, Tablet, PC und MAG-Geräte.",
     "f6_title": "Hohe Gewinnspannen",
-    "f6_desc": "Zum Großhandelspreis kaufen und zum eigenen Preis verkaufen."
+    "f6_desc": "Zum Großhandelspreis kaufen und zum eigenen Preis verkaufen.",
+    "title1": "Alles was Sie brauchen,",
+    "title2": "um Ihr Geschäft auszubauen",
+    "subtitle": "Konzentrieren Sie sich nur auf den Verkauf, überlassen Sie uns die technischen Details und die Infrastruktur."
   },
   "pricing": {
     "badge": "Preise",
@@ -45,5 +47,35 @@
     "support": "Support",
     "legal": "Rechtliches",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "feature_page": {
+    "title": "Konkurrenzlose Eigenschaften",
+    "subtitle": "Wir bieten nicht nur ein Panel, sondern ein komplettes Ökosystem zur Verwaltung.",
+    "device_badge": "Umfassende Geräteunterstützung",
+    "device_title": "Nahtloses Erlebnis auf jedem Gerät",
+    "device_sub": "Unser IPTV-Dienst ist so optimiert, dass er perfekt auf allen Geräten funktioniert.",
+    "infra_title": "Starke Infrastruktur, Reibungsloser Service",
+    "infra_item1": "Erweiterter DDoS- und Firewall-Schutz",
+    "infra_item2": "10 Gbit/s Portgeschwindigkeit & Lastausgleich",
+    "infra_item3": "Serverstandorte in Europa und Amerika"
+  },
+  "pricing_page": {
+    "title": "Reseller-Pakete",
+    "subtitle": "Keine versteckten Kosten. Bauen Sie Ihr Geschäft sofort durch transparente Preise aus.",
+    "offer_title": "Suchen Sie ein individuelles Angebot?",
+    "offer_subtitle": "Wir erstellen Ihnen maßgeschneiderte Angebote für den Kauf von 100+ Credits und Partnerschaften.",
+    "offer_cta": "Angebot über WhatsApp"
+  },
+  "contact_page": {
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Wir bieten rund um die Uhr Support für alle Fragen.",
+    "box1_title": "Live-Support",
+    "box1_desc": "Sofortige Hilfe für schnelle Lösungen.",
+    "box2_title": "E-Mail Support",
+    "box2_desc": "Für geschäftliche und detaillierte Anfragen."
+  },
+  "faq_page": {
+    "title": "Häufig Gestellte Fragen",
+    "subtitle": "Hier finden Sie Antworten. Erfahren Sie alles über unser IPTV Reseller Programm."
   }
 }
