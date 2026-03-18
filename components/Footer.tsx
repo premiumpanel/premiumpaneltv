@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, MessageCircle, Mail, MapPin } from "lucide-react";
+import CityLinks from "@/components/CityLinks";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -77,6 +78,8 @@ export default function Footer() {
                         Premium Panel, IPTV bayilik işinizin kesintisiz yürümesi için dünya standartlarında bir sunucu altyapısına sahiptir. Türkiye (İstanbul, Ankara, İzmir) başta olmak üzere, Avrupa (Almanya, Hollanda) ve Amerika lokasyonlarındaki güçlü veri merkezleri sayesinde düşük gecikme süreleri ve istikrarlı, donmasız panel erişimi sağlar. Tüm bu teknik işlerle biz uğraşırken, siz tamamen kendi satışlarınıza ve kârınıza odaklanabilirsiniz.
                     </p>
                 </div>
+
+                <CityLinks />
 
                 {/* Bottom Bar */}
                 <div className="mt-12 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
