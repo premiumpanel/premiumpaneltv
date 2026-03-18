@@ -3,6 +3,7 @@
 import { Check, Shield } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 const plans = [
     {
@@ -56,6 +57,8 @@ const plans = [
 ];
 
 export default function PricingCards() {
+    const t = useTranslations("pricing");
+
     return (
         <section className="py-20 bg-slate-950 relative overflow-hidden" id="pricing">
             {/* Background Elements */}
@@ -63,15 +66,18 @@ export default function PricingCards() {
 
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
+                    <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/5 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6">
+                        {t("badge")}
+                    </span>
                     <ScrollReveal textClassName="text-3xl md:text-5xl font-bold mb-6 text-white min-h-[4rem]">
                         <h2>
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x italic shadow-sm drop-shadow-md">
-                                İhtiyacınıza Uygun IPTV Reseller Paketleri
+                                {t("title")}
                             </span>
                         </h2>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 text-lg mb-8">
-                        Net fiyatlarla bütçenize en uygun paketi seçin, hemen kazanmaya başlayın.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
 

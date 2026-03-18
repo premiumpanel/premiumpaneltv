@@ -3,6 +3,7 @@ import CTAButton from "@/components/CTAButton";
 import { Star, Shield, Users, Radio, Zap, Headphones } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ThreeDMarquee, MarqueeImage } from "@/components/ui/3d-marquee";
+import { useTranslations } from "next-intl";
 
 const marqueeImages: MarqueeImage[] = [
     { src: "/assets/images/media/heroimg/nba-iptv-izlemek.jpg", alt: "NBA IPTV İzleme" },
@@ -24,6 +25,8 @@ const marqueeImages: MarqueeImage[] = [
 ];
 
 export default function Hero() {
+    const t = useTranslations("hero");
+
     return (
         <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-32 bg-slate-950">
 
@@ -48,15 +51,19 @@ export default function Hero() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column: Content */}
                     <div className="text-left max-w-4xl mx-auto lg:mx-0">
+                        <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/10 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6 hover:shadow-[0_0_15px_rgba(213,144,10,0.5)] transition-shadow">
+                            {t("badge")}
+                        </span>
                         <h1 className="text-3xl md:text-5xl lg:text-[3.25rem] font-bold mb-8 leading-[1.15] text-white tracking-tight drop-shadow-2xl pb-4">
                             <ScrollReveal>
-                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x block">
-                                    Kredili IPTV Bayilik Paneli
+                                <span>{t("title1")} </span>
+                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x inline-block">
+                                    {t("title2")}
                                 </span>
                             </ScrollReveal>
                             <ScrollReveal>
-                                <span className="block text-white">
-                                    ile Kolayca Satışa Başlayın
+                                <span className="block text-white mt-2">
+                                    {t("title3")}
                                 </span>
                             </ScrollReveal>
                         </h1>
@@ -64,15 +71,15 @@ export default function Hero() {
                         <ScrollReveal
                             textClassName="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed drop-shadow-md"
                         >
-                            Bayilik ücretsizdir. Paneli aktif etmek için minimum 120 kredi yüklemeniz yeterlidir. Sistem tamamen ön ödemeli ve şeffaftır: Oluşturduğunuz her 12 aylık üyelik için yalnızca 12 kredi düşer. 120 kredi ile 10 adet yıllık satış yapabilir, fiyat politikanızı kendiniz belirleyerek kârınızı kontrol edebilirsiniz.
+                            {t("subtitle")}
                         </ScrollReveal>
 
                         <div className="flex flex-col sm:flex-row items-center lg:items-start justify-start gap-4 mb-8">
                             <CTAButton href="https://wa.me/491632680219" variant="primary" className="w-full sm:w-auto shadow-xl shadow-blue-600/20">
-                                120 Kredi ile Başla
+                                {t("cta_primary")}
                             </CTAButton>
                             <CTAButton href="#demo" variant="outline" className="w-full sm:w-auto shadow-xl shadow-white/10" icon={false}>
-                                Paneli Demo İncele
+                                {t("cta_secondary")}
                             </CTAButton>
                         </div>
 

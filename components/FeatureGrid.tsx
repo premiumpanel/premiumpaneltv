@@ -1,48 +1,59 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-
-const features = [
-    {
-        title: "Bayi Olmak Ücretsizdir",
-        description: "Premium Panel ile ücretsiz IPTV satabilir, bayi ol sürecini herhangi bir başlangıç ücreti ödemeden tamamlayabilirsin. Sistemimiz kredili altyapı ile çalışır. Yüklenen krediler silinmez ve sonraki satışlar için devreder.",
-        image: "/assets/images/media/ucretsiz-iptv-bayilik.png",
-        link: "/ozellikler",
-        colSpan: "lg:col-span-4",
-    },
-    {
-        title: "Kredili IPTV Bayi Paneli",
-        description: "IPTV bayi panelimiz ön ödemeli kredi sistemi ile çalışır. Yüklediğin kredi kadar satış yaparsın, her üyelik bakiyenden düşer.",
-        image: "/assets/images/media/iptv-bayilik-kredisi.png",
-        link: "/ozellikler",
-        colSpan: "lg:col-span-4",
-    },
-    {
-        title: "Alt Bayilik (Subreseller) İmkanı",
-        description: "Kendi IPTV reseller ağını kur! Alt bayi oluşturabilir, kar oranını belirleyebilir ve kredi transferi yaparak kendi satış ağınızı kurabilirsiniz.",
-        image: "/assets/images/media/iptv-alt-bayi-olmak.png",
-        link: "/ozellikler",
-        colSpan: "lg:col-span-4",
-    },
-    {
-        title: "Anlık Yönetim & Hat Kontrolü",
-        description: "IPTV bayi paneli üzerinden kullanıcı oluşturma, süre uzatma, şifre yenileme ve istatistik görüntüleme işlemlerini tek ekrandan yönet. Geniş cihaz uyumluluğu ile MAC tabanlı veya m3u listesi kullanan cihazlara hat oluşturabilirsin.",
-        image: "/assets/images/media/iptv-kullanici-yonetimi.png",
-        link: "/paketler",
-        colSpan: "lg:col-span-6",
-        isLarge: true,
-    },
-    {
-        title: "Büyüyen İşler İçin Bayilik Altyapısı",
-        description: "Bireysel satıştan geniş bayi ağlarına kadar her seviyeye uygun altyapı. Kredili sistem ve panel araçlarıyla işini büyütmek için ekstra yatırıma ihtiyaç duymazsın. IPTV bayilik modelini profesyonel bir panel üzerinden yönet.",
-        video: "/assets/images/media/animated-globe.mp4",
-        link: "/iletisim",
-        colSpan: "lg:col-span-6 bg-slate-800",
-        isDark: true,
-    },
-];
+import { useTranslations } from "next-intl";
 
 export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
+    const t = useTranslations("features");
+
+    const features = [
+        {
+            title: t("f1_title"),
+            description: t("f1_desc"),
+            image: "/assets/images/media/ucretsiz-iptv-bayilik.png",
+            link: "/ozellikler",
+            colSpan: "lg:col-span-4",
+        },
+        {
+            title: t("f2_title"),
+            description: t("f2_desc"),
+            image: "/assets/images/media/iptv-bayilik-kredisi.png",
+            link: "/ozellikler",
+            colSpan: "lg:col-span-4",
+        },
+        {
+            title: t("f3_title"),
+            description: t("f3_desc"),
+            image: "/assets/images/media/iptv-alt-bayi-olmak.png",
+            link: "/ozellikler",
+            colSpan: "lg:col-span-4",
+        },
+        {
+            title: t("f4_title"),
+            description: t("f4_desc"),
+            image: "/assets/images/media/iptv-kullanici-yonetimi.png",
+            link: "/paketler",
+            colSpan: "lg:col-span-6",
+            isLarge: true,
+        },
+        {
+            title: t("f5_title"),
+            description: t("f5_desc"),
+            video: "/assets/images/media/animated-globe.mp4",
+            link: "/iletisim",
+            colSpan: "lg:col-span-6 bg-slate-800",
+            isDark: true,
+        },
+        {
+            title: t("f6_title"),
+            description: t("f6_desc"),
+            image: "/assets/images/media/iptv-bayilik-kredisi.png",
+            link: "/iletisim",
+            colSpan: "lg:col-span-12",
+            isLarge: true,
+        }
+    ];
+
     return (
         <section className="py-20 bg-slate-950 overflow-hidden relative" id="features">
             <div className="container mx-auto px-4 md:px-6">
@@ -50,18 +61,18 @@ export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/5 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6">
-                        Özellikler
+                        {t("badge")}
                     </span>
                     <ScrollReveal textClassName="text-3xl md:text-5xl font-extrabold italic text-white mb-6 leading-tight">
                         <h2>
-                            İşinizi büyütmek için <br />
+                            {t("title1")} <br />
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">
-                                ihtiyacınız olan her şey
+                                {t("title2")}
                             </span>
                         </h2>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 text-lg">
-                        Sadece satışa odaklanın, teknik detayları ve altyapıyı bize bırakın.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
 
