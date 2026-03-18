@@ -14,8 +14,10 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
     { src: "/assets/images/gallery/appvid.mp4", alt: "Panel ve Uygulama Tanıtımı", type: "video", className: "col-span-2 row-span-2" },
     { src: "/assets/images/gallery/dashboard.jpg", alt: "Panel Genel Görünümü", type: "image", className: "col-span-2 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-10.jpg", alt: "Smart TV Senkronizasyonu", type: "image", className: "col-span-1 row-span-2" },
     { src: "/assets/images/gallery/uygulama-ekrani-1.jpg", alt: "Mobil Uygulama Arayüzü", type: "image", className: "col-span-1 row-span-1" },
     { src: "/assets/images/gallery/uygulama-ekrani-2.jpg", alt: "Kategori Listesi", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-9.jpg", alt: "Dizi Detay Ekranı", type: "image", className: "col-span-1 row-span-2" },
     { src: "/assets/images/gallery/uygulama-ekrani-3.jpg", alt: "Canlı TV Oynatıcı", type: "image", className: "col-span-1 row-span-1" },
     { src: "/assets/images/gallery/uygulama-ekrani-4.jpg", alt: "Film & Dizi Arşivi", type: "image", className: "col-span-1 row-span-1" },
     { src: "/assets/images/gallery/ticket.jpg", alt: "Destek Yönetimi", type: "image", className: "col-span-2 row-span-1" },
@@ -23,8 +25,6 @@ const galleryItems: GalleryItem[] = [
     { src: "/assets/images/gallery/uygulama-ekrani-6.jpg", alt: "EPG ve Program Rehberi", type: "image", className: "col-span-1 row-span-1" },
     { src: "/assets/images/gallery/uygulama-ekrani-7.jpg", alt: "Ayarlar Menüsü", type: "image", className: "col-span-2 row-span-1" },
     { src: "/assets/images/gallery/uygulama-ekrani-8.jpg", alt: "Çoklu Ekran Desteği", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-9.jpg", alt: "Dizi Detay Ekranı", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-10.jpg", alt: "Smart TV Senkronizasyonu", type: "image", className: "col-span-1 row-span-1" },
 ];
 
 export default function MasonryGallery() {

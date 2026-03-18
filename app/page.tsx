@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTAButton from "@/components/CTAButton";
 import CTABanner from "@/components/CTABanner";
+import HomeSEOContent from "@/components/HomeSEOContent";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -63,10 +64,50 @@ export default function Home() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "IPTV Bayilik (Reseller) Nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IPTV bayiliği, toptan alınan yayın sunucusu kredilerinin, perakende son kullanıcılara donmasız paketler halinde satılarak yüksek kar elde edildiği risksiz bir dijital iş modelidir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IPTV Bayilik Satışı Nasıl Başlar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Premium Panel sistemimize kayıt olup, minimum bayi kredisini alarak anında kendi panelinize sahip olabilir ve çevrenize, sosyal medyada IPTV satışı yapmaya başlayabilirsiniz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IPTV Satışı Yaparak Ne Kadar Para Kazanılır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Toptan sanal IPTV kredisi aldığınız için maliyeti en diptedir. Bulunduğunuz konuma göre %100 ila %400'e varan kâr marjıyla satış gerçekleştirebilirsiniz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Satılmayan IPTV Bayi Kredileri Yanar Mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Asla yanmaz. Kredili IPTV bayi sisteminde satın aldığınız kontörlerin bir son kullanma tarihi yoktur. Kullanılana kadar hesabınızda baki kalır."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">
       <JsonLd data={webSiteSchema} />
       <JsonLd data={orgSchema} />
+      <JsonLd data={faqSchema} />
       <Header />
 
       <Hero />
@@ -84,6 +125,8 @@ export default function Home() {
       <FAQAccordion />
 
       <CTABanner />
+
+      <HomeSEOContent />
 
       <Footer />
     </main>
