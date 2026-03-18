@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "packages": "Forfaits",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "blog": "Blog",
+    "goToPanel": "Accéder au Panel"
+  },
+  "hero": {
+    "badge": "Revendeur IPTV (Reseller)",
+    "title1": "Créez votre entreprise IPTV,",
+    "title2": "Vendez avec",
+    "title3": "des profits élevés!",
+    "subtitle": "Obtenez votre panel instantanément sans risque grâce au système de crédits. Compatible à 100% avec Smart TV, Android, Apple et MAG. Offrez à vos clients une expérience sans faille avec une diffusion sans coupure.",
+    "cta_primary": "Voir les forfaits",
+    "cta_secondary": "Demander un test gratuit"
+  },
+  "features": {
+    "badge": "Pourquoi Premium Panel?",
+    "title": "Les fonctionnalités de revente les plus avancées pour devancer vos concurrents.",
+    "f1_title": "Panel Revendeur Avancé",
+    "f1_desc": "Gérez facilement vos clients depuis un seul écran.",
+    "f2_title": "Garantie 99.9% Uptime",
+    "f2_desc": "Offrez une expérience de visionnage sans interruption et sans coupure.",
+    "f3_title": "Système de crédits flexible",
+    "f3_desc": "Vos crédits n'expirent jamais, commercez sans risque.",
+    "f4_title": "Support continu 24/7",
+    "f4_desc": "Notre équipe d'experts est toujours à vos côtés.",
+    "f5_title": "Compatible tous appareils",
+    "f5_desc": "Smart TV, mobile, tablette, ordinateur, appareils MAG.",
+    "f6_title": "Marges bénéficiaires élevées",
+    "f6_desc": "Achetez au prix de gros et vendez au prix de votre choix."
+  },
+  "pricing": {
+    "badge": "Tarification",
+    "title": "Des forfaits à votre mesure",
+    "subtitle": "Achetez selon vos besoins avec le système de crédits flexible et gagnez en vendant.",
+    "buy_now": "Commencer maintenant"
+  },
+  "footer": {
+    "description": "Plateforme mondiale de revendeurs offrant des services IPTV professionnels, un système de crédits facile à utiliser et des prix nets.",
+    "quick_links": "Liens rapides",
+    "support": "Support",
+    "legal": "Légal",
+    "rights": "Tous droits réservés."
+  }
+}

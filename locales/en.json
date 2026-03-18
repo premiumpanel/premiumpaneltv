@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "packages": "Packages",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "blog": "Blog",
+    "goToPanel": "Go to Panel"
+  },
+  "hero": {
+    "badge": "IPTV Reseller",
+    "title1": "Start Your Own IPTV Business,",
+    "title2": "And Sell With",
+    "title3": "High Profits!",
+    "subtitle": "Get your panel instantly without risk using the credit system. 100% compatible with Smart TV, Android, Apple, and MAG devices. Offer your customers a flawless experience with freeze-free broadcast quality.",
+    "cta_primary": "View Starter Packages",
+    "cta_secondary": "Request Free Trial"
+  },
+  "features": {
+    "badge": "Why Premium Panel?",
+    "title": "The most advanced reseller features to put you ahead of competitors.",
+    "f1_title": "Advanced Reseller Panel",
+    "f1_desc": "Easily manage your customers from a single dashboard.",
+    "f2_title": "99.9% Uptime Guarantee",
+    "f2_desc": "Offer an uninterrupted and freeze-free viewing experience.",
+    "f3_title": "Flexible Credit System",
+    "f3_desc": "Your credits never expire, trade risk-free.",
+    "f4_title": "24/7 Continuous Support",
+    "f4_desc": "Our expert team is always by your side.",
+    "f5_title": "All Devices Compatible",
+    "f5_desc": "Smart TV, mobile, tablet, PC, and MAG devices.",
+    "f6_title": "High Profit Margins",
+    "f6_desc": "Buy at wholesale prices and sell at your own rate."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Packages That Suit You",
+    "subtitle": "Buy as much as you need with the flexible credit system and earn as you sell.",
+    "buy_now": "Start Now"
+  },
+  "footer": {
+    "description": "A global reseller platform providing professional IPTV reseller services, an easy-to-use credit system, and transparent pricing.",
+    "quick_links": "Quick Links",
+    "support": "Support",
+    "legal": "Legal",
+    "rights": "All Rights Reserved."
+  }
+}

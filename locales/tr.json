@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "features": "Özellikler",
+    "packages": "Paketler",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "blog": "Blog",
+    "goToPanel": "Panel'e Git"
+  },
+  "hero": {
+    "badge": "IPTV Bayilik (Reseller)",
+    "title1": "Kendi IPTV İşinizi Kurun,",
+    "title2": "Yüksek Karlarla",
+    "title3": "Satışa Başlayın!",
+    "subtitle": "Kredili sistem ile risk almadan, anında panelinize kavuşun. Smart TV, Android, Apple ve MAG ile %100 uyumlu, donmasız yayın kalitesiyle müşterilerinize kusursuz bir deneyim sunun.",
+    "cta_primary": "Başlangıç Paketini İncele",
+    "cta_secondary": "Ücretsiz Test İste"
+  },
+  "features": {
+    "badge": "Neden Premium Panel?",
+    "title": "Rakiplerinize fark atmanızı sağlayacak en gelişmiş bayilik özellikleri.",
+    "f1_title": "Gelişmiş Bayi Paneli",
+    "f1_desc": "Müşterilerinizi tek bir ekrandan kolayca yönetin.",
+    "f2_title": "%99.9 Uptime Garantisi",
+    "f2_desc": "Kesintisiz ve donmasız yayın deneyimi sunun.",
+    "f3_title": "Esnek Kredi Sistemi",
+    "f3_desc": "Kredileriniz asla yanmaz, risksiz ticaret yapın.",
+    "f4_title": "7/24 Kesintisiz Destek",
+    "f4_desc": "Uzman ekibimiz her an yanınızda.",
+    "f5_title": "Tüm Cihazlara Uyumluluk",
+    "f5_desc": "Smart TV, mobil, tablet, bilgisayar, MAG cihazları.",
+    "f6_title": "Yüksek Kar Marjı",
+    "f6_desc": "Toptan fiyatına alıp dilediğiniz fiyata satın."
+  },
+  "pricing": {
+    "badge": "Fiyatlandırma",
+    "title": "Size Uygun Paketler",
+    "subtitle": "Esnek kredi sistemi ile ihtiyacınız kadar alın, aldıkça kazanın.",
+    "buy_now": "Hemen Başla"
+  },
+  "footer": {
+    "description": "Profesyonel IPTV bayilik hizmeti sağlayan, kullanımı kolay kredili sistem ve net fiyatlar sunan global bayi platformu.",
+    "quick_links": "Hızlı Linkler",
+    "support": "Destek",
+    "legal": "Yasal",
+    "rights": "Tüm Hakları Saklıdır."
+  }
+}

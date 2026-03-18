@@ -1,12 +1,32 @@
 "use client";
 
-import Link from "next/link";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight, User } from "lucide-react";
+import { Menu, X, ArrowRight, User, Globe, ChevronDown } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [langOpen, setLangOpen] = useState(false);
+
+    const t = useTranslations("navbar");
+    const locale = useLocale();
+    const router = useRouter();
+    const pathname = usePathname();
+
+    const languages = [
+        { code: "tr", label: "Türkçe" },
+        { code: "en", label: "English" },
+        { code: "de", label: "Deutsch" },
+        { code: "fr", label: "Français" },
+        { code: "nl", label: "Nederlands" }
+    ];
+
+    const changeLanguage = (nextLocale: string) => {
+        router.replace(pathname, { locale: nextLocale });
+        setLangOpen(false);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,12 +37,12 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Ana Sayfa", href: "/" },
-        { name: "Paketler", href: "/paketler" },
-        { name: "Özellikler", href: "/ozellikler" },
-        { name: "SSS", href: "/sss" },
-        { name: "Blog", href: "/blog" },
-        { name: "İletişim", href: "/iletisim" },
+        { name: t("home"), href: "/" },
+        { name: t("packages"), href: "/paketler" },
+        { name: t("features"), href: "/ozellikler" },
+        { name: t("faq"), href: "/sss" },
+        { name: t("blog"), href: "/blog" },
+        { name: t("contact"), href: "/iletisim" },
     ];
 
     return (
@@ -32,7 +52,6 @@ export default function Header() {
                     ? "bg-slate-950/90 backdrop-blur-2xl rounded-2xl border border-white/10 py-2 md:py-3 shadow-lg shadow-black/50 flex items-center justify-between"
                     : "bg-transparent border border-transparent rounded-2xl py-3 md:py-4 flex items-center justify-between"
                     }`}>
-
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group ml-2">
@@ -58,43 +77,81 @@ export default function Header() {
                     </nav>
 
                     <div className="hidden md:flex items-center gap-4 mr-2">
+                        {/* Language Switcher */}
+                        <div className="relative">
+                            <button
+                                onClick={() => setLangOpen(!langOpen)}
+                                className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors font-medium text-sm py-2 px-3 rounded-lg border border-slate-700/50 hover:border-slate-600 bg-slate-800/50"
+                            >
+                                <Globe className="w-4 h-4" />
+                                <span className="uppercase">{locale}</span>
+                                <ChevronDown className={`w-3 h-3 transition-transform ${langOpen ? 'rotate-180' : ''}`} />
+                            </button>
+                            
+                            {langOpen && (
+                                <div className="absolute top-full right-0 mt-2 w-36 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-50">
+                                    {languages.map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => changeLanguage(lang.code)}
+                                            className={`w-full text-left px-4 py-2 text-sm transition-colors ${locale === lang.code ? 'bg-[#d5900a]/10 text-[#d5900a] font-medium' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}
+                                        >
+                                            {lang.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
                         <Link
                             href="https://panel.premiumpanel.com/login"
                             className="uiverse-btn"
-                            data-text="GİRİŞ YAP"
+                            data-text={t("goToPanel")}
                         >
-                            <span className="actual-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />GİRİŞ YAP&nbsp;</span>
-                            <span aria-hidden="true" className="hover-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />GİRİŞ YAP&nbsp;</span>
-                        </Link>
-                        <Link
-                            href="https://wa.me/491632680219"
-                            target="_blank"
-                            className="group/button relative overflow-hidden px-5 py-2.5 bg-[#d5900a] text-white font-bold rounded-lg hover:scale-105 transition-all flex items-center gap-2 shadow-lg shadow-[#d5900a]/20 active:scale-95 border border-transparent"
-                        >
-                            <span className="relative z-10 flex items-center gap-2">
-                                <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-4 h-4 brightness-0 invert" />
-                                Ücretsiz Bayimiz Ol <ArrowRight className="w-4 h-4 transition-transform group-hover/button:translate-x-1" />
-                            </span>
-                            {/* Shimmer Effect */}
-                            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-                                <div className="relative h-full w-10 bg-white/20 blur-[2px]" />
-                            </div>
+                            <span className="actual-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />{t("goToPanel")}&nbsp;</span>
+                            <span aria-hidden="true" className="hover-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />{t("goToPanel")}&nbsp;</span>
                         </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button
-                        className="lg:hidden text-slate-100 p-2"
-                        onClick={() => setIsOpen(!isOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                    </button>
+                    <div className="lg:hidden flex items-center gap-3">
+                        <button
+                            className="text-slate-100 p-2 border border-slate-700/50 rounded-lg bg-slate-800/50 flex items-center gap-1 uppercase text-xs font-bold"
+                            onClick={() => setLangOpen(!langOpen)}
+                        >
+                            <Globe className="w-4 h-4" /> {locale}
+                        </button>
+                        <button
+                            className="text-slate-100 p-2"
+                            onClick={() => setIsOpen(!isOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        </button>
+                    </div>
                 </div>
+
+                {/* Mobile Lang Dropdown */}
+                {langOpen && (
+                    <div className="lg:hidden absolute top-full right-4 mt-2 w-40 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-[60]">
+                        {languages.map((lang) => (
+                            <button
+                                key={lang.code}
+                                onClick={() => {
+                                    changeLanguage(lang.code);
+                                    setIsOpen(false);
+                                }}
+                                className={`w-full text-left px-4 py-3 text-sm transition-colors border-b border-slate-800/50 ${locale === lang.code ? 'bg-[#d5900a]/10 text-[#d5900a] font-medium' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}
+                            >
+                                {lang.label}
+                            </button>
+                        ))}
+                    </div>
+                )}
 
                 {/* Mobile Nav */}
                 {isOpen && (
-                    <div className="lg:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-700 py-4 animate-in slide-in-from-top-4 shadow-2xl">
+                    <div className="lg:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-700 py-4 animate-in slide-in-from-top-4 shadow-2xl mt-4">
                         <nav className="flex flex-col gap-2 px-6">
                             {navLinks.map((link) => (
                                 <Link
@@ -109,26 +166,12 @@ export default function Header() {
                             ))}
                             <div className="flex flex-col gap-3 mt-6">
                                 <Link
-                                    href="#"
+                                    href="https://panel.premiumpanel.com/login"
                                     className="uiverse-btn mx-auto w-full justify-center"
-                                    data-text="GİRİŞ YAP"
+                                    data-text={t("goToPanel")}
                                 >
-                                    <span className="actual-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />GİRİŞ YAP&nbsp;</span>
-                                    <span aria-hidden="true" className="hover-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />GİRİŞ YAP&nbsp;</span>
-                                </Link>
-                                <Link
-                                    href="https://wa.me/491632680219"
-                                    target="_blank"
-                                    className="group/button relative overflow-hidden w-full bg-[#d5900a] text-white font-bold py-3 rounded-lg text-center border border-transparent shadow-lg shadow-[#d5900a]/20 hover:scale-[1.02] transition-all"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    <span className="relative z-10 flex items-center justify-center gap-2">
-                                        <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-4 h-4 brightness-0 invert" />
-                                        Ücretsiz Bayimiz Ol
-                                    </span>
-                                    <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-                                        <div className="relative h-full w-10 bg-white/20 blur-[2px]" />
-                                    </div>
+                                    <span className="actual-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />{t("goToPanel")}&nbsp;</span>
+                                    <span aria-hidden="true" className="hover-text">&nbsp;<User className="w-4 h-4 mr-1 shrink-0" />{t("goToPanel")}&nbsp;</span>
                                 </Link>
                             </div>
                         </nav>

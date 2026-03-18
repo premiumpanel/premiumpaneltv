@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Startpagina",
+    "features": "Functies",
+    "packages": "Pakketten",
+    "faq": "Veelgestelde Vragen",
+    "contact": "Contact",
+    "blog": "Blog",
+    "goToPanel": "Naar Paneel"
+  },
+  "hero": {
+    "badge": "IPTV Reseller",
+    "title1": "Start je eigen IPTV",
+    "title2": "Bedrijf Met Hoge Winsten",
+    "title3": "Verkopen!",
+    "subtitle": "Krijg uw paneel direct zonder risico met het kredietsysteem. 100% compatibel met Smart TV, Android, Apple en MAG. Bied uw klanten een vlekkeloze ervaring met een naadloze uitzendkwaliteit.",
+    "cta_primary": "Bekijk Startpakketten",
+    "cta_secondary": "Vraag Gratis Test Aan"
+  },
+  "features": {
+    "badge": "Waarom Premium Panel?",
+    "title": "De meest geavanceerde reseller-functies om concurrenten voor te blijven.",
+    "f1_title": "Geavanceerd Resellerpaneel",
+    "f1_desc": "Beheer eenvoudig al uw klanten vanaf één scherm.",
+    "f2_title": "99.9% Uptime Garantie",
+    "f2_desc": "Bied een ononderbroken kijkervaring zonder storingen.",
+    "f3_title": "Flexibel Kredietsysteem",
+    "f3_desc": "Uw credits verlopen nooit, handel zonder risico.",
+    "f4_title": "24/7 Continue Ondersteuning",
+    "f4_desc": "Ons team van experts staat altijd voor u klaar.",
+    "f5_title": "Compatibel met alle apparaten",
+    "f5_desc": "Smart TV, mobiel, tablet, pc en MAG-apparaten.",
+    "f6_title": "Hoge Winstmarges",
+    "f6_desc": "Koop tegen groothandelsprijzen en verkoop voor uw eigen prijs."
+  },
+  "pricing": {
+    "badge": "Prijzen",
+    "title": "Pakketten die bij u passen",
+    "subtitle": "Koop wat u nodig heeft met het flexibele kredietsysteem en verdien u verkoopt.",
+    "buy_now": "Begin Nu"
+  },
+  "footer": {
+    "description": "Een wereldwijd resellerplatform dat professionele IPTV-resellerservices combineert met een gebruiksvriendelijk kredietsysteem.",
+    "quick_links": "Snelle Links",
+    "support": "Ondersteuning",
+    "legal": "Juridisch",
+    "rights": "Alle Rechten Voorbehouden."
+  }
+}

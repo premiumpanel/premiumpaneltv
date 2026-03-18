@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "packages": "Pakete",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "goToPanel": "Zum Panel"
+  },
+  "hero": {
+    "badge": "IPTV Reseller",
+    "title1": "Starten Sie Ihr eigenes IPTV-Geschäft",
+    "title2": "und verkaufen Sie mit",
+    "title3": "hohen Gewinnen!",
+    "subtitle": "Erhalten Sie Ihr Panel sofort und ohne Risiko über das Kreditsystem. 100% kompatibel mit Smart TV, Android, Apple und MAG. Bieten Sie Ihren Kunden ein einwandfreies Erlebnis mit ruckelfreier Sendequalität.",
+    "cta_primary": "Starter-Pakete ansehen",
+    "cta_secondary": "Kostenlosen Test anfordern"
+  },
+  "features": {
+    "badge": "Warum Premium Panel?",
+    "title": "Die fortschrittlichsten Reseller-Funktionen für Ihren Vorsprung.",
+    "f1_title": "Erweitertes Reseller-Panel",
+    "f1_desc": "Verwalten Sie Ihre Kunden einfach auf einem einzigen Bildschirm.",
+    "f2_title": "99.9% Uptime Garantie",
+    "f2_desc": "Bieten Sie ein unterbrechungsfreies und ruckelfreies Seherlebnis.",
+    "f3_title": "Flexibles Kreditsystem",
+    "f3_desc": "Ihre Credits verfallen nie, handeln Sie risikofrei.",
+    "f4_title": "24/7 Premium Support",
+    "f4_desc": "Unser Expertenteam ist jederzeit für Sie da.",
+    "f5_title": "Geeignet für alle Geräte",
+    "f5_desc": "Smart TV, Smartphone, Tablet, PC und MAG-Geräte.",
+    "f6_title": "Hohe Gewinnspannen",
+    "f6_desc": "Zum Großhandelspreis kaufen und zum eigenen Preis verkaufen."
+  },
+  "pricing": {
+    "badge": "Preise",
+    "title": "Pakete, die zu Ihnen passen",
+    "subtitle": "Kaufen Sie so viel wie nötig mit dem flexiblen Kreditsystem und verdienen Sie beim Verkauf.",
+    "buy_now": "Jetzt starten"
+  },
+  "footer": {
+    "description": "Eine globale Reseller-Plattform, die professionelle IPTV-Reseller-Dienste, ein einfach zu bedienendes Kreditsystem und transparente Preise anbietet.",
+    "quick_links": "Schnelllinks",
+    "support": "Support",
+    "legal": "Rechtliches",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
