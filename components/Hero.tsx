@@ -27,6 +27,7 @@ const marqueeImages: MarqueeImage[] = [
 export default function Hero() {
     const t_base = useTranslations("hero");
     const t = useTranslations("hero_stats");
+    const t_extra = useTranslations();
 
     return (
         <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-32 bg-slate-950">
@@ -79,7 +80,7 @@ export default function Hero() {
                             <CTAButton href="https://wa.me/491632680219" variant="primary" className="w-full sm:w-auto shadow-xl shadow-blue-600/20">
                                 {t_base("cta_primary")}
                             </CTAButton>
-                            <CTAButton href="#demo" variant="outline" className="w-full sm:w-auto shadow-xl shadow-white/10" icon={false}>
+                            <CTAButton href={`https://wa.me/491632680219?text=${encodeURIComponent(t_extra("whatsapp_msg"))}`} variant="outline" className="w-full sm:w-auto shadow-xl shadow-white/10" icon={false}>
                                 {t_base("cta_secondary")}
                             </CTAButton>
                         </div>
@@ -87,7 +88,7 @@ export default function Hero() {
                         {/* TrustPilot Style Reviews */}
                         <div className="flex flex-row items-center justify-start gap-4 text-sm text-slate-300 mb-8 lg:mb-0">
                             <div className="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700 backdrop-blur-sm">
-                                <span className="font-bold text-white">Mükemmel</span>
+                                <span className="font-bold text-white">{t_extra("hero_extra.excellent")}</span>
                                 <div className="flex gap-0.5">
                                     {[...Array(5)].map((_, i) => (
                                         <div key={i} className="p-1">
@@ -96,7 +97,7 @@ export default function Hero() {
                                     ))}
                                 </div>
                             </div>
-                            <span className="opacity-80 font-medium">%98.7 Olumlu Geri Dönüş</span>
+                            <span className="opacity-80 font-medium">{t_extra("hero_extra.positive_feedback")}</span>
                         </div>
                     </div>
 

@@ -136,5 +136,257 @@
     "plan3_f4": "Tam White Label & Özel DNS",
     "plan3_bonus": "VIP Toptancı Ayrıcalıkları",
     "plan3_cta": "Master Bayi Ol"
+  },
+  "hero_extra": {
+    "excellent": "Mükemmel",
+    "positive_feedback": "%98.7 Olumlu Geri Dönüş"
+  },
+  "testimonials": {
+    "title": "Yüzlerce Mutlu Bayi",
+    "subtitle": "Ağımıza katılan ve kendi işini büyüten bayilerimizin başarı hikayelerine göz atın.",
+    "reviews": [
+      {
+        "name": "Caner Y.",
+        "role": "IPTV BAYİ SAHİBİ",
+        "text": "\"IPTV bayilik sistemine bu panel ile başladım. Kredi sistemi çok şeffaf ve kanal geçiş hızı gerçekten etkileyici. Müşterilerimden hiç şikayet almıyorum.\""
+      },
+      {
+        "name": "Metehan D.",
+        "role": "E-TİCARET BAYİ",
+        "text": "\"Kredi transfer hızı ve otomatik aktivasyon özelliği sayesinde müşterilerime anında hizmet verebiliyorum. IPTV server kalitesi gerçekten piyasanın üzerinde.\""
+      },
+      {
+        "name": "Rodrigo A.",
+        "role": "INTERNATIONAL RESELLER",
+        "text": "\"Consistent streams and localized content for multiple regions. The admin dashboard gives me full control over user bouquets and subscriptions.\""
+      },
+      {
+        "name": "Murat K.",
+        "role": "KURUMSAL BAYİ",
+        "text": "\"Toplu kredi alımlarında sağladıkları avantajlar ve özel DNS hizmeti ile kendi markamızı tamamen ön plana çıkarabildik. Gerçekten çözüm ortağılar.\""
+      },
+      {
+        "name": "Yavuz K.",
+        "role": "DIGITAL MARKETER",
+        "text": "\"Reseller paneli arayüzü çok sezgisel. Alt bayi oluşturma ve limit tanımlama işlemleri saniyeler sürüyor. İşimi büyütmemde çok yardımcı oldular.\""
+      },
+      {
+        "name": "Selin A.",
+        "role": "YENİ GİRİŞİMCİ",
+        "text": "\"Başlangıçta çekincelerim vardı ancak destek ekibi her adımda yanımda oldu. Şimdi kendi müşteri ağımı kurdum ve düzenli gelir elde ediyorum.\""
+      },
+      {
+        "name": "Hans S.",
+        "role": "VERTRIEBSPARTNER",
+        "text": "\"Die Qualität der 4K-Streams ist hervorragend. Meine Kunden in Deutschland sind sehr zufrieden mit der Stabilität. Absolut empfehlenswert.\""
+      },
+      {
+        "name": "Cansu D.",
+        "role": "PAZARLAMA MÜDÜRÜ",
+        "text": "\"Test hesabı verme özelliği satışları kapatmakta çok etkili oluyor. Müşteri önce kaliteyi görüyor, sonra güvenle satın alıyor.\""
+      }
+    ]
+  },
+  "faq_accordion": {
+    "faqs": [
+      {
+        "question": "IPTV Bayilik (Reseller) nedir?",
+        "answer": "IPTV bayiliği, toptan alınan yayın sunucusu kredilerinin, perakende son kullanıcılara satılarak yüksek kar elde edildiği risksiz bir dijital iş modelidir."
+      },
+      {
+        "question": "Kredili IPTV sistemi nasıl çalışır?",
+        "answer": "Sistem ön ödemeli çalışır. Satın aldığınız kontör/krediler hesabınıza yüklenir. Müşterinize paket açtıkça bakiyenizden düşer."
+      },
+      {
+        "question": "Satın aldığım kredilerin kullanım süresi var mı?",
+        "answer": "Asla yoktur. Kredileriniz siz onları kullanana kadar yıllarca hesabınızda kalır, iptal olmaz veya silinmez."
+      },
+      {
+        "question": "Alt bayi (Subreseller) ekleyebilir miyim?",
+        "answer": "Evet! Belirli paketlerden itibaren kendi alt bayilerinizi oluşturabilir ve onlara kredi satışı yaparak toptancı olabilirsiniz."
+      },
+      {
+        "question": "Hangi cihazlar için yayın verebilirim?",
+        "answer": "Smart TV'ler, Android BOX, Apple TV, PC, Telefon ve Tabletler dahil MAG cihazlarına kadar tüm platformlara özel formatlarda (M3U, Xtream) yayın sağlayabilirsiniz."
+      },
+      {
+        "question": "Panel kurulumu ücretli mi?",
+        "answer": "Hayır. Panel kurulumu, eğitimi ve altyapı desteği tamamen ücretsizdir. Yalnızca satacağınız kredileri ödersiniz."
+      },
+      {
+        "question": "Aylık taahhüt veya kiralama bedeli ödüyor muyum?",
+        "answer": "Hayır. Aylık sunucu kiralama, panel aidatı veya gizli ücretler yoktur. Sadece kendi sermayenize göre kredi alır, kârla satarsınız."
+      },
+      {
+        "question": "Kendi markamı ve alan adımı kullanabilir miyim?",
+        "answer": "Evet. DNS adreslerini size özel ayarlayabilir (örn: sizinmarkaniz.com:8080) ve paneli de kendi domaininize kurabiliriz."
+      }
+    ]
+  },
+  "cta_banner": {
+    "badge": "HEMEN BAŞLAYIN",
+    "title_line1": "İşinizi büyütmeye",
+    "title_line2": "hazır mısınız?",
+    "subtitle": "Binlerce bayi arasına katılın ve kazanmaya başlayın. Teknik detayları biz halledelim.",
+    "button": "Ücretsiz Deneme Başlat"
+  },
+  "seo_content": {
+    "p1": "IPTV Bayilik (Reseller) Rehberi: Kendi İşinizin Patronu Olun",
+    "p2": "Dijital medyanın ve internet hızlarının günümüzde ulaştığı muazzam kapasite, eğlence ve televizyon sektörünü kökünden değiştirdi. IPTV üzerinden geniş bant hızlarla yayın yapmak artık revaçta.",
+    "read_more": "Daha Fazla Oku...",
+    "read_less": "Gizle"
+  },
+  "footer_extra": {
+    "terms": "Kullanım Koşulları",
+    "privacy": "Gizlilik Politikası",
+    "whatsapp_line": "WhatsApp Hattı",
+    "email_line": "E-posta Hattı",
+    "seo_title": "Sunucu Lokasyonları ve Yüksek Hızlı Altyapı",
+    "seo_text": "Premium Panel, IPTV bayilik işinizin kesintisiz yürümesi için dünya standartlarında bir sunucu altyapısına sahiptir. Türkiye (İstanbul, Ankara, İzmir) başta olmak üzere, Avrupa (Almanya, Hollanda) ve Amerika lokasyonlarındaki güçlü veri merkezleri sayesinde düşük gecikme süreleri ve istikrarlı, donmasız panel erişimi sağlar. Tüm bu teknik işlerle biz uğraşırken, siz tamamen kendi satışlarınıza ve kârınıza odaklanabilirsiniz."
+  },
+  "whatsapp_msg": "Bayilik için ücretsiz test talep ediyorum.",
+  "pricing_extra": {
+    "credit": "Kredi",
+    "popular": "POPÜLER",
+    "secure_infrastructure": "Güvenli ve Şeffaf Altyapı",
+    "footer_text_strong": "Maliyetini Çıkar, Kârını Katla!",
+    "footer_text_light": "İlk 120 Kredini Hemen Yükle."
+  },
+  "bento_grid": {
+    "badge": "Neden Premium Panel?",
+    "subtitle": "IPTV bayilik dünyasında fark yaratan özelliklerimizle tanışın.",
+    "f1_title": "Bayi Olmak Ücretsizdir",
+    "f1_desc": "Premium Panel ile ücretsiz IPTV satabilir, bayi ol sürecini herhangi bir başlangıç ücreti ödemeden tamamlayabilirsin. Sistemimiz kredili altyapı ile çalışır. Satış yapabilmek için panele minimum 120 kredi yüklemen gerekir. Örneğin 12 aylık bir üyelik satışı yalnızca 12 kredi düşer. Böylece kredi bakiyeni kontrol ederek planlı ve sürdürülebilir bir IPTV reseller sistemi kurarsın. Ücretsiz bayi ol, kredini yükle ve satışa başla.",
+    "f1_cta": "Detayları Keşfet",
+    "f2_title": "Kredili IPTV Bayi Paneli",
+    "f2_desc": "IPTV bayi panelimiz ön ödemeli kredi sistemi ile çalışır. Yüklediğin kredi kadar satış yaparsın, her oluşturulan üyelik belirlenen kredi tutarını bakiyenden düşer. Bu yapı sayesinde kar marjını sen belirlersin, fiyat politikanı özgürce yönetirsin. IPTV bayilik sisteminde nakit akışını kontrol altında tutmak isteyenler için ideal bir reseller modelidir.",
+    "f3_title": "Alt Bayilik (Subreseller) İmkanı",
+    "f3_desc": "Kendi IPTV reseller ağını kurmak ister misin? Premium Panel ile alt bayi oluşturabilir, kredi tanımlayabilir ve kar oranını belirleyebilirsin. Yani sadece son kullanıcıya değil, kendi alt bayilerine de satış yaparak büyük bir IPTV bayilik ağı kurarsın. Gerçek bir panel yönetim mantığı ile işini büyütmek tamamen senin elinde olur.",
+    "f4_title": "Anlık Yönetim & Hat Kontrolü",
+    "f4_desc": "IPTV bayi paneli üzerinden kullanıcı oluşturma, süre uzatma, şifre yenileme, bağlantı resetleme ve istatistik görüntüleme işlemlerini tek ekrandan yönetebilirsin. MAC tabanlı cihazlar veya m3u listesi kullanan cihazlar için farklı hat türleri oluşturabilir, test hesapları tanımlayabilirsin. Tüm süreç birkaç tıkla tamamlanır.",
+    "f5_title": "Her İhtiyaca Uygun IPTV Bayilik Sistemi",
+    "f5_desc": "İster bireysel satış yap ister geniş bir bayi ağı kur, Premium Panel sana kolayca büyüme imkanı sunar. Kredili sistem, alt bayi desteği ve panel içi yönetim araçları sayesinde işini büyütmek için ekstra yazılıma para harcamazsın. IPTV bayilik işini profesyonel bir panel üzerinden yöneterek sürekli gelir elde edebilirsin."
+  },
+  "masonry_gallery": {
+    "alt_1": "Panel ve Uygulama Tanıtımı",
+    "alt_2": "Panel Genel Görünümü",
+    "alt_3": "Smart TV Senkronizasyonu",
+    "alt_4": "Mobil Uygulama Arayüzü",
+    "alt_5": "Kategori Listesi",
+    "alt_6": "Dizi Detay Ekranı",
+    "alt_7": "Canlı TV Oynatıcı",
+    "alt_8": "Film & Dizi Arşivi",
+    "alt_9": "Destek Yönetimi",
+    "alt_10": "Kullanıcı Profili",
+    "alt_11": "EPG ve Program Rehberi",
+    "alt_12": "Ayarlar Menüsü",
+    "alt_13": "Çoklu Ekran Desteği"
+  },
+  "metadata_sss": {
+    "title": "Sıkça Sorulan Sorular | Premium Panel",
+    "description": "Bayilik sistemi, ödemeler, panel kullanımı ve teknik konular hakkında merak edilenler."
+  },
+  "metadata_paketler": {
+    "title": "Bayilik Paketleri ve Fiyatları | Premium Panel",
+    "description": "İhtiyacınıza en uygun IPTV bayilik paketini seçin."
+  },
+  "metadata_ozellikler": {
+    "title": "Gelişmiş IPTV Özellikleri | Premium Panel",
+    "description": "Yüksek performanslı panel, %99 uptime, 7/24 destek ve global altyapı özelliklerimizi keşfedin."
+  },
+  "metadata_kullanim": {
+    "title": "Kullanım Koşulları | Premium Panel",
+    "description": "Premium Panel kullanım koşulları ve kuralları."
+  },
+  "metadata_gizlilik": {
+    "title": "Gizlilik Politikası | Premium Panel",
+    "description": "Gizlilik politikamız ve veri güvenliği."
+  },
+  "metadata_blog": {
+    "title": "Blog - IPTV Bayilik ve Sektör Haberleri | Premium Panel",
+    "description": "En son IPTV haberleri, bayilik ipuçları, teknik rehberler ve sektör analizleri. Başarılı bir bayi olmak için gereken her şey."
+  },
+  "metadata_iletisim": {
+    "title": "İletişim | Premium Panel",
+    "description": "Bizimle iletişime geçin, sorularınızı yanıtlayalım."
+  },
+  "metadata_iptv_bayilik": {
+    "title": "{city} IPTV Bayilik | En İyi Kredili Reseller Paneli Serüveni",
+    "description": "{city} şehri ve {region} bölgesi için en iyi IPTV bayilik hizmeti. Donmasız kesintisiz yayınlarla IPTV satışı yaparak yüksek kazanç elde edin."
+  },
+  "contact_extra": {
+    "contact_info": "İletişim Bilgileri",
+    "connect_wa": "WhatsApp ile Bağlan",
+    "write_us": "Bize Yazın",
+    "fullname": "Adınız Soyadınız",
+    "fullname_placeholder": "Adınız Soyadınız",
+    "email": "E-Posta Adresiniz",
+    "email_placeholder": "ornek@email.com",
+    "message": "Mesajınız",
+    "message_placeholder": "Size nasıl yardımcı olabiliriz?",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "sending": "Gönderiliyor...",
+    "send": "Gönder"
+  },
+  "iptv_bayilik_page": {
+    "hero_badge": "{region} Bölgesinin Lideri Olun",
+    "hero_title": "{name} IPTV Bayilik İşine",
+    "hero_title_highlight": "Bugün Başlayın!",
+    "hero_desc": "{name} lokasyonuna özel sıfır sermaye riskiyle donmasız ve yüksek çözünürlüklü IPTV paketleri satarak kendi kârlı işletmenizi kurun. %100 Uptime ve limitsiz satış potansiyeli.",
+    "cta_customer": "{name} Müşterisi Kazan",
+    "cta_packages": "Bayilik Paketleri",
+    "bottom_title": "Hemen Kredili Sisteme Geçin",
+    "bottom_desc": "{name} halkına satmak üzere hazır kurulu, kendi markanızı yönetebileceğiniz toptan panel ile sektörde lider konumuna ulaşabilirsiniz. Sektördeki yenilikleri yakalamak ve yüksek karlılıklara ulaşmak bir telefon kadar uzağınızda.",
+    "wa_button": "WhatsApp İletişim"
+  },
+  "seo_content_extended": {
+    "p3": "Eğer siz de yüksek yatırım maliyetleri, kira, vergi, fiziksel dükkan masrafları veya büyük stok tutma zorunlulukları olmadan risksiz bir kazanç modeli arıyorsanız, IPTV bayilik satışı tam size göre. Premium Panel olarak, size piyasanın en stabil ve gelişmiş altyapısıyla kendi müşterilerinizi yönetebileceğiniz, fiyat politikasını tamamen kendi inisiyatifinize göre belirleyebileceğiniz kredili bir bayi platformu sunuyoruz.",
+    "h1": "1. IPTV Bayiliği Nedir ve Kredili Sistem Nasıl Çalışır?",
+    "s1_p1": "IPTV Bayiliği, toptan alınan içerik erişim haklarının, son tüketicilere paketler halinde perakende olarak satılması işlemine denir. Bayi olduğunuz andan itibaren size özel tasarlanmış profesyonel bir yönetim paneli tahsis edilir. Bu panel aracılığıyla yeni abonelikler (hesaplar) açabilir, müşterilerinize test yayınları gönderebilir (ücretsiz deneme), süresi biten abonelerin tarihlerini uzatabilir, ve aktif ya da pasif tüm portföyünüzü tek bir ekrandan kontrol edebilirsiniz.",
+    "s1_p2": "Premium Panel olarak kullandığımız Kredili Sistem şeffaf ve kayıpsız bir modeldir:",
+    "s1_li1": "Bayi paneline başlangıçta belirli bir miktar kredi yüklemesi yaparsınız.",
+    "s1_li2": "Her abonelik açılışında, o paketin süresine eşdeğer oranda panonuzdan kredi düşülür.",
+    "s1_li3": "Risk Yoktur: Satış yapmadığınız takdirde kredilerinizin son kullanma tarihi yoktur; hesabınızda aynen durur ve yanmaz.",
+    "s1_li4": "Sermaye kontrolü tamamen sizindir; ön ödemeli çalışarak kimseye borçlanmazsınız.",
+    "h2": "2. Neden Premium Panel IPTV Bayilik Sistemini Seçmelisiniz?",
+    "s2_p1": "İnternet üzerinde sayısız streaming (akış) sağlayıcısı ve iptv toptancısı mevcuttur. Ancak uzun vadede kârlı bir gelir elde etmek istiyorsanız arka plandaki altyapının kalitesi hayati önem taşır.",
+    "s2_li1": "Küresel CDN Ağı: Her lokasyonda en hızlı ping değerleriyle kesintisiz canlı TV deneyimi.",
+    "s2_li2": "Kesintisiz Hizmet (99.9% Uptime): On binlerce kullanıcının eş zamanlı izleme taleplerine yanıt verebilecek güç.",
+    "s2_li3": "Anti-Freeze Teknolojisi: Düşük internet hızlarında dahi donmayı engelleyen algoritma.",
+    "s2_li4": "7/24 Kesintisiz Destek: Destek ekibimiz bayi hesaplarınıza anında müdahale edebilmek için hazırdır.",
+    "h3": "3. Sektörel Büyüme ve Kazanç Potansiyeli",
+    "s3_p1": "Fiber optik ağların genişlemesi ve 5G teknolojileri IPTV talebini benzeri görülmemiş bir şekilde artırdı.",
+    "h4": "4. Başarılı Bir IPTV Bayisi Olmak İçin Satış Stratejileri",
+    "s4_p1": "Kredinizi aldınız ve paneliniz kullanıma hazır. Peki ya sonra? Doğru stratejiyle hedef kitlenize ulaşmanız gerekir.",
+    "h5": "5. Teknik Uygulamalar ve Cihaz Uyumlulukları",
+    "s5_p1": "Bir IPTV hizmetini satmanın en kolay yolu, sunduğunuz sistemin dünyadaki hemen her ekrana uyumlu olabilmesidir.",
+    "h6": "6. Sıkça Karşılaşılan Müşteri Sorunları ve Çözümler",
+    "s6_p1": "Müşterilerinizin yaşayabileceği teknik aksaklıklarda sorunun ana kaynağını bulmak önemlidir.",
+    "h7": "7. İşinizi Büyütmenin ve Markalaşmanın Yolları",
+    "s7_p1": "IPTV pazarında binlerce satıcı olmasına rağmen, markalaşan ve farklılaşan olanlar ipi göğüsler.",
+    "h8": "8. Neden Hemen Başlamalısınız?",
+    "s8_p1": "Vakit, nakittir. Her geçen gün yüzlerce insan streaming servislerine yönelmektedir.",
+    "footer_cta": "Daha fazla bilgi edinmek, ücretsiz test yayını talebinde bulunmak için vakit kaybetmeden İletişim sayfamızdan veya WhatsApp üzerinden bize ulaşın."
+  },
+  "pricing_whatsapp": "Merhaba, {plan} paketiniz hakkında bilgi almak istiyorum.",
+  "city_links": {
+    "title": "Türkiye Geneli IPTV Bayilik Hizmet Bölgelerimiz",
+    "link_text": "{name} IPTV Bayilik"
+  },
+  "floating_whatsapp": {
+    "message": "Merhaba, IPTV bayilik hakkında bilgi almak istiyorum.",
+    "tooltip": "Destek lazım mı?"
+  },
+  "schemas": {
+    "org_desc": "Profesyonel IPTV bayilik hizmeti sağlayan, kullanımı kolay kredili sistem ve net fiyatlar sunan bayi platformu.",
+    "q1": "IPTV Bayilik (Reseller) Nedir?",
+    "a1": "IPTV bayiliği, toptan alınan yayın sunucusu kredilerinin, perakende son kullanıcılara donmasız paketler halinde satılarak yüksek kar elde edildiği risksiz bir dijital iş modelidir.",
+    "q2": "IPTV Bayilik Satışı Nasıl Başlar?",
+    "a2": "Premium Panel sistemimize kayıt olup, minimum bayi kredisini alarak anında kendi panelinize sahip olabilir ve çevrenize, sosyal medyada IPTV satışı yapmaya başlayabilirsiniz.",
+    "q3": "IPTV Satışı Yaparak Ne Kadar Para Kazanılır?",
+    "a3": "Toptan sanal IPTV kredisi aldığınız için maliyeti en diptedir. Bulunduğunuz konuma göre %100 ila %400'e varan kâr marjıyla satış gerçekleştirebilirsiniz.",
+    "q4": "Satılmayan IPTV Bayi Kredileri Yanar Mı?",
+    "a4": "Asla yanmaz. Kredili IPTV bayi sisteminde satın aldığınız kontörlerin bir son kullanma tarihi yoktur. Kullanılana kadar hesabınızda baki kalır."
   }
 }

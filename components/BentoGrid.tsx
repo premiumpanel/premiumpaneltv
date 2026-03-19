@@ -1,36 +1,40 @@
 import React from 'react';
 import { UserPlus, CreditCard, Network, Settings, BarChart3, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const BentoGrid = () => {
+    const t = useTranslations("bento_grid");
+
     const features = [
         {
-            title: "Bayi Olmak Ücretsizdir",
-            description: "Premium Panel ile ücretsiz IPTV satabilir, bayi ol sürecini herhangi bir başlangıç ücreti ödemeden tamamlayabilirsin. Sistemimiz kredili altyapı ile çalışır. Satış yapabilmek için panele minimum 120 kredi yüklemen gerekir. Örneğin 12 aylık bir üyelik satışı yalnızca 12 kredi düşer. Böylece kredi bakiyeni kontrol ederek planlı ve sürdürülebilir bir IPTV reseller sistemi kurarsın. Ücretsiz bayi ol, kredini yükle ve satışa başla.",
+            title: t("f1_title"),
+            description: t("f1_desc"),
             icon: <UserPlus className="w-8 h-8 text-[#d5900a]" />,
             className: "lg:col-span-8 lg:row-span-2 bg-gradient-to-br from-slate-900 to-slate-800",
-            image: "/assets/images/media/dashboard-mockup.png" // Placeholder or will be updated
+            image: "/assets/images/media/dashboard-mockup.png", // Placeholder or will be updated
+            cta: t("f1_cta")
         },
         {
-            title: "Kredili IPTV Bayi Paneli",
-            description: "IPTV bayi panelimiz ön ödemeli kredi sistemi ile çalışır. Yüklediğin kredi kadar satış yaparsın, her oluşturulan üyelik belirlenen kredi tutarını bakiyenden düşer. Bu yapı sayesinde kar marjını sen belirlersin, fiyat politikanı özgürce yönetirsin. IPTV bayilik sisteminde nakit akışını kontrol altında tutmak isteyenler için ideal bir reseller modelidir.",
+            title: t("f2_title"),
+            description: t("f2_desc"),
             icon: <CreditCard className="w-6 h-6 text-[#d5900a]" />,
             className: "lg:col-span-4 bg-slate-900",
         },
         {
-            title: "Alt Bayilik (Subreseller) İmkanı",
-            description: "Kendi IPTV reseller ağını kurmak ister misin? Premium Panel ile alt bayi oluşturabilir, kredi tanımlayabilir ve kar oranını belirleyebilirsin. Yani sadece son kullanıcıya değil, kendi alt bayilerine de satış yaparak büyük bir IPTV bayilik ağı kurarsın. Gerçek bir panel yönetim mantığı ile işini büyütmek tamamen senin elinde olur.",
+            title: t("f3_title"),
+            description: t("f3_desc"),
             icon: <Network className="w-6 h-6 text-[#d5900a]" />,
             className: "lg:col-span-4 bg-slate-900",
         },
         {
-            title: "Anlık Yönetim & Hat Kontrolü",
-            description: "IPTV bayi paneli üzerinden kullanıcı oluşturma, süre uzatma, şifre yenileme, bağlantı resetleme ve istatistik görüntüleme işlemlerini tek ekrandan yönetebilirsin. MAC tabanlı cihazlar veya m3u listesi kullanan cihazlar için farklı hat türleri oluşturabilir, test hesapları tanımlayabilirsin. Tüm süreç birkaç tıkla tamamlanır.",
+            title: t("f4_title"),
+            description: t("f4_desc"),
             icon: <Settings className="w-6 h-6 text-[#d5900a]" />,
             className: "lg:col-span-6 bg-slate-900",
         },
         {
-            title: "Her İhtiyaca Uygun IPTV Bayilik Sistemi",
-            description: "İster bireysel satış yap ister geniş bir bayi ağı kur, Premium Panel sana kolayca büyüme imkanı sunar. Kredili sistem, alt bayi desteği ve panel içi yönetim araçları sayesinde işini büyütmek için ekstra yazılıma para harcamazsın. IPTV bayilik işini profesyonel bir panel üzerinden yöneterek sürekli gelir elde edebilirsin.",
+            title: t("f5_title"),
+            description: t("f5_desc"),
             icon: <BarChart3 className="w-6 h-6 text-[#d5900a]" />,
             className: "lg:col-span-6 bg-slate-900",
         }
@@ -42,11 +46,11 @@ const BentoGrid = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-extrabold italic mb-6">
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">
-                            Neden Premium Panel?
+                            {t("badge")}
                         </span>
                     </h2>
                     <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-                        IPTV bayilik dünyasında fark yaratan özelliklerimizle tanışın.
+                        {t("subtitle")}
                     </p>
                 </div>
 
@@ -70,9 +74,9 @@ const BentoGrid = () => {
                                     {feature.description}
                                 </p>
 
-                                {idx === 0 && (
+                                {idx === 0 && feature.cta && (
                                     <div className="mt-auto pt-8 flex items-center gap-2 text-[#d5900a] font-bold text-sm cursor-pointer group/link">
-                                        Detayları Keşfet <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                                        {feature.cta} <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
                                     </div>
                                 )}
                             </div>

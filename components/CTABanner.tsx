@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { Star } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function CTABanner() {
+    const t = useTranslations("cta_banner");
+    const tExtra = useTranslations("hero_extra");
+    const tRoot = useTranslations();
+
     return (
         <section className="py-20 bg-slate-950 overflow-hidden relative" id="cta">
             {/* Concentric Circles Background */}
@@ -14,29 +19,29 @@ export default function CTABanner() {
             <div className="container mx-auto px-4 relative z-10 text-center">
                 <div className="max-w-3xl mx-auto">
                     <span className="inline-block py-1 px-3 rounded-full border-[#d5900a]/30 bg-[#d5900a]/10 text-[#d5900a] text-xs font-bold uppercase tracking-wider mb-6">
-                        Hemen Başlayın
+                        {t("badge").toUpperCase()}
                     </span>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                        İşinizi büyütmeye <br />
+                        {t("title_line1")} <br />
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">
-                            hazır mısınız?
+                            {t("title_line2")}
                         </span>
                     </h2>
 
                     <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-                        Binlerce bayi arasına katılın ve kazanmaya başlayın. Teknik detayları biz halledelim.
+                        {t("subtitle")}
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                         <Link
-                            href="https://wa.me/491632680219"
+                            href={`https://wa.me/491632680219?text=${encodeURIComponent(tRoot("whatsapp_msg"))}`}
                             target="_blank"
                             className="group/button inline-flex items-center justify-center relative overflow-hidden bg-[#d5900a] text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-[#d5900a]/20 hover:scale-105 transition-all active:scale-95 border border-transparent"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 brightness-0 invert" />
-                                Ücretsiz Deneme Başlat
+                                {t("button")}
                             </span>
                             {/* Shimmer Effect */}
                             <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
@@ -48,7 +53,7 @@ export default function CTABanner() {
                     {/* Review Snippet */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm">
                         <div className="flex items-center gap-2">
-                            <span className="font-bold text-white">Mükemmel</span>
+                            <span className="font-bold text-white">{tExtra("excellent")}</span>
                             <div className="flex gap-1">
                                 {[...Array(5)].map((_, i) => (
                                     <div key={i} className="bg-[#00b67a] p-1 rounded-sm">
@@ -57,7 +62,7 @@ export default function CTABanner() {
                                 ))}
                             </div>
                         </div>
-                        <span className="text-slate-500">%98.7 Olumlu Geri Dönüş</span>
+                        <span className="text-slate-500">{tExtra("positive_feedback")}</span>
                     </div>
 
                 </div>

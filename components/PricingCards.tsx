@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 export default function PricingCards() {
     const t = useTranslations("pricing");
     const t_plans = useTranslations("pricing_plans");
+    const t_base = useTranslations();
 
     const plans = [
         {
@@ -101,7 +102,7 @@ export default function PricingCards() {
                                             <div className="absolute h-20 w-20 bg-gradient-to-r from-[#d5900a] to-amber-600" />
                                             <div className="absolute h-20 w-20 bg-slate-950/90" />
                                             <div className="absolute right-0 top-[22px] h-[2px] w-[56px] rotate-45 bg-gradient-to-r from-[#d5900a] to-amber-600" />
-                                            <span className="absolute right-1 top-1 text-[9px] font-bold text-white tracking-widest">POPÜLER</span>
+                                            <span className="absolute right-1 top-1 text-[9px] font-bold text-white tracking-widest">{useTranslations("pricing_extra")("popular")}</span>
                                         </div>
                                     )}
 
@@ -114,7 +115,7 @@ export default function PricingCards() {
                                             <span className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
                                                 {plan.credits}
                                             </span>
-                                            <span className="text-lg text-slate-400 font-medium">Kredi</span>
+                                            <span className="text-lg text-slate-400 font-medium">{useTranslations("pricing_extra")("credit")}</span>
                                         </div>
                                         {plan.bonus && (
                                             <div className="mt-3 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-[#d5900a]/10 text-amber-500 border border-[#d5900a]/20">
@@ -146,7 +147,7 @@ export default function PricingCards() {
 
                                     <div className="relative mt-10">
                                         <CTAButton
-                                            href={`https://wa.me/491632680219?text=${encodeURIComponent(`Merhaba, ${plan.name} paketiniz hakkında bilgi almak istiyorum.`)}`}
+                                            href={`https://wa.me/491632680219?text=${encodeURIComponent(t_base("pricing_whatsapp", { plan: plan.name }))}`}
                                             variant={plan.popular ? "amber" : "outline"}
                                             className="w-full py-2.5 justify-center text-base shadow-xl"
                                         >
@@ -156,7 +157,7 @@ export default function PricingCards() {
 
                                     <div className="mt-6 flex items-center justify-center gap-2">
                                         <Shield className="h-4 w-4 text-slate-500" />
-                                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Güvenli ve Şeffaf Altyapı</span>
+                                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">{useTranslations("pricing_extra")("secure_infrastructure")}</span>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +168,7 @@ export default function PricingCards() {
                 <div className="mt-16 text-center">
                     <ScrollReveal textClassName="text-slate-400 text-lg font-medium">
                         <p>
-                            <strong className="text-white block sm:inline">Maliyetini Çıkar, Kârını Katla!</strong> <span className="opacity-90">İlk 120 Kredini Hemen Yükle.</span>
+                            <strong className="text-white block sm:inline">{useTranslations("pricing_extra")("footer_text_strong")}</strong> <span className="opacity-90">{useTranslations("pricing_extra")("footer_text_light")}</span>
                         </p>
                     </ScrollReveal>
                 </div>

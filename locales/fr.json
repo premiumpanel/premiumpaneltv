@@ -136,5 +136,257 @@
     "plan3_f4": "Marque Blanche Intégrale",
     "plan3_bonus": "Privilèges de Grossiste VIP",
     "plan3_cta": "Devenir Master"
+  },
+  "hero_extra": {
+    "excellent": "Excellent",
+    "positive_feedback": "98.7% Retours Positifs"
+  },
+  "testimonials": {
+    "title": "Des centaines de revendeurs heureux",
+    "subtitle": "Découvrez les histoires à succès de nos revendeurs qui ont développé leur entreprise.",
+    "reviews": [
+      {
+        "name": "Caner Y.",
+        "role": "REVENDEUR IPTV",
+        "text": "\"J'ai commencé avec ce panel. Le système de crédits est transparent et très rapide.\""
+      },
+      {
+        "name": "Metehan D.",
+        "role": "REVENDEUR E-COMMERCE",
+        "text": "\"Grâce au transfert de crédit rapide, je sers mes clients instantanément.\""
+      },
+      {
+        "name": "Rodrigo A.",
+        "role": "INTERNATIONAL RESELLER",
+        "text": "\"Consistent streams and localized content for multiple regions. The admin dashboard gives me full control over user bouquets and subscriptions.\""
+      },
+      {
+        "name": "Murat K.",
+        "role": "REVENDEUR CORPORATIF",
+        "text": "\"Les réductions en gros nous ont permis de construire notre propre marque.\""
+      },
+      {
+        "name": "Yavuz K.",
+        "role": "MARKETEUR DIGITAL",
+        "text": "\"L'interface du panel est très intuitive. Créer des sous-revendeurs prend quelques secondes.\""
+      },
+      {
+        "name": "Selin A.",
+        "role": "NOUVEL ENTREPRENEUR",
+        "text": "\"J'avais des doutes, mais l'assistance a été là. Maintenant j'ai un revenu stable.\""
+      },
+      {
+        "name": "Hans S.",
+        "role": "VERTRIEBSPARTNER",
+        "text": "\"Die Qualität der 4K-Streams ist hervorragend... Absolut empfehlenswert.\""
+      },
+      {
+        "name": "Cansu D.",
+        "role": "RESPONSABLE MARKETING",
+        "text": "\"La fonction de tests gratuits est très efficace pour vendre. Les clients achètent avec confiance.\""
+      }
+    ]
+  },
+  "faq_accordion": {
+    "faqs": [
+      {
+        "question": "Qu'est-ce qu'un revendeur IPTV ?",
+        "answer": "C'est un modèle sans risque où vous achetez des crédits en gros pour les revendre à vos clients."
+      },
+      {
+        "question": "Comment fonctionne le système de crédits ?",
+        "answer": "C'est prépayé. Vous achetez des crédits, et ils sont déduits lors de l'activation des abonnements."
+      },
+      {
+        "question": "Mes crédits expirent-ils ?",
+        "answer": "Jamais. Vos crédits restent valides tant que vous ne les utilisez pas."
+      },
+      {
+        "question": "Puis-je ajouter des sous-revendeurs ?",
+        "answer": "Oui ! À partir de certains forfaits, vous pouvez vendre des crédits à vos propres sous-revendeurs."
+      },
+      {
+        "question": "Pour quels appareils ?",
+        "answer": "Smart TV, Android BOX, Apple TV, PC, Smartphones et Tablettes."
+      },
+      {
+        "question": "La configuration du panel est-elle payante ?",
+        "answer": "Non, la configuration et le support sont gratuits."
+      },
+      {
+        "question": "Puis-je utiliser ma propre marque ?",
+        "answer": "Oui, nous pouvons configurer votre propre DNS et nom de domaine."
+      },
+      {
+        "question": "Dois-je payer des frais mensuels ?",
+        "answer": "Non. Aucun frais mensuel ou caché."
+      }
+    ]
+  },
+  "cta_banner": {
+    "badge": "COMMENCER",
+    "title_line1": "Êtes-vous prêt à",
+    "title_line2": "développer votre entreprise ?",
+    "subtitle": "Rejoignez des milliers de revendeurs. Nous gérons la technique.",
+    "button": "Démarrer l'essai gratuit"
+  },
+  "seo_content": {
+    "p1": "Guide Revendeur IPTV: Soyez votre propre patron",
+    "p2": "La diffusion IPTV haut débit est la nouvelle tendance. Entrez dans l'industrie dès aujourd'hui.",
+    "read_more": "Lire la suite...",
+    "read_less": "Réduire"
+  },
+  "footer_extra": {
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité",
+    "whatsapp_line": "Ligne WhatsApp",
+    "email_line": "Ligne E-mail",
+    "seo_title": "Emplacements des Serveurs et Infrastructure Haute Vitesse",
+    "seo_text": "Premium Panel dispose d'une infrastructure de serveurs de classe mondiale pour que votre entreprise de revendeur IPTV fonctionne sans interruption. Grâce à des centres de données performants en Turquie (Istanbul, Ankara, Izmir), en Europe (Allemagne, Pays-Bas) et aux États-Unis, il offre une faible latence et un accès au panel stable et sans gel. Pendant que nous nous occupons de toutes ces questions techniques, vous pouvez vous concentrer pleinement sur vos propres ventes et bénéfices."
+  },
+  "whatsapp_msg": "Je demande un test gratuit pour le programme revendeur.",
+  "pricing_extra": {
+    "credit": "Crédits",
+    "popular": "POPULAIRE",
+    "secure_infrastructure": "Infrastructure Sûre & Transparente",
+    "footer_text_strong": "Récupérez vos coûts, décuplez vos profits !",
+    "footer_text_light": "Chargez vos 120 premiers crédits maintenant."
+  },
+  "bento_grid": {
+    "badge": "Pourquoi Premium Panel?",
+    "subtitle": "Découvrez les fonctionnalités qui font la différence.",
+    "f1_title": "Devenir Revendeur est Gratuit",
+    "f1_desc": "Vendez de l'IPTV gratuitement, sans frais d'entrée. Notre système fonctionne aux crédits. Vous avez besoin de 120 crédits pour commencer.",
+    "f1_cta": "Découvrir les détails",
+    "f2_title": "Panel IPTV à Crédits",
+    "f2_desc": "Le système prépayé vous permet de ne payer que ce que vous vendez. Gérez librement vos marges et votre politique tarifaire.",
+    "f3_title": "Réseau de Sous-Revendeurs",
+    "f3_desc": "Créez votre réseau de revendeurs, donnez des crédits, faites des bénéfices.",
+    "f4_title": "Contrôle Direct",
+    "f4_desc": "Créez des utilisateurs, prolongez la durée, etc. tout depuis un seul écran.",
+    "f5_title": "L'IPTV pour tous",
+    "f5_desc": "Croissance assurée grâce à un système taillé pour vous, sans coûts logiciels additionnels."
+  },
+  "masonry_gallery": {
+    "alt_1": "Présentation du Panel",
+    "alt_2": "Aperçu du Panel",
+    "alt_3": "Smart TV Sync",
+    "alt_4": "Interface App Mobile",
+    "alt_5": "Catégories",
+    "alt_6": "Détails de Série",
+    "alt_7": "Lecteur TV en direct",
+    "alt_8": "Archive Films & Séries",
+    "alt_9": "Gestion Support",
+    "alt_10": "Profil Utilisateur",
+    "alt_11": "EPG & Guide TV",
+    "alt_12": "Menu Paramètres",
+    "alt_13": "Support Multi-écran"
+  },
+  "metadata_sss": {
+    "title": "Foire Aux Questions | Premium Panel",
+    "description": "Sur le système revendeur, paiements, utilisation du panel et technique."
+  },
+  "metadata_paketler": {
+    "title": "Forfaits Revendeur & Tarifs | Premium Panel",
+    "description": "Choisissez le forfait revendeur IPTV le plus adapté."
+  },
+  "metadata_ozellikler": {
+    "title": "Fonctionnalités IPTV Avancées | Premium Panel",
+    "description": "Découvrez notre panel, 99.9% uptime, support 24/7 et infrastructure mondiale."
+  },
+  "metadata_kullanim": {
+    "title": "Conditions d'utilisation | Premium Panel",
+    "description": "Conditions générales d'utilisation du Premium Panel."
+  },
+  "metadata_gizlilik": {
+    "title": "Politique de confidentialité | Premium Panel",
+    "description": "Politique de confidentialité et sécurité."
+  },
+  "metadata_blog": {
+    "title": "Blog - Actualités Revendeur IPTV | Premium Panel",
+    "description": "Dernières infos IPTV, conseils revendeur, guides techniques."
+  },
+  "metadata_iletisim": {
+    "title": "Contact | Premium Panel",
+    "description": "Contactez-nous pour toute question."
+  },
+  "metadata_iptv_bayilik": {
+    "title": "{city} Revendeur IPTV | Meilleur Panel Crédits",
+    "description": "Meilleur service revendeur IPTV pour {city} ({region})."
+  },
+  "contact_extra": {
+    "contact_info": "Informations de Contact",
+    "connect_wa": "Se connecter via WhatsApp",
+    "write_us": "Écrivez-nous",
+    "fullname": "Nom Complet",
+    "fullname_placeholder": "Votre Nom Complet",
+    "email": "Adresse Email",
+    "email_placeholder": "exemple@email.com",
+    "message": "Votre Message",
+    "message_placeholder": "Comment pouvons-nous vous aider?",
+    "success": "Votre message a été envoyé avec succès!",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "sending": "Envoi...",
+    "send": "Envoyer"
+  },
+  "iptv_bayilik_page": {
+    "hero_badge": "Devenez le Leader de {region}",
+    "hero_title": "Démarrez votre Entreprise de Revendeur IPTV à {name}",
+    "hero_title_highlight": "Aujourd'hui !",
+    "hero_desc": "Créez votre entreprise rentable en vendant des forfaits IPTV sans coupure à {name} avec zéro risque. 100% Uptime.",
+    "cta_customer": "Gagnez des clients à {name}",
+    "cta_packages": "Forfaits Revendeur",
+    "bottom_title": "Passez au système de Crédits",
+    "bottom_desc": "Devenez le leader incontesté à {name}. Installez votre marque IPTV avec notre panel revendeur facile.",
+    "wa_button": "Contact WhatsApp"
+  },
+  "seo_content_extended": {
+    "p3": "Si vous recherchez un modèle de profit sans risque, sans frais d'investissement élevés, loyer, taxes, frais de magasin physique ou exigences de stock importantes, la revente IPTV est faite pour vous. En tant que Premium Panel, nous vous proposons une plateforme de revendeur basée sur des crédits où vous pouvez gérer vos propres clients avec l'infrastructure la plus stable et la plus avancée du marché et déterminer votre politique de prix entièrement à votre discrétion.",
+    "h1": "1. Qu'est-ce que la revente IPTV et comment fonctionne le système de crédits ?",
+    "s1_p1": "La revente IPTV est le processus de vente de droits d'accès au contenu en gros aux consommateurs finaux dans des forfaits de détail. Dès que vous devenez revendeur, un panel de gestion conçu professionnellement vous est attribué. Grâce à ce panel, vous pouvez ouvrir de nouveaux abonnements (comptes), envoyer des flux de test (essais gratuits) à vos clients, prolonger les dates des abonnés expirés et contrôler l'ensemble de votre portefeuille actif ou passif à partir d'un seul écran.",
+    "s1_p2": "Le système de crédits que nous utilisons chez Premium Panel est un modèle transparent et sans perte :",
+    "s1_li1": "Vous chargez initialement une certaine quantité de crédits dans le panel revendeur.",
+    "s1_li2": "À chaque ouverture d'abonnement, un crédit est déduit de votre panel au taux équivalent à la durée de ce forfait.",
+    "s1_li3": "Aucun risque : vos crédits n'ont pas de date d'expiration si vous ne faites pas de vente ; ils restent exactement sur votre compte.",
+    "s1_li4": "Le contrôle du capital est entièrement le vôtre ; vous ne devez rien à personne en travaillant en prépayé.",
+    "h2": "2. Pourquoi choisir le système de revendeur IPTV Premium Panel ?",
+    "s2_p1": "Il existe de nombreux fournisseurs de streaming et grossistes IPTV sur Internet. Cependant, si vous souhaitez obtenir un revenu rentable à long terme, la qualité de l'infrastructure sous-jacente est vitale.",
+    "s2_li1": "Réseau CDN mondial : expérience TV en direct ininterrompue avec les valeurs de ping les plus rapides dans chaque emplacement.",
+    "s2_li2": "Service ininterrompu (99,9% d'Uptime) : capacité à répondre aux demandes de visionnage simultanées de dizaines de milliers d'utilisateurs.",
+    "s2_li3": "Technologie Anti-Freeze : algorithme qui empêche le gel même à des vitesses Internet faibles.",
+    "s2_li4": "Assistance ininterrompue 24h/24 et 7j/7 : notre équipe d'assistance est prête à intervenir instantanément sur vos comptes de revendeur.",
+    "h3": "3. Croissance du secteur et potentiel de gain",
+    "s3_p1": "L'expansion des réseaux de fibre optique et des technologies 5G a augmenté la demande IPTV de manière sans précédent.",
+    "h4": "4. Stratégies de vente pour devenir un revendeur IPTV performant",
+    "s4_p1": "Vous avez reçu votre crédit et votre panel est prêt à l'emploi. Quelle est la suite ? Vous devez atteindre votre public cible avec la bonne stratégie.",
+    "h5": "5. Applications techniques et compatibilité des appareils",
+    "s5_p1": "Le moyen le plus simple de vendre un service IPTV est que le système que vous proposez soit compatible avec presque tous les écrans du monde.",
+    "h6": "6. Problèmes clients courants et solutions",
+    "s6_p1": "Il est important de trouver la source principale du problème dans les défaillances techniques que vos clients peuvent rencontrer.",
+    "h7": "7. Moyens de développer votre entreprise et votre image de marque",
+    "s7_p1": "Malgré des milliers de vendeurs sur le marché IPTV, ceux qui créent une marque et se différencient prennent les devants.",
+    "h8": "8. Pourquoi devriez-vous commencer maintenant ?",
+    "s8_p1": "Le temps, c'est de l'argent. Chaque jour, des centaines de personnes se tournent vers les services de streaming.",
+    "footer_cta": "Pour obtenir plus d'informations ou pour demander un flux de test gratuit, contactez-nous immédiatement via notre page Contact ou WhatsApp."
+  },
+  "pricing_whatsapp": "Bonjour, je souhaite obtenir des informations sur votre forfait {plan}.",
+  "city_links": {
+    "title": "Nos régions de service de revendeur IPTV dans le monde",
+    "link_text": "Revendeur IPTV {name}"
+  },
+  "floating_whatsapp": {
+    "message": "Bonjour, j'aimerais obtenir des informations sur le revendeur IPTV.",
+    "tooltip": "Besoin d'aide ?"
+  },
+  "schemas": {
+    "org_desc": "Plateforme de revendeur fournissant un service de revendeur IPTV professionnel, un système de crédit facile à utiliser et des prix nets.",
+    "q1": "Qu'est-ce que la revente IPTV ?",
+    "a1": "La revente IPTV est un modèle commercial numérique sans risque où les crédits de serveur de streaming en gros sont vendus aux utilisateurs finaux dans des forfaits sans gel, générant ainsi un profit élevé.",
+    "q2": "Comment démarrer les ventes de revendeur IPTV ?",
+    "a2": "En vous inscrivant sur notre système Premium Panel et en achetant le crédit minimum de revendeur, vous pouvez instantanément avoir votre propre panel et commencer à vendre l'IPTV à votre entourage et sur les réseaux sociaux.",
+    "q3": "Combien d'argent peut-on gagner en vendant de l'IPTV ?",
+    "a3": "Comme vous achetez des crédits IPTV virtuels en gros, le coût est au plus bas. Vous pouvez vendre avec une marge bénéficiaire de 100% à 400% selon votre emplacement.",
+    "q4": "Les crédits de revendeur IPTV non vendus expirent-ils ?",
+    "a4": "Jamais. Les crédits dans le système de revendeur IPTV basé sur les crédits n'ont pas de date d'expiration. Ils restent sur votre compte jusqu'à leur utilisation."
   }
 }

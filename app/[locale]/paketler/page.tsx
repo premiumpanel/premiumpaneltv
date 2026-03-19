@@ -7,13 +7,18 @@ import CTAButton from "@/components/CTAButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-    title: "Bayilik Paketleri ve Fiyatları | Premium Panel",
-    description: "İhtiyacınıza en uygun IPTV bayilik paketini seçin.",
-    alternates: {
-        canonical: "https://premiumpanel.com/paketler",
-    },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'metadata_paketler' });
+    
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: `https://premiumpanel.com/${locale}/paketler`,
+        },
+    };
+}
 
 export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;

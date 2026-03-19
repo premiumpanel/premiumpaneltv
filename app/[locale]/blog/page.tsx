@@ -4,13 +4,21 @@ import Footer from "@/components/Footer";
 import { blogPosts } from "@/lib/blog";
 import { Calendar, User, ArrowRight } from "lucide-react";
 
-export const metadata = {
-    title: "Blog - IPTV Bayilik ve Sektör Haberleri | Premium Panel",
-    description: "En son IPTV haberleri, bayilik ipuçları, teknik rehberler ve sektör analizleri. Başarılı bir bayi olmak için gereken her şey.",
-    alternates: {
-        canonical: "https://premiumpanel.com/blog",
-    },
-};
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'metadata_blog' });
+    
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: `https://premiumpanel.com/${locale}/blog`,
+        },
+    };
+}
 
 export default function BlogIndex() {
     return (

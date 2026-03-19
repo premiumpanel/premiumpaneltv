@@ -13,24 +13,25 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-    { src: "/assets/images/gallery/appvid.mp4", alt: "Panel ve Uygulama Tanıtımı", type: "video", className: "col-span-2 row-span-2" },
-    { src: "/assets/images/gallery/dashboard.jpg", alt: "Panel Genel Görünümü", type: "image", className: "col-span-2 row-span-2" },
-    { src: "/assets/images/gallery/uygulama-ekrani-10.jpg", alt: "Smart TV Senkronizasyonu", type: "image", className: "col-span-1 row-span-2" },
-    { src: "/assets/images/gallery/uygulama-ekrani-1.jpg", alt: "Mobil Uygulama Arayüzü", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-2.jpg", alt: "Kategori Listesi", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-9.jpg", alt: "Dizi Detay Ekranı", type: "image", className: "col-span-1 row-span-2" },
-    { src: "/assets/images/gallery/uygulama-ekrani-3.jpg", alt: "Canlı TV Oynatıcı", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-4.jpg", alt: "Film & Dizi Arşivi", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/ticket.jpg", alt: "Destek Yönetimi", type: "image", className: "col-span-2 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-5.jpg", alt: "Kullanıcı Profili", type: "image", className: "col-span-1 row-span-2" },
-    { src: "/assets/images/gallery/uygulama-ekrani-6.jpg", alt: "EPG ve Program Rehberi", type: "image", className: "col-span-1 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-7.jpg", alt: "Ayarlar Menüsü", type: "image", className: "col-span-2 row-span-1" },
-    { src: "/assets/images/gallery/uygulama-ekrani-8.jpg", alt: "Çoklu Ekran Desteği", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/appvid.mp4", alt: "alt_1", type: "video", className: "col-span-2 row-span-2" },
+    { src: "/assets/images/gallery/dashboard.jpg", alt: "alt_2", type: "image", className: "col-span-2 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-10.jpg", alt: "alt_3", type: "image", className: "col-span-1 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-1.jpg", alt: "alt_4", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-2.jpg", alt: "alt_5", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-9.jpg", alt: "alt_6", type: "image", className: "col-span-1 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-3.jpg", alt: "alt_7", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-4.jpg", alt: "alt_8", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/ticket.jpg", alt: "alt_9", type: "image", className: "col-span-2 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-5.jpg", alt: "alt_10", type: "image", className: "col-span-1 row-span-2" },
+    { src: "/assets/images/gallery/uygulama-ekrani-6.jpg", alt: "alt_11", type: "image", className: "col-span-1 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-7.jpg", alt: "alt_12", type: "image", className: "col-span-2 row-span-1" },
+    { src: "/assets/images/gallery/uygulama-ekrani-8.jpg", alt: "alt_13", type: "image", className: "col-span-1 row-span-1" },
 ];
 
 export default function MasonryGallery() {
     const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
     const t = useTranslations("gallery");
+    const t_masonry = useTranslations("masonry_gallery");
 
     useEffect(() => {
         if (selectedItem) {
@@ -104,7 +105,7 @@ export default function MasonryGallery() {
 
                                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none">
                                     <p className="text-white font-medium text-xs md:text-sm drop-shadow-md border-l-2 border-[#d5900a] pl-2 lg:pl-3 italic line-clamp-2">
-                                        {item.alt}
+                                        {t_masonry(item.alt)}
                                     </p>
                                 </div>
                             </div>
@@ -139,12 +140,12 @@ export default function MasonryGallery() {
                         ) : (
                             <img
                                 src={selectedItem.src}
-                                alt={selectedItem.alt}
+                                alt={t_masonry(selectedItem.alt)}
                                 className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-[0_0_50px_rgba(213,144,10,0.2)]"
                             />
                         )}
                         <div className="absolute -bottom-12 left-0 right-0 text-center">
-                            <p className="text-white/80 font-medium italic">{selectedItem.alt}</p>
+                            <p className="text-white/80 font-medium italic">{t_masonry(selectedItem.alt)}</p>
                         </div>
                     </div>
                 </div>

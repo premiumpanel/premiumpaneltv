@@ -8,13 +8,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export const metadata = {
-    title: "Gelişmiş IPTV Özellikleri | Premium Panel",
-    description: "Yüksek performanslı panel, %99 uptime, 7/24 destek ve global altyapı özelliklerimizi keşfedin.",
-    alternates: {
-        canonical: "https://premiumpanel.com/ozellikler",
-    },
-};
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'metadata_ozellikler' });
+    
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: `https://premiumpanel.com/${locale}/ozellikler`,
+        },
+    };
+}
 
 export default async function FeaturesPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;

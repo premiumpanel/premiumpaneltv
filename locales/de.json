@@ -136,5 +136,257 @@
     "plan3_f4": "Volles White Label & DNS",
     "plan3_bonus": "VIP Vorteile",
     "plan3_cta": "Jetzt Master werden"
+  },
+  "hero_extra": {
+    "excellent": "Hervorragend",
+    "positive_feedback": "98.7% Positives Feedback"
+  },
+  "testimonials": {
+    "title": "Hunderte von glücklichen Resellern",
+    "subtitle": "Lesen Sie die Erfolgsgeschichten unserer Reseller, die ihr Geschäft erweitert haben.",
+    "reviews": [
+      {
+        "name": "Caner Y.",
+        "role": "IPTV RESELLER",
+        "text": "\"Ich habe mein IPTV-Geschäft mit diesem Panel begonnen. Das Kreditsystem ist transparent und sehr schnell.\""
+      },
+      {
+        "name": "Metehan D.",
+        "role": "E-COMMERCE RESELLER",
+        "text": "\"Dank der schnellen Kreditübertragung und Auto-Aktivierung kann ich meine Kunden sofort bedienen.\""
+      },
+      {
+        "name": "Rodrigo A.",
+        "role": "INTERNATIONAL RESELLER",
+        "text": "\"Consistent streams and localized content for multiple regions. The admin dashboard gives me full control over user bouquets and subscriptions.\""
+      },
+      {
+        "name": "Murat K.",
+        "role": "CORPORATE RESELLER",
+        "text": "\"Die Mengenrabatte haben es uns ermöglicht, unsere eigene Marke aufzubauen. Ein echter Partner.\""
+      },
+      {
+        "name": "Yavuz K.",
+        "role": "DIGITAL MARKETER",
+        "text": "\"Die Panel-Oberfläche ist sehr intuitiv. Das Erstellen von Unterhändlern dauert nur Sekunden.\""
+      },
+      {
+        "name": "Selin A.",
+        "role": "NEUUNTERNEHMER",
+        "text": "\"Ich hatte anfangs Bedenken, aber das Support-Team war immer da. Jetzt habe ich ein stetiges Einkommen.\""
+      },
+      {
+        "name": "Hans S.",
+        "role": "VERTRIEBSPARTNER",
+        "text": "\"Die Qualität der 4K-Streams ist hervorragend. Meine Kunden in Deutschland sind sehr zufrieden mit der Stabilität. Absolut empfehlenswert.\""
+      },
+      {
+        "name": "Cansu D.",
+        "role": "MARKETING MANAGER",
+        "text": "\"Die Funktion der Testzugänge ist beim Verkaufen sehr effektiv. Kunden kaufen danach mit Vertrauen.\""
+      }
+    ]
+  },
+  "faq_accordion": {
+    "faqs": [
+      {
+        "question": "Was ist ein IPTV-Reseller?",
+        "answer": "IPTV-Reselling ist ein risikofreies digitales Geschäftsmodell, bei dem Sie Server-Credits im Großhandel einkaufen und diese mit hohem Gewinn an Endkunden verkaufen."
+      },
+      {
+        "question": "Wie funktioniert das Credit-IPTV-System?",
+        "answer": "Das System funktioniert auf Prepaid-Basis. Die von Ihnen gekauften Credits werden in Ihr Konto geladen. Wenn Sie Pakete aktivieren, werden diese abgezogen."
+      },
+      {
+        "question": "Verfallen meine gekauften Credits?",
+        "answer": "Niemals. Ihre Credits bleiben jahrelang auf Ihrem Konto, bis Sie diese nutzen."
+      },
+      {
+        "question": "Kann ich Unterhändler (Subreseller) hinzufügen?",
+        "answer": "Ja! Bei bestimmten Paketen können Sie eigene Unterhändler erstellen und diesen Credits verkaufen."
+      },
+      {
+        "question": "Für welche Geräte kann ich Streams anbieten?",
+        "answer": "Sie können Streams in individuellen Formaten für Smart TVs, Android BOX, Apple TV, PC, Smartphones und Tablets anbieten."
+      },
+      {
+        "question": "Ist die Einrichtung des Panels kostenpflichtig?",
+        "answer": "Nein. Die Einrichtung, Schulung und der Support sind kostenlos. Sie zahlen nur für die Credits."
+      },
+      {
+        "question": "Zahle ich monatliche Beiträge?",
+        "answer": "Nein. Es gibt keine monatlichen Mietgebühren oder versteckten Kosten."
+      },
+      {
+        "question": "Kann ich meine eigene Marke nutzen?",
+        "answer": "Ja. Wir können benutzerdefinierte DNS-Adressen für Sie einrichten und das Panel auf Ihrer Domain installieren."
+      }
+    ]
+  },
+  "cta_banner": {
+    "badge": "JETZT STARTEN",
+    "title_line1": "Sind Sie bereit,",
+    "title_line2": "Ihr Geschäft auszubauen?",
+    "subtitle": "Schließen Sie sich Tausenden von Resellern an. Überlassen Sie uns die Technik.",
+    "button": "Kostenlosen Test starten"
+  },
+  "seo_content": {
+    "p1": "IPTV Reseller Leitfaden: Seien Sie Ihr eigener Chef",
+    "p2": "Die enorme Kapazität der digitalen Medien von heute hat die Fernsehindustrie grundlegend verändert. IPTV ist der neue Trend.",
+    "read_more": "Weiterlesen...",
+    "read_less": "Weniger anzeigen"
+  },
+  "footer_extra": {
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzrichtlinie",
+    "whatsapp_line": "WhatsApp-Linie",
+    "email_line": "E-Mail-Linie",
+    "seo_title": "Serverstandorte und Hochgeschwindigkeitsinfrastruktur",
+    "seo_text": "Premium Panel verfügt über eine erstklassige Serverinfrastruktur, damit Ihr IPTV-Reseller-Geschäft unterbrechungsfrei läuft. Dank leistungsstarker Rechenzentren in der Türkei (Istanbul, Ankara, Izmir), Europa (Deutschland, Niederlande) und den USA bietet es niedrige Latenzzeiten und einen stabilen, ruckelfreien Zugriff auf das Panel. Während wir uns um all diese technischen Angelegenheiten kümmern, können Sie sich voll und ganz auf Ihre eigenen Verkäufe und Gewinne konzentrieren."
+  },
+  "whatsapp_msg": "Ich fordere einen kostenlosen Test für das Reseller-Programm an.",
+  "pricing_extra": {
+    "credit": "Credits",
+    "popular": "BELIEBT",
+    "secure_infrastructure": "Sichere & Transparente Infrastruktur",
+    "footer_text_strong": "Decke deine Kosten, vermehre deinen Gewinn!",
+    "footer_text_light": "Lade jetzt deine ersten 120 Credits auf."
+  },
+  "bento_grid": {
+    "badge": "Warum Premium Panel?",
+    "subtitle": "Lernen Sie die Funktionen kennen, die in der IPTV-Welt den Unterschied machen.",
+    "f1_title": "Kostenlos Reseller werden",
+    "f1_desc": "Mit Premium Panel können Sie kostenlos Reseller werden und ohne Startgebühren anfangen. Unser System basiert auf Credits. Um zu verkaufen, laden Sie mindestens 120 Credits auf. Ein 12-Monats-Paket kostet 12 Credits. Kontrollieren Sie so optimal Ihr Geschäft.",
+    "f1_cta": "Details entdecken",
+    "f2_title": "Kreditbasiertes IPTV Panel",
+    "f2_desc": "Unser Prepaid-Kreditsystem bedeutet, Sie zahlen nur das, was Sie verkaufen. Jedes Abo zieht die entsprechenden Credits von Ihrem Konto ab. Sie legen Ihre Gewinnmargen und Preispolitik selbst fest.",
+    "f3_title": "Unterhändler (Subreseller) Option",
+    "f3_desc": "Bauen Sie Ihr eigenes Reseller-Netzwerk auf! Erstellen Sie Subreseller, weisen Sie Credits zu und bestimmen Sie Ihre Gewinne.",
+    "f4_title": "Verwaltung & Leitungskontrolle",
+    "f4_desc": "Erstellen Sie Benutzer, verlängern Sie Pakete, setzen Sie Passwörter zurück. Generieren Sie verschiedene Links für MAC-Geräte oder M3U in wenigen Klicks.",
+    "f5_title": "IPTV Reselling für jeden Bedarf",
+    "f5_desc": "Egal ob Einzelverkäufer oder großes Netzwerk. Premium Panel macht gesundes Wachstum möglich, ohne Extrakosten für Software."
+  },
+  "masonry_gallery": {
+    "alt_1": "Panel & App Vorstellung",
+    "alt_2": "Panel Übersicht",
+    "alt_3": "Smart TV Sync",
+    "alt_4": "Mobile App UI",
+    "alt_5": "Kategorien",
+    "alt_6": "Serien-Detailbildschirm",
+    "alt_7": "Live-TV-Player",
+    "alt_8": "Film & Serien Archiv",
+    "alt_9": "Ticketverwaltung",
+    "alt_10": "Benutzerprofil",
+    "alt_11": "EPG & TV Guide",
+    "alt_12": "Einstellungen",
+    "alt_13": "Mehrfachbildschirm-Unterstützung"
+  },
+  "metadata_sss": {
+    "title": "Häufig Gestellte Fragen | Premium Panel",
+    "description": "Wissenswertes über das Reseller-System, Zahlungen, Panel-Nutzung und Technik."
+  },
+  "metadata_paketler": {
+    "title": "Reseller Pakete & Preise | Premium Panel",
+    "description": "Wählen Sie das für Sie passende IPTV-Resellerpaket."
+  },
+  "metadata_ozellikler": {
+    "title": "Erweiterte IPTV-Funktionen | Premium Panel",
+    "description": "Entdecken Sie unser Panel, 99,9% Uptime, 24/7 Support und globale Struktur."
+  },
+  "metadata_kullanim": {
+    "title": "Nutzungsbedingungen | Premium Panel",
+    "description": "Bedingungen für die Nutzung des Premium Panels."
+  },
+  "metadata_gizlilik": {
+    "title": "Datenschutzerklärung | Premium Panel",
+    "description": "Unsere Datenschutzerklärung und Datensicherheit."
+  },
+  "metadata_blog": {
+    "title": "Blog - IPTV Reseller & Branchen-News | Premium Panel",
+    "description": "Aktuelle IPTV-News, Tipps für Reseller, technische Leitfäden."
+  },
+  "metadata_iletisim": {
+    "title": "Kontakt | Premium Panel",
+    "description": "Kontaktieren Sie uns, wir beantworten Ihre Fragen."
+  },
+  "metadata_iptv_bayilik": {
+    "title": "{city} IPTV Reseller | Bestes Credit Reseller Panel",
+    "description": "Bester IPTV-Reseller-Service in {city} ({region}). Verdienen Sie hohe Gewinne durch ruckelfreie IPTV-Verkäufe."
+  },
+  "contact_extra": {
+    "contact_info": "Kontaktinformationen",
+    "connect_wa": "Verbinden Sie sich über WhatsApp",
+    "write_us": "Schreiben Sie uns",
+    "fullname": "Vollständiger Name",
+    "fullname_placeholder": "Ihr vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "email_placeholder": "beispiel@email.com",
+    "message": "Ihre Nachricht",
+    "message_placeholder": "Wie können wir helfen?",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "sending": "Senden...",
+    "send": "Senden"
+  },
+  "iptv_bayilik_page": {
+    "hero_badge": "Werden Sie der Marktführer in {region}",
+    "hero_title": "Starten Sie Ihr {name} IPTV-Reseller-Geschäft",
+    "hero_title_highlight": "Heute!",
+    "hero_desc": "Bauen Sie Ihr eigenes profitables Geschäft auf, indem Sie pufferfreie und hochauflösende IPTV-Pakete exklusiv für den Standort {name} ohne Kapitalrisiko verkaufen. 100% Uptime und unbegrenztes Umsatzpotenzial.",
+    "cta_customer": "{name} Kunden gewinnen",
+    "cta_packages": "Reseller-Pakete",
+    "bottom_title": "Jetzt auf das Credit-System umsteigen",
+    "bottom_desc": "Mit unserem Großhandels-Panel für {name} bauen Sie Ihr eigenes IPTV-Unternehmen mit eigener Marke auf. Hohe Gewinne warten auf Sie.",
+    "wa_button": "WhatsApp Kontakt"
+  },
+  "seo_content_extended": {
+    "p3": "Wenn Sie nach einem risikofreien Gewinnmodell ohne hohe Investitionskosten, Miete, Steuern, physische Ladenkosten oder große Lageranforderungen suchen, ist der IPTV-Wiederverkauf genau das Richtige für Sie. Als Premium Panel bieten wir Ihnen eine kreditbasierte Reseller-Plattform an, auf der Sie Ihre eigenen Kunden mit der stabilsten und fortschrittlichsten Infrastruktur auf dem Markt verwalten und Ihre Preispolitik völlig nach eigenem Ermessen festlegen können.",
+    "h1": "1. Was ist IPTV-Reselling und wie funktioniert das Creditsystem?",
+    "s1_p1": "IPTV-Reselling ist der Prozess des Verkaufs von Großhandels-Inhaltszugriffsrechten an Endverbraucher in Einzelhandelspaketen. Ab dem Moment, in dem Sie Reseller werden, wird Ihnen ein professionell gestaltetes Management-Panel zugewiesen. Über dieses Panel können Sie neue Abonnements (Konten) eröffnen, Testsendungen (kostenlose Testversionen) an Ihre Kunden senden, die Daten abgelaufener Abonnenten verlängern und Ihr gesamtes aktives oder passives Portfolio von einem einzigen Bildschirm aus steuern.",
+    "s1_p2": "Das Creditsystem, das wir als Premium Panel verwenden, ist ein transparentes und verlustfreies Modell:",
+    "s1_li1": "Sie laden zunächst eine bestimmte Menge an Credits in das Reseller-Panel.",
+    "s1_li2": "Bei jeder Abonnementeröffnung wird ein Credit-Betrag von Ihrem Panel abgezogen, der der Dauer dieses Pakets entspricht.",
+    "s1_li3": "Kein Risiko: Ihre Credits haben kein Ablaufdatum, wenn Sie keinen Verkauf tätigen; sie bleiben genau in Ihrem Konto erhalten.",
+    "s1_li4": "Die Kapitalkontrolle liegt ganz bei Ihnen; Sie schulden niemandem etwas, da Sie auf Vorauszahlungsbasis arbeiten.",
+    "h2": "2. Warum sollten Sie sich für das Premium Panel IPTV Reseller System entscheiden?",
+    "s2_p1": "Es gibt zahlreiche Streaming-Anbieter und IPTV-Großhändler im Internet. Wenn Sie jedoch langfristig ein profitables Einkommen erzielen möchten, ist die Qualität der zugrunde liegenden Infrastruktur von entscheidender Bedeutung.",
+    "s2_li1": "Globales CDN-Netzwerk: Ununterbrochenes Live-TV-Erlebnis mit den schnellsten Ping-Werten an jedem Ort.",
+    "s2_li2": "Ununterbrochener Service (99,9% Uptime): Die Kraft, auf die gleichzeitigen Sehanfragen von Zehntausenden von Benutzern zu reagieren.",
+    "s2_li3": "Anti-Freeze-Technologie: Algorithmus, der das Einfrieren selbst bei niedrigen Internetgeschwindigkeiten verhindert.",
+    "s2_li4": "24/7 ununterbrochener Support: Unser Support-Team ist bereit, sofort in Ihre Reseller-Konten einzugreifen.",
+    "h3": "3. Branchenwachstum und Verdienstpotenzial",
+    "s3_p1": "Der Ausbau von Glasfasernetzen und 5G-Technologien hat die IPTV-Nachfrage auf beispiellose Weise erhöht.",
+    "h4": "4. Verkaufsstrategien, um ein erfolgreicher IPTV-Reseller zu werden",
+    "s4_p1": "Sie haben Ihren Credit erhalten und Ihr Panel ist einsatzbereit. Was kommt als Nächstes? Sie müssen Ihre Zielgruppe mit der richtigen Strategie erreichen.",
+    "h5": "5. Technische Anwendungen und Gerätekompatibilität",
+    "s5_p1": "Der einfachste Weg, einen IPTV-Dienst zu verkaufen, besteht darin, dass das von Ihnen angebotene System mit fast jedem Bildschirm der Welt kompatibel ist.",
+    "h6": "6. Häufige Kundenprobleme und Lösungen",
+    "s6_p1": "Es ist wichtig, die Hauptursache des Problems bei technischen Ausfällen zu finden, die bei Ihren Kunden auftreten können.",
+    "h7": "7. Wege zum Wachstum Ihres Unternehmens und Brandings",
+    "s7_p1": "Trotz Tausender Verkäufer auf dem IPTV-Markt übernehmen diejenigen die Führung, die sich als Marke etablieren und differenzieren.",
+    "h8": "8. Warum sollten Sie jetzt anfangen?",
+    "s8_p1": "Zeit ist Geld. Jeden Tag wenden sich hunderte Menschen Streaming-Diensten zu.",
+    "footer_cta": "Um weitere Informationen zu erhalten oder eine kostenlose Testübertragung anzufordern, kontaktieren Sie uns umgehend über unsere Kontaktseite oder WhatsApp."
+  },
+  "pricing_whatsapp": "Hallo, ich möchte Informationen zu Ihrem {plan}-Paket erhalten.",
+  "city_links": {
+    "title": "Unsere IPTV-Reseller-Serviceregionen weltweit",
+    "link_text": "{name} IPTV-Wiederverkäufer"
+  },
+  "floating_whatsapp": {
+    "message": "Hallo, ich möchte Informationen über IPTV Reseller erhalten.",
+    "tooltip": "Brauchen Sie Hilfe?"
+  },
+  "schemas": {
+    "org_desc": "Reseller-Plattform, die professionellen IPTV-Reseller-Service, ein einfach zu bedienendes Creditsystem und Nettopreise bietet.",
+    "q1": "Was ist IPTV-Reselling?",
+    "a1": "IPTV-Reselling ist ein risikofreies digitales Geschäftsmodell, bei dem Großhandels-Streaming-Server-Credits in ruckelfreien Paketen an Endverbraucher verkauft werden, was hohe Gewinne einbringt.",
+    "q2": "Wie startet man den IPTV-Reseller-Verkauf?",
+    "a2": "Indem Sie sich bei unserem Premium-Panel-System registrieren und das Mindest-Reseller-Credit kaufen, können Sie sofort Ihr eigenes Panel haben und mit dem Verkauf von IPTV in Ihrem Umfeld und in sozialen Medien beginnen.",
+    "q3": "Wie viel Geld kann man mit dem Verkauf von IPTV verdienen?",
+    "a3": "Da Sie virtuelle IPTV-Credits im Großhandel kaufen, liegen die Kosten ganz unten. Sie können mit einer Gewinnspanne von 100% bis 400% verkaufen, je nach Standort.",
+    "q4": "Verfallen nicht verkaufte IPTV-Reseller-Credits?",
+    "a4": "Niemals. Credits im kreditbasierten IPTV-Reseller-System haben kein Ablaufdatum. Sie bleiben in Ihrem Konto, bis sie verbraucht werden."
   }
 }

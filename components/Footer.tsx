@@ -45,8 +45,8 @@ export default function Footer() {
                     <div className="md:col-span-1">
                         <h3 className="text-white font-semibold mb-4 border-l-4 border-[#d5900a] pl-3">{t("legal")}</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><Link href="/kullanim" className="hover:text-[#d5900a] transition-colors block py-0.5">Kullanım Koşulları</Link></li>
-                            <li><Link href="/gizlilik" className="hover:text-[#d5900a] transition-colors block py-0.5">Gizlilik Politikası</Link></li>
+                            <li><Link href="/kullanim" className="hover:text-[#d5900a] transition-colors block py-0.5">{useTranslations("footer_extra")("terms")}</Link></li>
+                            <li><Link href="/gizlilik" className="hover:text-[#d5900a] transition-colors block py-0.5">{useTranslations("footer_extra")("privacy")}</Link></li>
                             <li><Link href="/iletisim" className="hover:text-[#d5900a] transition-colors block py-0.5">{nav("contact")}</Link></li>
                         </ul>
                     </div>
@@ -58,14 +58,14 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mt-1 shrink-0 invert sepia saturate-[2000%] hue-rotate-[10deg] brightness-[100%]" style={{ filter: 'invert(52%) sepia(82%) saturate(1219%) hue-rotate(8deg) brightness(101%) contrast(92%)' }} />
                                 <span>
-                                    <strong className="block text-white mb-1">WhatsApp Hattı</strong>
+                                    <strong className="block text-white mb-1">{useTranslations("footer_extra")("whatsapp_line")}</strong>
                                     <a href="https://wa.me/491632680219" target="_blank" className="hover:text-[#d5900a] transition-colors font-bold">+49 163 2680219</a>
                                 </span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Mail className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
                                 <span>
-                                    <strong className="block text-white mb-1">E-Posta</strong>
+                                    <strong className="block text-white mb-1">{useTranslations("footer_extra")("email_line")}</strong>
                                     <a href="mailto:info@premiumpanel.com" className="hover:text-blue-400 transition-colors">info@premiumpanel.com</a>
                                 </span>
                             </li>
@@ -75,9 +75,9 @@ export default function Footer() {
 
                 {/* SEO Text Block */}
                 <div className="mt-12 pt-8 border-t border-slate-800/50">
-                    <h4 className="text-white font-semibold mb-2 text-sm">Sunucu Lokasyonları ve Yüksek Hızlı Altyapı</h4>
+                    <h4 className="text-white font-semibold mb-2 text-sm">{useTranslations("footer_extra")("seo_title")}</h4>
                     <p className="text-xs text-slate-500 leading-relaxed">
-                        Premium Panel, IPTV bayilik işinizin kesintisiz yürümesi için dünya standartlarında bir sunucu altyapısına sahiptir. Türkiye (İstanbul, Ankara, İzmir) başta olmak üzere, Avrupa (Almanya, Hollanda) ve Amerika lokasyonlarındaki güçlü veri merkezleri sayesinde düşük gecikme süreleri ve istikrarlı, donmasız panel erişimi sağlar. Tüm bu teknik işlerle biz uğraşırken, siz tamamen kendi satışlarınıza ve kârınıza odaklanabilirsiniz.
+                        {useTranslations("footer_extra")("seo_text")}
                     </p>
                 </div>
 

@@ -136,5 +136,257 @@
     "plan3_f4": "Absolute White Label + VIP",
     "plan3_bonus": "VIP-Groothandel",
     "plan3_cta": "Word Master Dealer"
+  },
+  "hero_extra": {
+    "excellent": "Uitstekend",
+    "positive_feedback": "98.7% Positieve Feedback"
+  },
+  "testimonials": {
+    "title": "Honderden tevreden resellers",
+    "subtitle": "Lees de succesverhalen van onze resellers die hun bedrijf hebben laten groeien.",
+    "reviews": [
+      {
+        "name": "Caner Y.",
+        "role": "IPTV RESELLER",
+        "text": "\"Ik ben mijn IPTV-bedrijf begonnen met dit paneel. Zeer transparant en snel.\""
+      },
+      {
+        "name": "Metehan D.",
+        "role": "E-COMMERCE RESELLER",
+        "text": "\"Dankzij snelle kredietoverdracht kan ik mijn klanten direct bedienen.\""
+      },
+      {
+        "name": "Rodrigo A.",
+        "role": "INTERNATIONAL RESELLER",
+        "text": "\"Consistent streams and localized content for multiple regions.\""
+      },
+      {
+        "name": "Murat K.",
+        "role": "BEDRIJFS RESELLER",
+        "text": "\"Door bulkkortingen hebben we ons eigen merk opgebouwd.\""
+      },
+      {
+        "name": "Yavuz K.",
+        "role": "DIGITALE MARKETEER",
+        "text": "\"Het dashboard is intuïtief. Sub-resellers toevoegen duurt seconden.\""
+      },
+      {
+        "name": "Selin A.",
+        "role": "NIEUWE ONDERNEMER",
+        "text": "\"Het supportteam hielp me direct. Nu heb ik een vast inkomen.\""
+      },
+      {
+        "name": "Hans S.",
+        "role": "VERTRIEBSPARTNER",
+        "text": "\"Die Qualität der 4K-Streams ist hervorragend...\""
+      },
+      {
+        "name": "Cansu D.",
+        "role": "MARKETING MANAGER",
+        "text": "\"Testaccounts geven verkoopt snel. Klanten kopen met vertrouwen.\""
+      }
+    ]
+  },
+  "faq_accordion": {
+    "faqs": [
+      {
+        "question": "Wat is een IPTV-reseller?",
+        "answer": "Een risicovrij model waarbij u in bulk credits koopt om ze met winst aan klanten te verkopen."
+      },
+      {
+        "question": "Hoe werkt het creditsysteem?",
+        "answer": "Het is een prepaid systeem. Credits worden afgeschreven bij activering."
+      },
+      {
+        "question": "Verlopen mijn credits?",
+        "answer": "Nooit. Uw credits blijven jaren geldig totdat ze worden gebruikt."
+      },
+      {
+        "question": "Kan ik sub-resellers toevoegen?",
+        "answer": "Ja! Bij bepaalde pakketten kunt u eigen sub-resellers maken."
+      },
+      {
+        "question": "Voor welke apparaten?",
+        "answer": "Smart TV, Android BOX, Apple TV, PC, Smartphones en Tablets."
+      },
+      {
+        "question": "Zijn er instelkosten voor het paneel?",
+        "answer": "Nee. De installatie is helemaal gratis."
+      },
+      {
+        "question": "Kan ik mijn eigen merk gebruiken?",
+        "answer": "Ja, we kunnen een eigen DNS en domeinnaam instellen."
+      },
+      {
+        "question": "Zijn er maandelijkse kosten?",
+        "answer": "Nee, verborgen kosten bestaan bij ons niet."
+      }
+    ]
+  },
+  "cta_banner": {
+    "badge": "BEGIN NU",
+    "title_line1": "Bent u klaar om",
+    "title_line2": "uw bedrijf te laten groeien?",
+    "subtitle": "Sluit je aan bij duizenden resellers. Wij regelen de techniek.",
+    "button": "Start gratis proefperiode"
+  },
+  "seo_content": {
+    "p1": "IPTV Reseller Gids: Wees je Eigen Baas",
+    "p2": "Gedreven door breedband internet verandert IPTV de televisie. Start vandaag nog.",
+    "read_more": "Lees Meer...",
+    "read_less": "Minder Tonen"
+  },
+  "footer_extra": {
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacybeleid",
+    "whatsapp_line": "WhatsApp Lijn",
+    "email_line": "E-mail Lijn",
+    "seo_title": "Serverlocaties en Hogesnelheidsinfrastructuur",
+    "seo_text": "Premium Panel beschikt over een serverinfrastructuur van wereldklasse zodat uw IPTV-resellerbedrijf ononderbroken kan draaien. Dankzij sterke datacenters in Turkije (Istanbul, Ankara, Izmir), Europa (Duitsland, Nederland) en de VS biedt het een lage latentie en stabiele, storingsvrije toegang tot het paneel. Terwijl wij ons bezighouden met al deze technische zaken, kunt u zich volledig concentreren op uw eigen verkoop en winst."
+  },
+  "whatsapp_msg": "Ik vraag een gratis test aan voor het reseller programma.",
+  "pricing_extra": {
+    "credit": "Credits",
+    "popular": "POPULAIR",
+    "secure_infrastructure": "Veilige en Transparante Infrastructuur",
+    "footer_text_strong": "Verdien je kosten terug, vermenigvuldig je winst!",
+    "footer_text_light": "Laad nu je eerste 120 credits."
+  },
+  "bento_grid": {
+    "badge": "Waarom Premium Panel?",
+    "subtitle": "Ontdek de functies die het verschil maken.",
+    "f1_title": "Reseller Worden Is Gratis",
+    "f1_desc": "Start zonder instapkosten met ons creditsysteem. Laad 120 credits om te beginnen en bouw je bedrijf op.",
+    "f1_cta": "Details Bekijken",
+    "f2_title": "Credit Gebaseerd Panel",
+    "f2_desc": "Prepaid betekent dat je alleen betaalt voor wat je verkoopt. Jij bepaalt je marge en prijzen.",
+    "f3_title": "Sub-Reseller Kansen",
+    "f3_desc": "Bouw je eigen resellernetwerk door sub-resellers toe te voegen en hun limieten te bepalen.",
+    "f4_title": "Direct Beheer",
+    "f4_desc": "Verleng tijden, reset wachtwoorden, controleer connecties etc. gemakkelijk vanuit één paneel.",
+    "f5_title": "Voor Alle Behoeften",
+    "f5_desc": "Een model gemaakt voor elke ondernemer om de business snel en winstgevend op te schalen."
+  },
+  "masonry_gallery": {
+    "alt_1": "App & Panel Showcase",
+    "alt_2": "Panel Overzicht",
+    "alt_3": "Smart TV Sync",
+    "alt_4": "Mobiele App UI",
+    "alt_5": "Categorieënlijst",
+    "alt_6": "Serie Detail Scherm",
+    "alt_7": "Live TV Speler",
+    "alt_8": "Films & Series Archief",
+    "alt_9": "Ticketbeheer",
+    "alt_10": "Gebruikersprofiel",
+    "alt_11": "EPG & TV Gids",
+    "alt_12": "Instellingen Menu",
+    "alt_13": "Multiscreen Ondersteuning"
+  },
+  "metadata_sss": {
+    "title": "Veelgestelde Vragen | Premium Panel",
+    "description": "Vragen over resellersysteem, betalingen, panelgebruik en techniek."
+  },
+  "metadata_paketler": {
+    "title": "Reseller Pakketten & Prijzen | Premium Panel",
+    "description": "Kies het IPTV resellerpakket dat bij u past."
+  },
+  "metadata_ozellikler": {
+    "title": "Geavanceerde IPTV Functies | Premium Panel",
+    "description": "Ontdek ons panel, 99.9% uptime, 24/7 support en wereldwijde infrastructuur."
+  },
+  "metadata_kullanim": {
+    "title": "Gebruiksvoorwaarden | Premium Panel",
+    "description": "Voorwaarden voor Premium Panel."
+  },
+  "metadata_gizlilik": {
+    "title": "Privacybeleid | Premium Panel",
+    "description": "Ons privacybeleid en databeveiliging."
+  },
+  "metadata_blog": {
+    "title": "Blog - IPTV Reseller Nieuws | Premium Panel",
+    "description": "Laatste IPTV nieuws, reseller tips, en technische gidsen."
+  },
+  "metadata_iletisim": {
+    "title": "Contact | Premium Panel",
+    "description": "Neem contact op, wij beantwoorden uw vragen."
+  },
+  "metadata_iptv_bayilik": {
+    "title": "{city} IPTV Reseller | Beste Panel Ervaring",
+    "description": "Beste IPTV reseller service voor {city} ({region}). Verdien hoge winst met storingsvrije IPTV."
+  },
+  "contact_extra": {
+    "contact_info": "Contactinformatie",
+    "connect_wa": "Verbind via WhatsApp",
+    "write_us": "Schrijf Ons",
+    "fullname": "Volledige Naam",
+    "fullname_placeholder": "Uw Volledige Naam",
+    "email": "E-mailadres",
+    "email_placeholder": "voorbeeld@email.com",
+    "message": "Uw Bericht",
+    "message_placeholder": "Hoe kunnen wij u helpen?",
+    "success": "Uw bericht is succesvol verzonden!",
+    "error": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "sending": "Verzenden...",
+    "send": "Verzenden"
+  },
+  "iptv_bayilik_page": {
+    "hero_badge": "Word de Leider van {region}",
+    "hero_title": "Start Uw {name} IPTV Reseller Bedrijf",
+    "hero_title_highlight": "Vandaag!",
+    "hero_desc": "Bouw uw winstgevende bedrijf door buffervrije IPTV-pakketten te verkopen in {name} zonder risico. 100% Uptime.",
+    "cta_customer": "Krijg klanten in {name}",
+    "cta_packages": "Reseller Pakketten",
+    "bottom_title": "Schakel Nu Over op Credits",
+    "bottom_desc": "Word de leider in {name} met een wholesale panel klaar voor de start. Beheer uw eigen merk.",
+    "wa_button": "WhatsApp Contact"
+  },
+  "seo_content_extended": {
+    "p3": "Als u op zoek bent naar een risicovrij winstmodel zonder hoge investeringskosten, huur, belastingen, fysieke winkelkosten of grote voorraadvereisten, dan is IPTV-resellerverkoop echt iets voor u. Als Premium Panel bieden wij u een op credits gebaseerd resellerplatform waar u uw eigen klanten kunt beheren met de meest stabiele en geavanceerde infrastructuur in de markt en uw prijsbeleid volledig naar eigen inzicht kunt bepalen.",
+    "h1": "1. Wat is IPTV-resellen en hoe werkt het creditsysteem?",
+    "s1_p1": "IPTV-resellen is het proces van het verkopen van groothandels-toegangsrechten voor inhoud aan eindconsumenten in retailpakketten. Vanaf het moment dat u reseller wordt, wordt er een professioneel ontworpen beheerpaneel aan u toegewezen. Via dit paneel kunt u nieuwe abonnementen (accounts) openen, testuitzendingen (gratis proefversies) naar uw klanten sturen, de data van verlopen abonnees verlengen en uw gehele actieve of passieve portfolio vanaf één scherm beheren.",
+    "s1_p2": "Het Creditsysteem dat we bij Premium Panel gebruiken is een transparant en verliesvrij model:",
+    "s1_li1": "U laadt in eerste instantie een bepaalde hoeveelheid credits in het resellerpaneel.",
+    "s1_li2": "Bij elke opening van een abonnement worden credits van uw paneel afgetrokken tegen een tarief dat gelijk is aan de duur van dat pakket.",
+    "s1_li3": "Geen risico: uw credits hebben geen vervaldatum als u geen verkoop doet; ze blijven precies in uw account staan.",
+    "s1_li4": "Kapitaalcontrole is volledig aan u; u bent niemand iets verschuldigd door prepaid te werken.",
+    "h2": "2. Waarom zou u kiezen voor het Premium Panel IPTV-resellersysteem?",
+    "s2_p1": "Er zijn talloze streamingproviders en IPTV-groothandelaren op internet. Als u echter op de lange termijn een winstgevend inkomen wilt verdienen, is de kwaliteit van de onderliggende infrastructuur van cruciaal belang.",
+    "s2_li1": "Wereldwijd CDN-netwerk: Ononderbroken live TV-ervaring met de snelste ping-waarden op elke locatie.",
+    "s2_li2": "Ononderbroken service (99,9% uptime): Kracht om te reageren op de gelijktijdige kijkverzoeken van tienduizenden gebruikers.",
+    "s2_li3": "Anti-Freeze Technologie: Algoritme dat bevriezing voorkomt, zelfs bij lage internetsnelheden.",
+    "s2_li4": "24/7 ononderbroken ondersteuning: Ons ondersteuningsteam staat klaar om direct in te grijpen in uw reseller-accounts.",
+    "h3": "3. Groei van de sector en verdienpotentieel",
+    "s3_p1": "De uitbreiding van glasvezelnetwerken en 5G-technologieën heeft de vraag naar IPTV op een ongekende manier doen toenemen.",
+    "h4": "4. Verkoopstrategieën om een succesvolle IPTV-reseller te worden",
+    "s4_p1": "U heeft uw credits ontvangen en uw paneel is klaar voor gebruik. Wat is de volgende stap? U moet uw doelgroep bereiken met de juiste strategie.",
+    "h5": "5. Technische toepassingen en apparaatcompatibiliteit",
+    "s5_p1": "De eenvoudigste manier om een IPTV-service te verkopen is dat het systeem dat u aanbiedt compatibel is met bijna elk scherm ter wereld.",
+    "h6": "6. Veelvoorkomende klantproblemen en oplossingen",
+    "s6_p1": "Het is belangrijk om de belangrijkste bron van het probleem te vinden bij technische storingen die uw klanten kunnen ervaren.",
+    "h7": "7. Manieren om uw bedrijf en branding te laten groeien",
+    "s7_p1": "Ondanks duizenden verkopers in de IPTV-markt, nemen degenen die een merk opbouwen en zich onderscheiden de leiding.",
+    "h8": "8. Waarom zou u nu beginnen?",
+    "s8_p1": "Tijd is geld. Elke dag stappen honderden mensen over op streamingdiensten.",
+    "footer_cta": "Voor meer informatie of om een gratis testuitzending aan te vragen, neem onmiddellijk contact met ons op via onze Contactpagina of WhatsApp."
+  },
+  "pricing_whatsapp": "Hallo, ik wil graag informatie ontvangen over jullie {plan}-pakket.",
+  "city_links": {
+    "title": "Onze IPTV-resellerserviceregio's over de hele wereld",
+    "link_text": "IPTV-reseller {name}"
+  },
+  "floating_whatsapp": {
+    "message": "Hallo, ik wil graag informatie ontvangen over IPTV reseller.",
+    "tooltip": "Hulp nodig?"
+  },
+  "schemas": {
+    "org_desc": "Resellerplatform dat professionele IPTV-resellerservice, gebruiksvriendelijk creditsysteem en nettoprijzen biedt.",
+    "q1": "Wat is IPTV Reselling?",
+    "a1": "IPTV-reselling is een risicovrij digitaal bedrijfsmodel waarbij groothandelscredits voor streamingservers worden verkocht aan particuliere eindgebruikers in storingsvrije pakketten, wat een hoge winst oplevert.",
+    "q2": "Hoe start ik met IPTV Reseller Verkoop?",
+    "a2": "Door u te registreren op ons Premium Panel-systeem en het minimale resellercredit te kopen, kunt u direct over uw eigen paneel beschikken en beginnen met het verkopen van IPTV aan uw omgeving en op sociale media.",
+    "q3": "Hoeveel geld kan er worden verdiend met het verkopen van IPTV?",
+    "a3": "Omdat u virtuele IPTV-credits in de groothandel koopt, zijn de kosten het laagst. U kunt verkopen met een winstmarge van 100% tot 400%, afhankelijk van uw locatie.",
+    "q4": "Vervallen onverkochte IPTV Reseller Credits?",
+    "a4": "Nooit. Credits in het op credits gebaseerde IPTV-resellersysteem hebben geen vervaldatum. Ze blijven in uw account totdat ze worden gebruikt."
   }
 }

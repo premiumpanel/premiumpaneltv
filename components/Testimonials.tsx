@@ -3,96 +3,24 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import { Star } from 'lucide-react';
-
-const testimonials = [
-    {
-        name: "Caner Y.",
-        title: "IPTV Bayi Sahibi",
-        text: "IPTV bayilik sistemine bu panel ile başladım. Kredi sistemi çok şeffaf ve kanal geçiş hızı gerçekten etkileyici. Müşterilerimden hiç şikayet almıyorum.",
-        image: "/assets/images/media/user-1.png",
-    },
-    {
-        name: "Yavuz K.",
-        title: "Digital Marketer",
-        text: "Reseller paneli arayüzü çok sezgisel. Alt bayi oluşturma ve limit tanımlama işlemleri saniyeler sürüyor. İşimi büyütmemde çok yardımcı oldular.",
-        image: "/assets/images/media/user-2.png",
-    },
-    {
-        name: "Yücel Faruk Ş.",
-        title: "Teknik Destek Uzmanı",
-        text: "Sunucu uptime oranları %99.9 seviyesinde. Donma ve kesilme gibi kronik sorunlar bu altyapıda yaşanmıyor. Profesyonel çalışmak isteyenlere tavsiyemdir. Teknik altyapının bu kadar stabil olması müşteri kayıplarını sıfıra indirdi ve güvenilir bir marka oluşturmama büyük katkı sağladı. Destek ekibi ise her türlü sorunda anında çözüm üretiyor, bu da işimi güvenle yürütmemi sağlıyor.",
-        image: "/assets/images/media/user-3.png",
-    },
-    {
-        name: "Metehan D.",
-        title: "E-Ticaret Bayi",
-        text: "Kredi transfer hızı ve otomatik aktivasyon özelliği sayesinde müşterilerime anında hizmet verebiliyorum. IPTV server kalitesi gerçekten piyasanın üzerinde.",
-        image: "/assets/images/media/user-4.png",
-    },
-    {
-        name: "Selin A.",
-        title: "Yeni Girişimci",
-        text: "Başlangıçta çekincelerim vardı ancak destek ekibi her adımda yanımda oldu. Şimdi kendi müşteri ağımı kurdum ve düzenli gelir elde ediyorum.",
-        image: "/assets/images/media/user-5.png",
-    },
-    {
-        name: "Thomas M.",
-        title: "Reseller Partner",
-        text: "Das beste IPTV Reseller Panel, das ich je benutzt habe. Die Kanalauswahl ist riesig ve der Support ist immer erreichbar. Sehr stabil!",
-        image: "/assets/images/media/user-6.png",
-    },
-    {
-        name: "Ömer F.",
-        title: "Fullstack Developer",
-        text: "API desteği ve Webhook entegrasyonu harika çalışıyor. Kendi otomasyon sistemime paneli kolayca bağladım. Teknik altyapı çok güçlü.",
-        image: "/assets/images/media/user-7.png",
-    },
-    {
-        name: "Rodrigo A.",
-        title: "International Reseller",
-        text: "Consistent streams and localized content for multiple regions. The admin dashboard gives me full control over user bouquets and subscriptions.",
-        image: "/assets/images/media/user-8.png",
-    },
-    {
-        name: "Hans S.",
-        title: "Vertriebspartner",
-        text: "Die Qualität der 4K-Streams ist hervorragend. Meine Kunden in Deutschland sind sehr zufrieden mit der Stabilität. Absolut empfehlenswert!",
-        image: "/assets/images/media/user-9.png",
-    },
-    {
-        name: "Burak Y.",
-        title: "Sistem Admin",
-        text: "DDOS koruması ve sunucu güvenliği üst düzeyde. Yoğun maç günlerinde bile panelde en ufak bir yavaşlama hissetmiyoruz. Özellikle derbi günlerinde yaşanan yoğun trafiği bu kadar pürüzsüz yönetebilen başka bir panel görmedim. Siber saldırılara karşı alınan önlemler sayesinde işimiz hiç aksamıyor ve müşterilerimize kesintisiz 4K yayın keyfi sunabiliyoruz. Teknik olarak kusursuz bir deneyim söz konusu.",
-        image: "/assets/images/media/user-1.png",
-    },
-    {
-        name: "Murat K.",
-        title: "Kurumsal Bayi",
-        text: "Toplu kredi alımlarında sağladıkları avantajlar ve özel DNS hizmeti ile kendi markamızı tamamen ön plana çıkarabildik. Gerçekten çözüm ortağılar.",
-        image: "/assets/images/media/user-2.png",
-    },
-    {
-        name: "Cansu D.",
-        title: "Pazarlama Müdürü",
-        text: "Test hesabı verme özelliği satışları kapatmakta çok etkili oluyor. Müşteri önce kaliteyi görüyor, sonra güvenle satın alıyor.",
-        image: "/assets/images/media/user-3.png",
-    },
-    {
-        name: "Selin Y.",
-        title: "Evden Çalışan Girişimci",
-        text: "Esnek çalışma saatleri ve hazır reklam materyalleri ile IPTV bayiliği işine girmek çok kolaylaştı. Kazancım her ay katlanarak artıyor.",
-        image: "/assets/images/media/user-4.png",
-    },
-    {
-        name: "Alper T.",
-        title: "İş Geliştirme",
-        text: "Global kanal listesi ve 7/24 canlı destek hattı ile rakiplerimizden bir adım öndeyiz. Teknik hiçbir sorunla uğraşmadan satışa odaklanabiliyorum.",
-        image: "/assets/images/media/user-5.png",
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Testimonials() {
+    const t = useTranslations("testimonials");
     const anonymousFallbackImage = "/assets/images/media/user-1.png";
+
+    const reviews = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => ({
+        name: t(`reviews.${i}.name`),
+        title: t(`reviews.${i}.role`),
+        text: t(`reviews.${i}.text`),
+        image: `/assets/images/media/user-${(i % 5) + 1}.png`,
+    }));
+
+    // Split title for coloring
+    const fullTitle = t("title");
+    const spaceIndex = fullTitle.indexOf(' ');
+    const firstWord = spaceIndex !== -1 ? fullTitle.substring(0, spaceIndex) : fullTitle;
+    const restOfTitle = spaceIndex !== -1 ? fullTitle.substring(spaceIndex + 1) : "";
 
     return (
         <section className="py-24 bg-slate-950 relative overflow-hidden" id="testimonials">
@@ -102,16 +30,16 @@ export default function Testimonials() {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <ScrollReveal textClassName="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                         <h1 className="pb-2">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">Yüzlerce</span> Mutlu Bayi
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">{firstWord}</span> {restOfTitle}
                         </h1>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 text-lg">
-                        <p>Ağımıza katılan ve kendi işini büyüten bayilerimizin başarı hikayelerine göz atın.</p>
+                        <p>{t("subtitle")}</p>
                     </ScrollReveal>
                 </div>
 
                 <div className="w-full columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-                    {testimonials.map((t, index) => (
+                    {reviews.map((tItem, index) => (
                         <div
                             key={index}
                             className="bg-slate-900/40 backdrop-blur-xl p-6 rounded-2xl border border-slate-800 break-inside-avoid hover:border-slate-700 transition-all duration-300 group shadow-xl shadow-black/20 shimmer-main"
@@ -119,8 +47,8 @@ export default function Testimonials() {
                             <div className="flex items-center mb-4">
                                 <div className="relative">
                                     <img
-                                        src={t.image}
-                                        alt={t.name}
+                                        src={tItem.image}
+                                        alt={tItem.name}
                                         className="relative w-12 h-12 rounded-full object-cover mr-4 border border-slate-700 bg-slate-800"
                                         onError={(e) => {
                                             const target = e.target as HTMLImageElement;
@@ -130,8 +58,8 @@ export default function Testimonials() {
                                     />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <p className="font-bold text-white truncate group-hover:text-white transition-colors">{t.name}</p>
-                                    <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider truncate">{t.title}</p>
+                                    <p className="font-bold text-white truncate group-hover:text-white transition-colors">{tItem.name}</p>
+                                    <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider truncate">{tItem.title}</p>
                                 </div>
                             </div>
 
@@ -142,7 +70,7 @@ export default function Testimonials() {
                             </div>
 
                             <p className="text-sm text-slate-400 leading-relaxed font-medium">
-                                "{t.text}"
+                                {tItem.text}
                             </p>
                         </div>
                     ))}

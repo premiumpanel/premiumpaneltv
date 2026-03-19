@@ -1,9 +1,21 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-    title: "Gizlilik Politikası | Premium Panel",
-};
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'metadata_gizlilik' });
+    
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: `https://premiumpanel.com/${locale}/gizlilik`,
+        },
+    };
+}
 
 export default function PrivacyPage() {
     return (

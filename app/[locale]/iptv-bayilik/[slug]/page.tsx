@@ -11,7 +11,7 @@ export async function generateStaticParams() {
     }));
 }
 
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, slug: string }> }): Promise<Metadata> {
     const { locale, slug } = await params;
@@ -20,9 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const city = cities.find(c => c.slug === slug);
     if (!city) return {};
     
+    const t = await getTranslations({ locale, namespace: 'metadata_iptv_bayilik' });
+
     return {
-        title: `${city.name} IPTV Bayilik | En İyi Kredili Reseller Paneli Serüveni`,
-        description: `${city.name} şehri ve ${city.region} bölgesi için en iyi IPTV bayilik hizmeti. Donmasız kesintisiz yayınlarla IPTV satışı yaparak yüksek kazanç elde edin.`,
+        title: t('title', { city: city.name }),
+        description: t('description', { city: city.name, region: city.region }),
         alternates: {
             canonical: `https://premiumpanel.com/${locale}/iptv-bayilik/${slug}`
         }
@@ -47,6 +49,8 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
         .replace(/\n\n1\. (.*?)\n2\. (.*?)\n3\. (.*?)\n4\. (.*?)$/g, '<ol class="mt-4 list-decimal list-outside ml-6 space-y-2"><li>$1</li><li>$2</li><li>$3</li><li>$4</li></ol>')
         .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
 
+    const t = await getTranslations({ locale, namespace: 'iptv_bayilik_page' });
+
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col pt-32">
             <Header />
@@ -57,13 +61,13 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                 
                 <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
                     <span className="inline-block py-1 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/10 text-[#d5900a] text-sm font-bold uppercase tracking-wider mb-6 hover:shadow-[0_0_15px_rgba(213,144,10,0.5)] transition-shadow">
-                        {region} Bölgesinin Lideri Olun
+                        {t('hero_badge', { region })}
                     </span>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold italic text-white mb-6 drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] leading-tight">
-                        {name} IPTV Bayilik İşine<br /> <span className="text-[#d5900a]">Bugün Başlayın!</span>
+                        {t('hero_title', { name })}<br /> <span className="text-[#d5900a]">{t('hero_title_highlight')}</span>
                     </h1>
                     <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
-                        {name} lokasyonuna özel sıfır sermaye riskiyle donmasız ve yüksek çözünürlüklü IPTV paketleri satarak kendi kârlı işletmenizi kurun. %100 Uptime ve limitsiz satış potansiyeli.
+                        {t('hero_desc', { name })}
                     </p>
                     
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -71,13 +75,13 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                             href="https://wa.me/491632680219" 
                             variant="amber" 
                         >
-                            {name} Müşterisi Kazan
+                            {t('cta_customer', { name })}
                         </CTAButton>
                         <CTAButton 
                             href="/paketler" 
                             variant="outline" 
                         >
-                            Bayilik Paketleri
+                            {t('cta_packages')}
                         </CTAButton>
                     </div>
                 </div>
@@ -91,14 +95,14 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                         
                         <div className="mt-12 p-6 bg-slate-950/50 border border-slate-700/50 rounded-2xl flex flex-col md:flex-row gap-6 items-center">
                             <div className="md:w-2/3">
-                                <h4 className="text-xl font-bold text-white mb-2">Hemen Kredili Sisteme Geçin</h4>
+                                <h4 className="text-xl font-bold text-white mb-2">{t('bottom_title')}</h4>
                                 <p className="text-sm text-slate-400 mb-0">
-                                    {name} halkına satmak üzere hazır kurulu, kendi markanızı yönetebileceğiniz toptan panel ile sektörde lider konumuna ulaşabilirsiniz. Sektördeki yenilikleri yakalamak ve yüksek karlılıklara ulaşmak bir telefon kadar uzağınızda.
+                                    {t('bottom_desc', { name })}
                                 </p>
                             </div>
                             <div className="md:w-1/3 flex justify-center">
                                 <a href="https://wa.me/491632680219" className="inline-flex w-full items-center justify-center px-6 py-3 font-semibold text-black bg-[#d5900a] rounded-lg hover:scale-105 transition-transform">
-                                    WhatsApp İletişim
+                                    {t('wa_button')}
                                 </a>
                             </div>
                         </div>

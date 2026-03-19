@@ -12,11 +12,13 @@ import CTABanner from "@/components/CTABanner";
 import HomeSEOContent from "@/components/HomeSEOContent";
 import JsonLd from "@/components/JsonLd";
 
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'schemas' });
+
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -35,12 +37,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "name": "Premium Panel",
     "url": "https://premiumpanel.com",
     "logo": "https://premiumpanel.com/assets/images/logo.png",
-    "description": "Profesyonel IPTV bayilik hizmeti sağlayan, kullanımı kolay kredili sistem ve net fiyatlar sunan bayi platformu.",
+    "description": t("org_desc"),
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+49-163-2680219",
       "contactType": "sales",
-      "availableLanguage": "Turkish"
+      "availableLanguage": ["Turkish", "English", "German", "French", "Dutch"]
     }
   };
 
@@ -50,34 +52,34 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "IPTV Bayilik (Reseller) Nedir?",
+        "name": t("q1"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "IPTV bayiliği, toptan alınan yayın sunucusu kredilerinin, perakende son kullanıcılara donmasız paketler halinde satılarak yüksek kar elde edildiği risksiz bir dijital iş modelidir."
+          "text": t("a1")
         }
       },
       {
         "@type": "Question",
-        "name": "IPTV Bayilik Satışı Nasıl Başlar?",
+        "name": t("q2"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Premium Panel sistemimize kayıt olup, minimum bayi kredisini alarak anında kendi panelinize sahip olabilir ve çevrenize, sosyal medyada IPTV satışı yapmaya başlayabilirsiniz."
+          "text": t("a2")
         }
       },
       {
         "@type": "Question",
-        "name": "IPTV Satışı Yaparak Ne Kadar Para Kazanılır?",
+        "name": t("q3"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Toptan sanal IPTV kredisi aldığınız için maliyeti en diptedir. Bulunduğunuz konuma göre %100 ila %400'e varan kâr marjıyla satış gerçekleştirebilirsiniz."
+          "text": t("a3")
         }
       },
       {
         "@type": "Question",
-        "name": "Satılmayan IPTV Bayi Kredileri Yanar Mı?",
+        "name": t("q4"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Asla yanmaz. Kredili IPTV bayi sisteminde satın aldığınız kontörlerin bir son kullanma tarihi yoktur. Kullanılana kadar hesabınızda baki kalır."
+          "text": t("a4")
         }
       }
     ]
