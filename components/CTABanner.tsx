@@ -37,10 +37,10 @@ export default function CTABanner() {
                         <Link
                             href={`https://wa.me/491632680219?text=${encodeURIComponent(tRoot("whatsapp_msg"))}`}
                             target="_blank"
-                            className="group/button inline-flex items-center justify-center relative overflow-hidden bg-[#d5900a] text-white font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-[#d5900a]/20 hover:scale-105 transition-all active:scale-95 border border-transparent"
+                            className="group/button inline-flex items-center justify-center relative overflow-hidden bg-[#d5900a] text-slate-950 font-bold py-2.5 px-6 rounded-lg shadow-lg shadow-[#d5900a]/20 hover:scale-105 transition-all active:scale-95 border border-transparent"
                         >
                             <span className="relative z-10 flex items-center gap-2">
-                                <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 brightness-0 invert" />
+                                <img src="/assets/images/common/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 brightness-0" />
                                 {t("button")}
                             </span>
                             {/* Shimmer Effect */}

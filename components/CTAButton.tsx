@@ -30,7 +30,7 @@ export default function CTAButton({
         whatsapp:
             "bg-[#25D366] px-6 py-2.5 text-black hover:text-white hover:bg-[#1DA851] hover:shadow-2xl hover:shadow-[#25D366]/50 border border-[#25D366] transition-colors duration-300",
         amber:
-            "bg-gradient-to-r from-[#d5900a] to-amber-600 px-6 py-2.5 text-white shadow-lg shadow-amber-600/20 hover:shadow-amber-500/40 border border-white/10",
+            "bg-gradient-to-r from-[#d5900a] to-amber-600 px-6 py-2.5 text-slate-950 shadow-lg shadow-amber-600/20 hover:shadow-amber-500/40 border border-white/10",
     };
 
     return (
@@ -43,7 +43,7 @@ export default function CTAButton({
                     <img
                         src="/assets/images/common/whatsapp.svg"
                         alt="WhatsApp"
-                        className="w-5 h-5 mr-2 brightness-100 group-hover:invert transition-all duration-300"
+                        className="w-5 h-5 mr-2 brightness-0 group-hover:brightness-100 transition-all duration-300"
                     />
                 )}
                 {children}

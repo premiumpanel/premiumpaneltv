@@ -135,9 +135,9 @@ export default function Hero() {
                                     {stat.icon}
                                 </div>
                                 <div className="space-y-2">
-                                    <h4 className="text-lg font-bold text-white group-hover:text-white transition-colors">
+                                    <h2 className="text-lg font-bold text-white group-hover:text-white transition-colors">
                                         {stat.value}
-                                    </h4>
+                                    </h2>
                                     <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">
                                         {stat.label}
                                     </p>
