@@ -63,7 +63,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       creator: "@premiumpanel",
     },
     icons: {
-      icon: "/favicon.ico",
+      icon: "/assets/favicon.png",
+      apple: "/assets/favicon.png",
     },
   };
 }
