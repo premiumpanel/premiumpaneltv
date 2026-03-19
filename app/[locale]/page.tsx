@@ -1,15 +1,18 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import FeatureGrid from "@/components/FeatureGrid";
-import PricingCards from "@/components/PricingCards";
-import HowItWorks from "@/components/HowItWorks";
-import MasonryGallery from "@/components/MasonryGallery";
-import Testimonials from "@/components/Testimonials";
-import FAQAccordion from "@/components/FAQAccordion";
-import CTAButton from "@/components/CTAButton";
-import CTABanner from "@/components/CTABanner";
-import HomeSEOContent from "@/components/HomeSEOContent";
+import dynamic from "next/dynamic";
+
+const FeatureGrid = dynamic(() => import("@/components/FeatureGrid"), { ssr: true });
+const PricingCards = dynamic(() => import("@/components/PricingCards"), { ssr: true });
+const HowItWorks = dynamic(() => import("@/components/HowItWorks"), { ssr: true });
+const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), { ssr: true });
+const Testimonials = dynamic(() => import("@/components/Testimonials"), { ssr: true });
+const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"), { ssr: true });
+const CTABanner = dynamic(() => import("@/components/CTABanner"), { ssr: true });
+const HomeSEOContent = dynamic(() => import("@/components/HomeSEOContent"), { ssr: true });
+const CityLinks = dynamic(() => import("@/components/CityLinks"), { ssr: true });
+
 import JsonLd from "@/components/JsonLd";
 
 import { setRequestLocale, getTranslations } from "next-intl/server";

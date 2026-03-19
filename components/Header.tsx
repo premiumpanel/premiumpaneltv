@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, User, Globe, ChevronDown } from "lucide-react";
@@ -54,11 +55,14 @@ export default function Header() {
                     }`}>
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 group ml-2">
-                        <img
+                    <Link href="/" className="flex items-center gap-2 group ml-2 relative">
+                        <Image
                             src="/assets/images/logo.png"
                             alt="Premium Panel Logo"
-                            className={`w-auto transform group-hover:scale-105 transition-all duration-300 ${scrolled ? "h-10" : "h-14 md:h-16"}`}
+                            width={scrolled ? 120 : 160}
+                            height={scrolled ? 40 : 54}
+                            className={`transform group-hover:scale-105 transition-all duration-300 w-auto ${scrolled ? "h-10" : "h-14 md:h-16"}`}
+                            priority
                         />
                     </Link>
 

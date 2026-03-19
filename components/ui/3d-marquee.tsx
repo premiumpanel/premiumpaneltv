@@ -20,7 +20,7 @@ export const ThreeDMarquee: React.FC<ThreeDMarqueeProps> = ({
     onImageClick
 }) => {
     // Create a larger set of images for the grid
-    const gridImages = [...images, ...images, ...images, ...images, ...images, ...images];
+    const gridImages = [...images, ...images, ...images];
 
     return (
         <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden select-none">

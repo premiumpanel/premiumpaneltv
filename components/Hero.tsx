@@ -34,7 +34,7 @@ export default function Hero() {
 
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-slate-950/80 z-10 opactiy-90" /> {/* Overlay for better text readability */}
+                <div className="absolute inset-0 bg-slate-950/80 z-10 opacity-90" /> {/* Overlay for better text readability */}
                 <video
                     src="/assets/images/media/lexend-home-8.webm"
                     autoPlay
