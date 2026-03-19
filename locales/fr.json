@@ -76,7 +76,10 @@
   },
   "faq_page": {
     "title": "Questions Fréquentes",
-    "subtitle": "Les réponses à vos questions. Découvrez tout sur notre programme revendeur."
+    "subtitle": "Les réponses à vos questions. Découvrez tout sur notre programme revendeur.",
+    "badge": "CENTRE D'AIDE",
+    "title1": "Toutes Vos",
+    "title2": "Questions"
   },
   "metadata": {
     "title": "Revendeur IPTV | Panel à Crédits & Démarrage Gratuit",

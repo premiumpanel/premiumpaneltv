@@ -76,7 +76,10 @@
   },
   "faq_page": {
     "title": "Häufig Gestellte Fragen",
-    "subtitle": "Hier finden Sie Antworten. Erfahren Sie alles über unser IPTV Reseller Programm."
+    "subtitle": "Hier finden Sie Antworten. Erfahren Sie alles über unser IPTV Reseller Programm.",
+    "badge": "HILFEZENTRUM",
+    "title1": "Alle Ihre",
+    "title2": "Fragen"
   },
   "metadata": {
     "title": "IPTV Reseller | Kreditbasiertes Panel & Kostenloser Start",

@@ -62,7 +62,7 @@ export default function CTABanner() {
                                 ))}
                             </div>
                         </div>
-                        <span className="text-slate-500">{tExtra("positive_feedback")}</span>
+                        <span className="text-slate-400">{tExtra("positive_feedback")}</span>
                     </div>
 
                 </div>

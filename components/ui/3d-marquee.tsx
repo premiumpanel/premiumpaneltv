@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export interface MarqueeImage {
     src: string;
@@ -51,21 +52,29 @@ export const ThreeDMarquee: React.FC<ThreeDMarqueeProps> = ({
                                 <a
                                     href={image.href}
                                     target={image.target}
-                                    className="block w-full h-full"
+                                    className="block w-full h-full relative"
                                     onClick={(e) => e.stopPropagation()}
                                 >
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.alt}
-                                        className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
+                                        fill
+                                        sizes="(max-width: 768px) 192px, 256px"
+                                        className="object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
+                                        loading="lazy"
                                     />
                                 </a>
                             ) : (
-                                <img
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
-                                />
+                                <div className="w-full h-full relative">
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        sizes="(max-width: 768px) 192px, 256px"
+                                        className="object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
+                                        loading="lazy"
+                                    />
+                                </div>
                             )}
 
                         </div>

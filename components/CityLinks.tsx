@@ -16,9 +16,9 @@ export default function CityLinks() {
                     <Link
                         key={city.slug}
                         href={`/iptv-bayilik/${city.slug}`}
-                        className="text-[11px] text-slate-500 hover:text-[#d5900a] transition-colors whitespace-nowrap"
+                        className="text-xs text-slate-400 hover:text-[#d5900a] transition-colors whitespace-nowrap py-1.5 px-2 inline-block rounded-md bg-white/5 hover:bg-white/10"
                     >
-                        {t("link_text", { name: city.name })}{idx !== cities.length - 1 && <span className="ml-2 text-slate-700">|</span>}
+                        {t("link_text", { name: city.name })}
                     </Link>
                 ))}
             </div>

@@ -76,7 +76,7 @@ export default function Footer() {
                 {/* SEO Text Block */}
                 <div className="mt-12 pt-8 border-t border-slate-800/50">
                     <h4 className="text-white font-semibold mb-2 text-sm">{useTranslations("footer_extra")("seo_title")}</h4>
-                    <p className="text-xs text-slate-500 leading-relaxed">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                         {useTranslations("footer_extra")("seo_text")}
                     </p>
                 </div>

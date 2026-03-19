@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import { useTranslations } from "next-intl";
@@ -101,11 +102,16 @@ export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
                                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
                                         </div>
                                     ) : (
-                                        <img
-                                            src={feature.image}
-                                            alt={feature.title}
-                                            className={`w-full h-full object-contain transform transition-transform duration-700 group-hover:scale-110 ${feature.isLarge ? "rounded-xl shadow-lg" : ""}`}
-                                        />
+                                        <div className="relative w-full h-full">
+                                            <Image
+                                                src={feature.image || ""}
+                                                alt={feature.title}
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                className={`object-contain transform transition-transform duration-700 group-hover:scale-110 ${feature.isLarge ? "rounded-xl shadow-lg" : ""}`}
+                                                loading="lazy"
+                                            />
+                                        </div>
                                     )}
                                 </div>
 

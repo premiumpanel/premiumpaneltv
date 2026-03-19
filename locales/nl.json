@@ -76,7 +76,10 @@
   },
   "faq_page": {
     "title": "Veelgestelde Vragen",
-    "subtitle": "Vind hier antwoorden. Alles over IPTV resellers."
+    "subtitle": "Vind hier antwoorden. Alles over IPTV resellers.",
+    "badge": "HELPCENTER",
+    "title1": "Al Uw",
+    "title2": "Vragen"
   },
   "metadata": {
     "title": "IPTV Reseller | Credit-gebaseerd Panel & Gratis Start",

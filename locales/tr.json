@@ -76,7 +76,10 @@
   },
   "faq_page": {
     "title": "Sıkça Sorulan Sorular",
-    "subtitle": "Aklınızdaki soruların yanıtları burada. IPTV bayiliği hakkında merak ettiklerinizi inceleyin."
+    "subtitle": "Aklınızdaki soruların yanıtları burada. IPTV bayiliği hakkında merak ettiklerinizi inceleyin.",
+    "badge": "YARDIM MERKEZİ",
+    "title1": "Aklınızdaki",
+    "title2": "Tüm Sorular"
   },
   "metadata": {
     "title": "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",

@@ -138,7 +138,7 @@ export default function Hero() {
                                     <h4 className="text-lg font-bold text-white group-hover:text-white transition-colors">
                                         {stat.value}
                                     </h4>
-                                    <p className="text-sm text-slate-500 leading-relaxed line-clamp-2">
+                                    <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">
                                         {stat.label}
                                     </p>
                                 </div>
