@@ -12,31 +12,11 @@ import CTABanner from "@/components/CTABanner";
 import HomeSEOContent from "@/components/HomeSEOContent";
 import JsonLd from "@/components/JsonLd";
 
-export const metadata = {
-  title: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
-  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
-  keywords: "iptv bayilik, reseller panel, iptv panel kiralama, ucuz iptv bayilik, kredili iptv",
-  alternates: {
-    canonical: "https://premiumpanel.com",
-  },
-  openGraph: {
-    title: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
-    description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
-    url: "https://premiumpanel.com",
-    siteName: "Premium Panel",
-    images: [
-      {
-        url: "/og-image.jpg", // Needs to be added to public
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "tr_TR",
-    type: "website",
-  },
-};
+import { setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",

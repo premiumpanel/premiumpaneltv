@@ -77,5 +77,64 @@
   "faq_page": {
     "title": "Veelgestelde Vragen",
     "subtitle": "Vind hier antwoorden. Alles over IPTV resellers."
+  },
+  "metadata": {
+    "title": "IPTV Reseller | Credit-gebaseerd Panel & Gratis Start",
+    "description": "Start als verkoper met het flexibele creditsysteem! Registreren en aanmelden is helemaal gratis."
+  },
+  "hero_stats": {
+    "title1": "800+ Actieve Resellers",
+    "desc1": "Bereik meer klanten veilig met ons uitgebreide resellernetwerk.",
+    "title2": "99,9% Uptime",
+    "desc2": "Toewijding aan 99,9% uptime voor ononderbroken broadcastkwaliteit.",
+    "title3": "24/7 Ondersteuning",
+    "desc3": "Onmiddellijke tussenkomst van experts voor technische verzoeken."
+  },
+  "general": {
+    "view_details": "BEKIJK DETAILS"
+  },
+  "how_it_works": {
+    "title": "Hoe werkt het?",
+    "subtitle": "Geen startkosten of maandelijkse verplichtingen. Werk volledig op basis van credits.",
+    "step1_title": "Laad 120 Credits",
+    "step1_desc": "Activeer uw account door 120 credits te kopen, zonder verborgen administratiekosten.",
+    "step2_title": "Log in op het Reseller-paneel",
+    "step2_desc": "Ga naar uw paneel. Ervaar alles met ongelimiteerde testaccounts.",
+    "step3_title": "Verkoop 12 maanden",
+    "step3_desc": "Voor elk jaarabonnement van uw klant gaan er enkel exact 12 credits af."
+  },
+  "gallery": {
+    "badge": "GALERIJ",
+    "title": "Geavanceerde Paneelweergaven",
+    "subtitle": "Beheer klanten, volg credits, en voltooi opdrachten in luttele seconden."
+  },
+  "pricing_plans": {
+    "plan1_name": "Starter Reseller",
+    "plan1_desc": "Voor wie de markt wil testen en de eerste euro's wil verdienen.",
+    "plan1_math": "Gelijk aan 10 Jaarabonnementen",
+    "plan1_f1": "Gratis Paneel Gekregen",
+    "plan1_f2": "Onbeperkte Testaccounts",
+    "plan1_f3": "Live Statistieken",
+    "plan1_f4": "Standaard Support",
+    "plan1_bonus": "Ideaal Voor Beginners",
+    "plan1_cta": "Laad 120 Credits",
+    "plan2_name": "Pro Reseller",
+    "plan2_desc": "Start uw eigen sub-netwerk en maak uw merk populair.",
+    "plan2_math": "Tot 40 Jaarabonnementen",
+    "plan2_f1": "Sub-Resellers Aanmaken",
+    "plan2_f2": "Paneeltoegang Met Uw Eigen Domein",
+    "plan2_f3": "White Label Functie",
+    "plan2_f4": "24/7 Prioritaire Tech Support",
+    "plan2_bonus": "Speciale Reseller Voordelen",
+    "plan2_cta": "Kies Pakket",
+    "plan3_name": "Master Groothandel",
+    "plan3_desc": "Voor de echte grote dealers in onze industrie.",
+    "plan3_math": "Plan Tot Wel 100 Aankopen",
+    "plan3_f1": "Laagste Kosten Per Credit",
+    "plan3_f2": "Priority VIP Support",
+    "plan3_f3": "Custom API Setup",
+    "plan3_f4": "Absolute White Label + VIP",
+    "plan3_bonus": "VIP-Groothandel",
+    "plan3_cta": "Word Master Dealer"
   }
 }

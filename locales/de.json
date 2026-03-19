@@ -77,5 +77,64 @@
   "faq_page": {
     "title": "Häufig Gestellte Fragen",
     "subtitle": "Hier finden Sie Antworten. Erfahren Sie alles über unser IPTV Reseller Programm."
+  },
+  "metadata": {
+    "title": "IPTV Reseller | Kreditbasiertes Panel & Kostenloser Start",
+    "description": "Verkaufen Sie über das IPTV-Reseller-Panel im Kreditsystem. Ohne Startgebühren, ab 120 Credits können Sie loslegen."
+  },
+  "hero_stats": {
+    "title1": "800+ Aktive Reseller",
+    "desc1": "Erreichen Sie mehr Kunden sicher mit unserem umfangreichen Händlernetzwerk.",
+    "title2": "99,9% Uptime",
+    "desc2": "Verpflichtung zu 99,9% Laufzeit für ununterbrochene Broadcast-Qualität.",
+    "title3": "24/7 Technischer Support",
+    "desc3": "Sofortige Hilfe von Experten bei allen technischen Supportanfragen."
+  },
+  "general": {
+    "view_details": "DETAILS ANSEHEN"
+  },
+  "how_it_works": {
+    "title": "Wie funktioniert es?",
+    "subtitle": "Keine Aufnahmegebühren oder monatliche Bindung, Schritt-für-Schritt zum Erfolg.",
+    "step1_title": "120 Credits aufladen",
+    "step1_desc": "Aktivieren Sie Ihr Konto durch den Kauf von 120 Credits als Betriebskapital ohne Einrichtungsgebühren.",
+    "step2_title": "Ins Reseller-Panel einloggen",
+    "step2_desc": "Greifen Sie auf das personalisierte Reseller-Panel zu. Erstellen Sie Testkonten und erkunden Sie es.",
+    "step3_title": "12 Monate Verkauf (12)",
+    "step3_desc": "Eröffnen Sie Abos für Kunden. Ein 1-Jahres-Abo (12 Monate) zieht einfach 12 Credits ab."
+  },
+  "gallery": {
+    "badge": "GALERIE",
+    "title": "Fortschrittliche Panel-Ansichten",
+    "subtitle": "Verwalten Sie Kunden, verfolgen Sie Credits und führen Sie alle Aktionen in Sekundenschnelle durch."
+  },
+  "pricing_plans": {
+    "plan1_name": "Starter-Reseller",
+    "plan1_desc": "Für alle, die den Markt testen und erste Einnahmen erzielen möchten.",
+    "plan1_math": "10 x 1-Jahres-Verkauf",
+    "plan1_f1": "Kostenloses erweitertes IPTV-Panel",
+    "plan1_f2": "Unbegrenzte Testkonten",
+    "plan1_f3": "Live-Statistik",
+    "plan1_f4": "Standard-Verwaltungsunterstützung",
+    "plan1_bonus": "Ideal für Anfänger",
+    "plan1_cta": "120 Credits laden",
+    "plan2_name": "Pro Reseller",
+    "plan2_desc": "Für Benutzer, die Sub-Reseller aufbauen und eigene Marken gründen möchten.",
+    "plan2_math": "Bis zu 40x 1-Jahres-Abo möglich",
+    "plan2_f1": "Unterhändler erstellen",
+    "plan2_f2": "Panel-Zugriff über Ihre Domain",
+    "plan2_f3": "White Label Funktionen",
+    "plan2_f4": "24/7 Priority-Support",
+    "plan2_bonus": "Spezielle Vorteile",
+    "plan2_cta": "Pro-Paket wählen",
+    "plan3_name": "Master Großhändler",
+    "plan3_desc": "Für Hauptgroßhändler mit extrem hohem Verkaufsvolumen.",
+    "plan3_math": "Bis zu 100x 1-Jahres-Abo möglich",
+    "plan3_f1": "Niedrigste Kreditkosten",
+    "plan3_f2": "VIP-Prioritätssupport",
+    "plan3_f3": "Benutzerdefinierte API-Integration",
+    "plan3_f4": "Volles White Label & DNS",
+    "plan3_bonus": "VIP Vorteile",
+    "plan3_cta": "Jetzt Master werden"
   }
 }

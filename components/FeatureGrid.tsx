@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
     const t = useTranslations("features");
+    const t_general = useTranslations("general");
 
     const features = [
         {
@@ -123,11 +124,11 @@ export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
                                         <Link
                                             href={feature.link}
                                             className="uiverse-btn mt-auto group/btn"
-                                            data-text="DETAYLARI GÖR"
+                                            data-text={t_general("view_details")}
                                             style={{ '--animation-color': '#d5900a' } as React.CSSProperties}
                                         >
-                                            <span className="actual-text">&nbsp;DETAYLARI GÖR&nbsp;</span>
-                                            <span aria-hidden="true" className="hover-text">&nbsp;DETAYLARI GÖR&nbsp;</span>
+                                            <span className="actual-text">&nbsp;{t_general("view_details")}&nbsp;</span>
+                                            <span aria-hidden="true" className="hover-text">&nbsp;{t_general("view_details")}&nbsp;</span>
                                         </Link>
                                     )}
                                 </div>

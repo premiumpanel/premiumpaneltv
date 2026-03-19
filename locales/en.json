@@ -77,5 +77,64 @@
   "faq_page": {
     "title": "Frequently Asked Questions",
     "subtitle": "Answers to your questions are here. Find out everything about our IPTV reseller program."
+  },
+  "metadata": {
+    "title": "IPTV Reseller | Credit Based Reseller Panel & Free Start",
+    "description": "Sell via the credit system through the IPTV reseller panel. Activate your panel with 120 credits smoothly and free to start."
+  },
+  "hero_stats": {
+    "title1": "800+ Active Resellers",
+    "desc1": "Reach more customers securely with our extensive reseller network.",
+    "title2": "99.9% Uptime",
+    "desc2": "Commitment to 99.9% uptime for uninterrupted broadcast quality.",
+    "title3": "24/7 Tech Support",
+    "desc3": "Instant expert intervention for all technical support requests."
+  },
+  "general": {
+    "view_details": "VIEW DETAILS"
+  },
+  "how_it_works": {
+    "title": "How Does It Work?",
+    "subtitle": "No entry fees or monthly commitments, build your business with a transparent credit model.",
+    "step1_title": "Load 120 Credits",
+    "step1_desc": "Activate your account by purchasing only 120 credits as working capital, without any setup fees.",
+    "step2_title": "Login to Reseller Panel",
+    "step2_desc": "Access your personalized IPTV reseller panel. Experience it by creating test accounts.",
+    "step3_title": "12 Month Sale (Costs 12)",
+    "step3_desc": "Create subscriptions for your customers. Every 1-year (12-month) sale simply deducts 12 credits."
+  },
+  "gallery": {
+    "badge": "GALLERY",
+    "title": "Advanced Panel Views",
+    "subtitle": "Manage customers, track credits, and complete all operations within seconds on a user-friendly interface."
+  },
+  "pricing_plans": {
+    "plan1_name": "Starter Reseller",
+    "plan1_desc": "For those who want to test the market and make their first earnings.",
+    "plan1_math": "10x 1-Year Subscriptions",
+    "plan1_f1": "Free Advanced IPTV Panel",
+    "plan1_f2": "Unlimited Test Accounts",
+    "plan1_f3": "Live Stats View",
+    "plan1_f4": "Standard Management Support",
+    "plan1_bonus": "Ideal For Beginners",
+    "plan1_cta": "Load 120 Credits",
+    "plan2_name": "Pro Reseller",
+    "plan2_desc": "For those wanting to create subresellers and brand their service.",
+    "plan2_math": "Plan up to 40x 1-Year Subs",
+    "plan2_f1": "Create Subresellers",
+    "plan2_f2": "Panel Access With Your Domain",
+    "plan2_f3": "White Label Feature",
+    "plan2_f4": "24/7 Priority Tech Support",
+    "plan2_bonus": "Special Reseller Advantages",
+    "plan2_cta": "Choose Pro Package",
+    "plan3_name": "Master Wholesaler",
+    "plan3_desc": "For primary wholesalers driving high volume sales.",
+    "plan3_math": "Plan up to 100x 1-Year Subs",
+    "plan3_f1": "Lowest Credit Cost",
+    "plan3_f2": "VIP Priority Tech Support",
+    "plan3_f3": "Custom API & Brand Integration",
+    "plan3_f4": "Full White Label & Private DNS",
+    "plan3_bonus": "VIP Wholesaler Privileges",
+    "plan3_cta": "Become a Master"
   }
 }

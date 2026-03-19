@@ -5,7 +5,7 @@ import PricingCards from "@/components/PricingCards";
 import MasonryGallery from "@/components/MasonryGallery";
 import CTAButton from "@/components/CTAButton";
 import ScrollReveal from "@/components/ScrollReveal";
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: "Bayilik Paketleri ve Fiyatları | Premium Panel",
@@ -15,8 +15,10 @@ export const metadata: Metadata = {
     },
 };
 
-export default function PricingPage() {
-    const t = useTranslations("pricing_page");
+export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "pricing_page" });
 
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">

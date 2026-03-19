@@ -77,5 +77,64 @@
   "faq_page": {
     "title": "Questions Fréquentes",
     "subtitle": "Les réponses à vos questions. Découvrez tout sur notre programme revendeur."
+  },
+  "metadata": {
+    "title": "Revendeur IPTV | Panel à Crédits & Démarrage Gratuit",
+    "description": "Panel IPTV de revente via système de crédits. Démarrage sans frais d'installation, avec seulement 120 crédits initiaux."
+  },
+  "hero_stats": {
+    "title1": "800+ Revendeurs Actifs",
+    "desc1": "Atteignez plus de clients en toute sécurité avec notre vaste réseau.",
+    "title2": "Disponibilité de 99,9%",
+    "desc2": "Garantie de disponibilité pour une qualité de diffusion ininterrompue.",
+    "title3": "Assistance Technique",
+    "desc3": "Intervention immédiate d'experts pour toutes vos demandes."
+  },
+  "general": {
+    "view_details": "VOIR LES DÉTAILS"
+  },
+  "how_it_works": {
+    "title": "Comment ça marche?",
+    "subtitle": "Pas de frais d'inscription ou d'engagements mensuels, modèle de crédit transparent.",
+    "step1_title": "Chargez 120 Crédits",
+    "step1_desc": "Activez votre compte en achetant seulement 120 crédits de fonds de roulement sans frais.",
+    "step2_title": "Connectez-vous au Panneau",
+    "step2_desc": "Connectez-vous à votre panneau IPTV. Testez-le en créant des comptes d'essai.",
+    "step3_title": "Vente de 12 Mois (Coûte 12)",
+    "step3_desc": "Créez des abonnements. Chaque vente d'un an déduira 12 de vos crédits."
+  },
+  "gallery": {
+    "badge": "GALERIE",
+    "title": "Vues Avancées du Panneau",
+    "subtitle": "Gérez vos clients, suivez vos crédits et effectuez chaque opération sur une interface conviviale."
+  },
+  "pricing_plans": {
+    "plan1_name": "Revendeur Débutant",
+    "plan1_desc": "Pour tester le marché et faire vos premiers gains.",
+    "plan1_math": "10 Abonnements d'un An",
+    "plan1_f1": "Panneau IPTV Avancé Gratuit",
+    "plan1_f2": "Comptes de Test Illimités",
+    "plan1_f3": "Statistiques en Direct",
+    "plan1_f4": "Assistance Standard",
+    "plan1_bonus": "Idéal pour les Débutants",
+    "plan1_cta": "Charger 120 Crédits",
+    "plan2_name": "Revendeur Pro",
+    "plan2_desc": "Pour ceux qui veulent créer des sous-revendeurs et se développer.",
+    "plan2_math": "Jusqu'à 40 Abonnements",
+    "plan2_f1": "Créer des Sous-Revendeurs",
+    "plan2_f2": "Connexion via votre propre domaine",
+    "plan2_f3": "Marque Blanche Complète",
+    "plan2_f4": "Dépannage 24/7",
+    "plan2_bonus": "Avantages Spéciaux",
+    "plan2_cta": "Gamme Pro",
+    "plan3_name": "Grossiste Master",
+    "plan3_desc": "Pour les grossistes générant d'énormes ventes.",
+    "plan3_math": "100 Abonnements Flexibles",
+    "plan3_f1": "Meilleur Ratio de Coût",
+    "plan3_f2": "Assistance Technique VIP",
+    "plan3_f3": "Intégration d'API",
+    "plan3_f4": "Marque Blanche Intégrale",
+    "plan3_bonus": "Privilèges de Grossiste VIP",
+    "plan3_cta": "Devenir Master"
   }
 }

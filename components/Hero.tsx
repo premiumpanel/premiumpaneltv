@@ -25,7 +25,8 @@ const marqueeImages: MarqueeImage[] = [
 ];
 
 export default function Hero() {
-    const t = useTranslations("hero");
+    const t_base = useTranslations("hero");
+    const t = useTranslations("hero_stats");
 
     return (
         <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-32 bg-slate-950">
@@ -52,18 +53,18 @@ export default function Hero() {
                     {/* Left Column: Content */}
                     <div className="text-left max-w-4xl mx-auto lg:mx-0">
                         <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/10 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6 hover:shadow-[0_0_15px_rgba(213,144,10,0.5)] transition-shadow">
-                            {t("badge")}
+                            {t_base("badge")}
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-[3.25rem] font-bold mb-8 leading-[1.15] text-white tracking-tight drop-shadow-2xl pb-4">
                             <ScrollReveal>
-                                <span>{t("title1")} </span>
+                                <span>{t_base("title1")} </span>
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x inline-block">
-                                    {t("title2")}
+                                    {t_base("title2")}
                                 </span>
                             </ScrollReveal>
                             <ScrollReveal>
                                 <span className="block text-white mt-2">
-                                    {t("title3")}
+                                    {t_base("title3")}
                                 </span>
                             </ScrollReveal>
                         </h1>
@@ -71,15 +72,15 @@ export default function Hero() {
                         <ScrollReveal
                             textClassName="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed drop-shadow-md"
                         >
-                            {t("subtitle")}
+                            {t_base("subtitle")}
                         </ScrollReveal>
 
                         <div className="flex flex-col sm:flex-row items-center lg:items-start justify-start gap-4 mb-8">
                             <CTAButton href="https://wa.me/491632680219" variant="primary" className="w-full sm:w-auto shadow-xl shadow-blue-600/20">
-                                {t("cta_primary")}
+                                {t_base("cta_primary")}
                             </CTAButton>
                             <CTAButton href="#demo" variant="outline" className="w-full sm:w-auto shadow-xl shadow-white/10" icon={false}>
-                                {t("cta_secondary")}
+                                {t_base("cta_secondary")}
                             </CTAButton>
                         </div>
 
@@ -109,18 +110,18 @@ export default function Hero() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto mt-20 border-t border-white/5">
                     {[
                         {
-                            label: "Geniş bayi ağımızla daha fazla müşteriye güvenle ulaşın.",
-                            value: "800+ Aktif Bayi",
+                            label: t("desc1"),
+                            value: t("title1"),
                             icon: <Users className="w-5 h-5" />
                         },
                         {
-                            label: "Kesintisiz yayın kalitesi için %99.9 çalışma süresi taahhüdü.",
-                            value: "%99.9 Uptime",
+                            label: t("desc2"),
+                            value: t("title2"),
                             icon: <Shield className="w-5 h-5" />
                         },
                         {
-                            label: "Her türlü teknik desteğe ve talebe anında uzman müdahalesi.",
-                            value: "7/24 Teknik Destek",
+                            label: t("desc3"),
+                            value: t("title3"),
                             icon: <Headphones className="w-5 h-5" />
                         },
                     ].map((stat, i) => (

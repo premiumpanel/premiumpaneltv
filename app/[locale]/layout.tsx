@@ -15,50 +15,62 @@ const poppins = Poppins({
   display: 'swap'
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Premium Panel",
-    default: "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
-  },
-  description: "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim.",
-  metadataBase: new URL("https://premiumpanel.com"),
-  keywords: [
-    "iptv bayilik", 
-    "iptv bayilik satış", 
-    "en iyi iptv bayilik veren firmalar",
-    "iptv bayi paneli", 
-    "kredili iptv", 
-    "iptv reseller paneli",
-    "iptv satışı yaparak para kazan", 
-    "iptv toptancısı", 
-    "donmasız iptv bayiliği"
-  ],
-  authors: [{ name: "Premium Panel Team" }],
-  creator: "Premium Panel",
-  publisher: "Premium Panel",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  openGraph: {
-    title: "Premium IPTV Reseller Paneli",
-    description: "Kendi markanızla IPTV satışı yapın. Yüksek kar marjı ve profesyonel destek.",
-    url: "https://premiumpanel.com",
-    siteName: "Premium Panel",
-    locale: "tr_TR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Premium IPTV Reseller Paneli",
-    description: "Kendi markanızla IPTV satışı yapın.",
-    creator: "@premiumpanel",
-  },
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+import { getTranslations, setRequestLocale } from "next-intl/server";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+  
+  return {
+    title: {
+      template: "%s | Premium Panel",
+      default: t("title"),
+    },
+    description: t("description"),
+    metadataBase: new URL("https://premiumpanel.com"),
+    keywords: [
+      "iptv bayilik", 
+      "iptv bayilik satış", 
+      "en iyi iptv bayilik veren firmalar",
+      "iptv bayi paneli", 
+      "kredili iptv", 
+      "iptv reseller paneli",
+      "iptv satışı yaparak para kazan", 
+      "iptv toptancısı", 
+      "donmasız iptv bayiliği"
+    ],
+    authors: [{ name: "Premium Panel Team" }],
+    creator: "Premium Panel",
+    publisher: "Premium Panel",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "https://premiumpanel.com",
+      siteName: "Premium Panel",
+      locale: locale === "tr" ? "tr_TR" : locale === "en" ? "en_US" : locale === "de" ? "de_DE" : locale === "fr" ? "fr_FR" : "nl_NL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      creator: "@premiumpanel",
+    },
+    icons: {
+      icon: "/favicon.ico",
+    },
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function RootLayout({
   children,
@@ -68,6 +80,8 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }

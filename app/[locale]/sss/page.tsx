@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -45,8 +46,10 @@ const faqs = [
     },
 ];
 
-export default function FAQPage() {
-    const t = useTranslations("faq_page");
+export default async function FAQPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "faq_page" });
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { X, ZoomIn, Play } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface GalleryItem {
     src: string;
@@ -29,6 +30,7 @@ const galleryItems: GalleryItem[] = [
 
 export default function MasonryGallery() {
     const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
+    const t = useTranslations("gallery");
 
     useEffect(() => {
         if (selectedItem) {
@@ -47,13 +49,13 @@ export default function MasonryGallery() {
                 <div className="container mx-auto px-4 max-w-7xl relative z-10">
                     <div className="text-center mb-16">
                         <span className="inline-block py-1.5 px-4 rounded-full border border-[#d5900a]/30 bg-[#d5900a]/5 text-[#d5900a] text-xs font-bold uppercase tracking-widest mb-6">
-                            Galeri
+                            {t("badge")}
                         </span>
                         <ScrollReveal textClassName="text-3xl md:text-5xl font-extrabold italic text-white mb-6 leading-tight drop-shadow-md">
-                            <h2>Gelişmiş Panel Görünümleri</h2>
+                            <h2>{t("title")}</h2>
                         </ScrollReveal>
                         <ScrollReveal textClassName="text-slate-400 text-lg max-w-2xl mx-auto">
-                            Müşterilerinizi yönetin, kredilerinizi takip edin ve tüm işlemleri kullanıcı dostu arayüz üzerinden saniyeler içinde tamamlayın.
+                            {t("subtitle")}
                         </ScrollReveal>
                     </div>
 

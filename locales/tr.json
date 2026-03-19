@@ -77,5 +77,64 @@
   "faq_page": {
     "title": "Sıkça Sorulan Sorular",
     "subtitle": "Aklınızdaki soruların yanıtları burada. IPTV bayiliği hakkında merak ettiklerinizi inceleyin."
+  },
+  "metadata": {
+    "title": "IPTV Bayilik | Kredili Reseller Paneli & Ücretsiz Başlangıç",
+    "description": "IPTV bayilik paneli ile kredili sistem üzerinden satış yapın. Başlangıç ücretsiz, 120 kredi ile panelinizi aktif edin. Net maliyetler ve kolay yönetim."
+  },
+  "hero_stats": {
+    "title1": "800+ Aktif Bayi",
+    "desc1": "Geniş bayi ağımızla daha fazla müşteriye güvenle ulaşın.",
+    "title2": "%99.9 Uptime",
+    "desc2": "Kesintisiz yayın kalitesi için %99.9 çalışma süresi taahhüdü.",
+    "title3": "7/24 Teknik Destek",
+    "desc3": "Her türlü teknik desteğe ve talebe anında uzman müdahalesi."
+  },
+  "general": {
+    "view_details": "DETAYLARI GÖR"
+  },
+  "how_it_works": {
+    "title": "Süreç Nasıl İşliyor?",
+    "subtitle": "Giriş ücreti veya aylık taahhüt yok, adım adım şeffaf kredi modeli ile işinizi kurun.",
+    "step1_title": "120 Kredi Yükleyin",
+    "step1_desc": "Hiçbir kurulum bedeli ödemeden, yalnızca satacağınız ürünün sermayesi olan 120 krediyi satın alarak hesabınızı aktif hale getirin.",
+    "step2_title": "Bayi Paneline Giriş Yapın",
+    "step2_desc": "Size özel tanımlanan IPTV reseller paneline cihazınızdan erişin. Arayüz üzerinden test hesapları açarak platformu deneyimleyin.",
+    "step3_title": "12 Aylık Satış (12 Kredi Düşer)",
+    "step3_desc": "Müşterilerinize abonelik açın. Yaptığınız her 1 yıllık (12 ay) satış için bakiyenizden yalnızca 12 kredi eksilir. Kalan kredileriniz silinmez."
+  },
+  "gallery": {
+    "badge": "GALERİ",
+    "title": "Gelişmiş Panel Görünümleri",
+    "subtitle": "Müşterilerinizi yönetin, kredilerinizi takip edin ve tüm işlemleri kullanıcı dostu arayüz üzerinden saniyeler içinde tamamlayın."
+  },
+  "pricing_plans": {
+    "plan1_name": "Başlangıç Bayi",
+    "plan1_desc": "Piyasayı test etmek ve ilk kazancını sağlamak isteyenler için.",
+    "plan1_math": "10 Adet 1 Yıllık Satış",
+    "plan1_f1": "Ücretsiz Gelişmiş IPTV Paneli",
+    "plan1_f2": "Sınırsız Test Hesabı Açma",
+    "plan1_f3": "Canlı İstatistik Görünümü",
+    "plan1_f4": "Standart Yönetim Desteği",
+    "plan1_bonus": "Yeni Başlayanlar İçin İdeal",
+    "plan1_cta": "120 Kredi Yükle & Başla",
+    "plan2_name": "Pro Reseller",
+    "plan2_desc": "Kendi alt bayilerini kurmak ve markalaşmak isteyenler için.",
+    "plan2_math": "40 Adet 1 Yıllık Satış Planlanabilir",
+    "plan2_f1": "Alt Bayi (Subreseller) Oluşturma",
+    "plan2_f2": "Kendi Alan Adınızla Panel Girişi",
+    "plan2_f3": "White Label Özelliği",
+    "plan2_f4": "7/24 Öncelikli Teknik Destek",
+    "plan2_bonus": "Özel Bayi Avantajları",
+    "plan2_cta": "Pro Paketi Seç",
+    "plan3_name": "Master Toptancı",
+    "plan3_desc": "Çok sayıda satış yapan ana toptancılar için.",
+    "plan3_math": "100 Adet 1 Yıllık Satış Planlanabilir",
+    "plan3_f1": "En Düşük Birim Kredi Maliyeti",
+    "plan3_f2": "Öncelikli VIP Teknik Destek",
+    "plan3_f3": "Özel API & Marka Entegrasyonu",
+    "plan3_f4": "Tam White Label & Özel DNS",
+    "plan3_bonus": "VIP Toptancı Ayrıcalıkları",
+    "plan3_cta": "Master Bayi Ol"
   }
 }

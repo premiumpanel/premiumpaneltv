@@ -6,7 +6,7 @@ import MasonryGallery from "@/components/MasonryGallery";
 import { Monitor, Smartphone, Tablet, Terminal, Globe, Shield, Wifi } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata = {
     title: "Gelişmiş IPTV Özellikleri | Premium Panel",
@@ -16,8 +16,10 @@ export const metadata = {
     },
 };
 
-export default function FeaturesPage() {
-    const t = useTranslations("feature_page");
+export default async function FeaturesPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "feature_page" });
 
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">

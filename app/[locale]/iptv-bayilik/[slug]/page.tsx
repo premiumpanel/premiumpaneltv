@@ -11,8 +11,12 @@ export async function generateStaticParams() {
     }));
 }
 
+import { setRequestLocale } from 'next-intl/server';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, slug: string }> }): Promise<Metadata> {
     const { locale, slug } = await params;
+    setRequestLocale(locale);
+
     const city = cities.find(c => c.slug === slug);
     if (!city) return {};
     
@@ -26,7 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default async function CityPage({ params }: { params: Promise<{ locale: string, slug: string }> }) {
-    const { slug } = await params;
+    const { locale, slug } = await params;
+    setRequestLocale(locale);
+    
     const city = cities.find((c) => c.slug === slug);
 
     if (!city) {

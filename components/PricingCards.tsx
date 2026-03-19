@@ -5,59 +5,60 @@ import CTAButton from "@/components/CTAButton";
 import ScrollReveal from "./ScrollReveal";
 import { useTranslations } from "next-intl";
 
-const plans = [
-    {
-        name: "Başlangıç Bayi",
-        description: "Piyasayı test etmek ve ilk kazancını sağlamak isteyenler için.",
-        credits: "120",
-        mathText: "10 Adet 1 Yıllık Satış",
-        features: [
-            "Ücretsiz Gelişmiş IPTV Paneli",
-            "Sınırsız Test Hesabı Açma",
-            "Canlı İstatistik Görünümü",
-            "Standart Yönetim Desteği",
-        ],
-        popular: false,
-        bonus: "Yeni Başlayanlar İçin İdeal",
-        color: "slate",
-        ctaText: "120 Kredi Yükle & Başla"
-    },
-    {
-        name: "Pro Reseller",
-        description: "Kendi alt bayilerini kurmak ve markalaşmak isteyenler için.",
-        credits: "500",
-        mathText: "40 Adet 1 Yıllık Satış Planlanabilir",
-        bonus: "Özel Bayi Avantajları",
-        features: [
-            "Alt Bayi (Subreseller) Oluşturma",
-            "Kendi Alan Adınızla Panel Girişi",
-            "White Label Özelliği",
-            "7/24 Öncelikli Teknik Destek",
-        ],
-        popular: true,
-        color: "blue",
-        ctaText: "Pro Paketi Seç"
-    },
-    {
-        name: "Master Toptancı",
-        description: "Çok sayıda satış yapan ana toptancılar için.",
-        credits: "1200",
-        mathText: "100 Adet 1 Yıllık Satış Planlanabilir",
-        bonus: "VIP Toptancı Ayrıcalıkları",
-        features: [
-            "En Düşük Birim Kredi Maliyeti",
-            "Öncelikli VIP Teknik Destek",
-            "Özel API & Marka Entegrasyonu",
-            "Tam White Label & Özel DNS",
-        ],
-        popular: false,
-        color: "amber",
-        ctaText: "Master Bayi Ol"
-    },
-];
-
 export default function PricingCards() {
     const t = useTranslations("pricing");
+    const t_plans = useTranslations("pricing_plans");
+
+    const plans = [
+        {
+            name: t_plans("plan1_name"),
+            description: t_plans("plan1_desc"),
+            credits: "120",
+            mathText: t_plans("plan1_math"),
+            features: [
+                t_plans("plan1_f1"),
+                t_plans("plan1_f2"),
+                t_plans("plan1_f3"),
+                t_plans("plan1_f4"),
+            ],
+            popular: false,
+            bonus: t_plans("plan1_bonus"),
+            color: "slate",
+            ctaText: t_plans("plan1_cta")
+        },
+        {
+            name: t_plans("plan2_name"),
+            description: t_plans("plan2_desc"),
+            credits: "500",
+            mathText: t_plans("plan2_math"),
+            bonus: t_plans("plan2_bonus"),
+            features: [
+                t_plans("plan2_f1"),
+                t_plans("plan2_f2"),
+                t_plans("plan2_f3"),
+                t_plans("plan2_f4"),
+            ],
+            popular: true,
+            color: "blue",
+            ctaText: t_plans("plan2_cta")
+        },
+        {
+            name: t_plans("plan3_name"),
+            description: t_plans("plan3_desc"),
+            credits: "1200",
+            mathText: t_plans("plan3_math"),
+            bonus: t_plans("plan3_bonus"),
+            features: [
+                t_plans("plan3_f1"),
+                t_plans("plan3_f2"),
+                t_plans("plan3_f3"),
+                t_plans("plan3_f4"),
+            ],
+            popular: false,
+            color: "amber",
+            ctaText: t_plans("plan3_cta")
+        },
+    ];
 
     return (
         <section className="py-20 bg-slate-950 relative overflow-hidden" id="pricing">

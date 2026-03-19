@@ -7,7 +7,6 @@ import CTAButton from "@/components/CTAButton";
 import { Mail, MapPin, Send, MessageCircle, AlertCircle, Phone } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useTranslations } from "next-intl";
-
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");

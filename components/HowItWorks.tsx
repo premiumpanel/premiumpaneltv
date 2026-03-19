@@ -1,23 +1,26 @@
 import { User, UserCheck, Smartphone } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function HowItWorks() {
+    const t = useTranslations("how_it_works");
+
     const steps = [
         {
-            title: "1. 120 Kredi Yükleyin",
-            description: "Hiçbir kurulum bedeli ödemeden, yalnızca satacağınız ürünün sermayesi olan 120 krediyi satın alarak hesabınızı aktif hale getirin.",
+            title: t("step1_title"),
+            description: t("step1_desc"),
             icon: User,
             color: "bg-[#d5900a]",
         },
         {
-            title: "2. Bayi Paneline Giriş Yapın",
-            description: "Size özel tanımlanan IPTV reseller paneline cihazınızdan erişin. Arayüz üzerinden test hesapları açarak platformu deneyimleyin.",
+            title: t("step2_title"),
+            description: t("step2_desc"),
             icon: Smartphone,
             color: "bg-[#d5900a]/90",
         },
         {
-            title: "3. 12 Aylık Satış (12 Kredi Düşer)",
-            description: "Müşterilerinize abonelik açın. Yaptığınız her 1 yıllık (12 ay) satış için bakiyenizden yalnızca 12 kredi eksilir. Kalan kredileriniz silinmez.",
+            title: t("step3_title"),
+            description: t("step3_desc"),
             icon: UserCheck,
             color: "bg-[#d5900a]/80",
         },
@@ -30,10 +33,10 @@ export default function HowItWorks() {
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
                 <div className="text-center mb-20">
                     <ScrollReveal textClassName="text-3xl md:text-5xl font-extrabold mb-6 text-white italic drop-shadow-md">
-                        <h2 className="pb-2">Süreç Nasıl İşliyor?</h2>
+                        <h2 className="pb-2">{t("title")}</h2>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 text-lg max-w-2xl mx-auto">
-                        Giriş ücreti veya aylık taahhüt yok, adım adım şeffaf kredi modeli ile işinizi kurun.
+                        {t("subtitle")}
                     </ScrollReveal>
                 </div>
 
@@ -61,7 +64,7 @@ export default function HowItWorks() {
 
                                 {/* Content */}
                                 <ScrollReveal textClassName="text-2xl font-bold text-white mb-4 italic group-hover:text-[#d5900a] transition-colors">
-                                    <h3>{step.title.split('. ')[1]}</h3>
+                                    <h3>{step.title}</h3>
                                 </ScrollReveal>
                                 <ScrollReveal textClassName="text-slate-400 text-base leading-relaxed max-w-xs mx-auto">
                                     {step.description}
