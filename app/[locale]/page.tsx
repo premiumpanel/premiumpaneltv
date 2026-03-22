@@ -26,10 +26,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Premium Panel",
-    "url": "https://premiumpanel.com",
+    "url": "https://premiumpaneltv.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://premiumpanel.com/search?q={search_term_string}",
+      "target": "https://premiumpaneltv.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -38,8 +38,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Premium Panel",
-    "url": "https://premiumpanel.com",
-    "logo": "https://premiumpanel.com/assets/images/logo.png",
+    "url": "https://premiumpaneltv.com",
+    "logo": "https://premiumpaneltv.com/assets/images/logo.png",
     "description": t("org_desc"),
     "contactPoint": {
       "@type": "ContactPoint",

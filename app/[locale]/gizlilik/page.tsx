@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t("title"),
         description: t("description"),
         alternates: {
-            canonical: `https://premiumpanel.com/${locale}/gizlilik`,
+            canonical: `https://premiumpaneltv.com/${locale}/gizlilik`,
         },
     };
 }

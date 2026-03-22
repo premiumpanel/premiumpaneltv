@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t('title', { city: city.name }),
         description: t('description', { city: city.name, region: city.region }),
         alternates: {
-            canonical: `https://premiumpanel.com/${locale}/iptv-bayilik/${slug}`
+            canonical: `https://premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
         }
     }
 }

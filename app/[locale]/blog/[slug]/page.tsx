@@ -35,7 +35,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         headline: post.title,
-        image: `https://premiumpanel.com${post.image}`,
+        image: `https://premiumpaneltv.com${post.image}`,
         author: {
             "@type": "Person",
             name: "Admin",
@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             name: "Premium Panel",
             logo: {
                 "@type": "ImageObject",
-                url: "https://premiumpanel.com/assets/images/logo.png",
+                url: "https://premiumpaneltv.com/assets/images/logo.png",
             },
         },
         datePublished: post.date,

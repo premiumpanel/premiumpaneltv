@@ -4,7 +4,7 @@ import { blogPosts } from '@/lib/blog';
 import { cities } from '@/lib/cities';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://premiumpanel.com';
+    const baseUrl = 'https://premiumpaneltv.com';
     const locales = ['tr', 'en', 'de', 'fr', 'nl'];
 
     const baseRoutes = [

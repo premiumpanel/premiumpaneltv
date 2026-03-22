@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t("title"),
         description: t("description"),
         alternates: {
-            canonical: `https://premiumpanel.com/${locale}/blog`,
+            canonical: `https://premiumpaneltv.com/${locale}/blog`,
         },
     };
 }
