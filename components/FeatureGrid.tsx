@@ -88,7 +88,7 @@ export default function FeatureGrid({ showCTA = true }: { showCTA?: boolean }) {
                             <div className="flex flex-col h-full">
 
                                 {/* Visual Part */}
-                                <div className={`relative overflow-hidden ${feature.isLarge ? "order-2 mt-auto p-6" : "h-48 md:h-64 bg-slate-800/50 p-6 flex items-center justify-center"}`}>
+                                <div className={`relative overflow-hidden ${feature.isLarge ? "order-2 mt-auto p-6 h-64 md:h-80" : "h-48 md:h-64 bg-slate-800/50 p-6 flex items-center justify-center"}`}>
                                     {feature.video ? (
                                         <div className="absolute inset-0 w-full h-full">
                                             <video

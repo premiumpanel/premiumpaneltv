@@ -137,7 +137,7 @@ export default function Header() {
 
                 {/* Mobile Lang Dropdown */}
                 {langOpen && (
-                    <div className="lg:hidden absolute top-full right-4 mt-2 w-40 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-[60]">
+                    <div className="lg:hidden absolute top-full right-4 mt-2 w-40 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-[60] pointer-events-auto">
                         {languages.map((lang) => (
                             <button
                                 key={lang.code}
@@ -155,7 +155,7 @@ export default function Header() {
 
                 {/* Mobile Nav */}
                 {isOpen && (
-                    <div className="lg:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-700 py-4 animate-in slide-in-from-top-4 shadow-2xl mt-4">
+                    <div className="lg:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-700 py-4 animate-in slide-in-from-top-4 shadow-2xl mt-4 pointer-events-auto">
                         <nav className="flex flex-col gap-2 px-6">
                             {navLinks.map((link) => (
                                 <Link

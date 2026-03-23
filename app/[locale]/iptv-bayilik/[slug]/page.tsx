@@ -101,7 +101,7 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                                 </p>
                             </div>
                             <div className="md:w-1/3 flex justify-center">
-                                <a href="https://wa.me/491632680219" className="inline-flex w-full items-center justify-center px-6 py-3 font-semibold text-black bg-[#d5900a] rounded-lg hover:scale-105 transition-transform">
+                                <a href="https://wa.me/491632680219" className="inline-flex w-full items-center justify-center px-6 py-3 font-semibold text-white bg-[#d5900a] rounded-lg hover:scale-105 transition-transform">
                                     {t('wa_button')}
                                 </a>
                             </div>

@@ -5,6 +5,7 @@ import "../globals.css";
 import GSAPInit from "@/components/GSAPInit";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import {NextIntlClientProvider} from 'next-intl';
+import ScrollToTop from "@/components/ScrollToTop";
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
@@ -127,6 +128,7 @@ export default async function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         <NextIntlClientProvider messages={messages} locale={locale}>
+          <ScrollToTop />
           <GSAPInit />
           {children}
           <FloatingWhatsApp />
