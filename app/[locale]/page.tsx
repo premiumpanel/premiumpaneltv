@@ -107,7 +107,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <Testimonials />
 
-      <FAQAccordion />
+      <FAQAccordion renderSchema={false} />
 
       <CTABanner />
 

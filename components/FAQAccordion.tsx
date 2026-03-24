@@ -11,7 +11,11 @@ interface FAQItem {
     answer: string;
 }
 
-export default function FAQAccordion() {
+interface FAQAccordionProps {
+    renderSchema?: boolean;
+}
+
+export default function FAQAccordion({ renderSchema = true }: FAQAccordionProps) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const t = useTranslations("faq_accordion");
 
@@ -27,23 +31,25 @@ export default function FAQAccordion() {
     return (
         <section className="py-24 bg-slate-950" id="faq">
             {/* FAQ Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": faqs.map(faq => ({
-                            "@type": "Question",
-                            "name": faq.question,
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": faq.answer
-                            }
-                        }))
-                    })
-                }}
-            />
+            {renderSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": faqs.map(faq => ({
+                                "@type": "Question",
+                                "name": faq.question,
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": faq.answer
+                                }
+                            }))
+                        })
+                    }}
+                />
+            )}
 
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="text-center mb-16">
