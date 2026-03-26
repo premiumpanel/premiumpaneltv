@@ -83,25 +83,32 @@ export const cities = [
 ];
 
 export function getCitySEOContent(cityName: string, region: string) {
-    const templates = [
-        `**${cityName} IPTV Bayiliği**, tüm Türkiye'de olduğu gibi ${region} bölgesinde de muazzam bir büyüme ve kazanç fırsatı sunuyor. Günümüzde insanlar geleneksel yayınların maliyetlerinden kaçıp dijital platformlara yönelirken, ${cityName} şehrindeki binlerce kullanıcıya donmasız yayın garantisiyle ulaşabilirsiniz. Bayi panelimiz sayesinde kendi müşterilerinizi yerel ağınızda kolayca kurabilirsiniz.`,
-        `Eğer **${cityName}** içinde ikamet ediyor veya doğrudan bu bölgeki kitleye iptv satmak istiyorsanız, Premium Panel size en ideal toptan fiyatları sağlar. ${region} bölgesinin hızla gelişen internet altyapısına özel optimize edilmiş H265/HEVC yayınlarımızla, ${cityName} halkına eşsiz bir canlı maç, dizi ve sinema keyfi yaşatırken %300'lere varan kar marjı elde edin.`,
-        `Kredili bayi sistemiyle **${cityName}** IPTV piyasasında kendi işinizin patronu olun. Sınırsız stok tutma derdi olmadan, sermayenizi riske atmadan saniyeler içinde ${cityName} şehrindeki kullanıcılarınıza hesap açın. Üstelik bayi panelinizde sattığınız hesapların süresi bitene kadar kredileriniz korunur. ${cityName} iline özel IPTV fırsatlarıyla bölgesel otoritenizi kurun.`
+    const introTemplates = [
+        `**${cityName} IPTV Bayiliği**, ${region} bölgesinde hızla büyüyen dijital yayıncılık pazarında size güçlü bir iş fırsatı sunuyor. ${cityName} şehrindeki binlerce potansiyel kullanıcıya, donmasız ve kesintisiz yayın garantisiyle ulaşabilir, kendi bayi paneliniz üzerinden müşteri portföyünüzü oluşturabilirsiniz.`,
+        `**${cityName}** ve çevresinde IPTV bayilik yapmak isteyenler için Premium Panel, ${region} bölgesine özel optimize edilmiş H265/HEVC yayın altyapısı sunar. ${cityName} halkına canlı maç, dizi ve sinema keyfi yaşatırken yüksek kar marjı elde etmeniz mümkün.`,
+        `${region} bölgesinin en dinamik şehirlerinden **${cityName}**'da kredili bayi sistemiyle kendi IPTV işinizi kurun. Sermaye riski olmadan, saniyeler içinde ${cityName} şehrindeki kullanıcılarınıza hesap açın ve bölgesel otoritenizi inşa edin.`,
     ];
-    
-    // Hash based on city name lengths to pick a pseudo-random yet consistent template 
-    const hash = cityName.length + region.length;
-    let selectedText = templates[hash % templates.length];
-    
-    // Supplement with unique statistics or varying secondary texts to avoid duplicate content penalties
-    const secondaryTexts = [
-        `\n\n### ${cityName} İçin Bayilik Aşamaları\n\n1. Ücretsiz Panel Başvurusu\n2. Kredi Yüklemesi\n3. ${cityName} Çevresinde veya Sosyal Medyada Satışlara Başlayın\n4. Müşterilerinizin Teknik Destek Süreçlerini Kolayca Yönetin`,
-        `\n\n### Neden ${cityName} Şehrinde IPTV Satmalısınız?\n\nBu ildeki artan internet tüketimi ve spor müsabakalarına olan yoğun talep, IPTV hizmetlerini temel ihtiyaçlardan biri haline getirmiştir. ${cityName} yerel lig taraftar gruplarından, dizi izleyicisine kadar herkes sizin potansiyel müşterinizdir.`,
-        `\n\n### Gelişmiş Bayi Paneli Özellikleri\n\nSadece ${cityName} ile sınırlı kalmayıp, Türkiye ve Avrupa'nın her yerine hizmet verebileceğiniz altyapımızla tanışın. Cihaz bağımsızlık, yüksek stabilite ve donmasız sunucu garantimizle arkanızdayız.`
+
+    const midTemplates = [
+        `\n\n### ${cityName} İçin IPTV Bayilik Adımları\n\n1. **Ücretsiz Panel Başvurusu** — Dakikalar içinde kendi bayi panelinize kavuşun\n2. **Kredi Yüklemesi** — İstediğiniz kadar kredi yükleyerek başlayın\n3. **${cityName} ve Çevresinde Satışa Başlayın** — Sosyal medya, WhatsApp grupları ve yerel ağınızı kullanın\n4. **Teknik Destek Yönetimi** — Müşterilerinizin tüm teknik süreçlerini panelden kolayca yönetin`,
+        `\n\n### Neden ${cityName} Şehrinde IPTV Satmalısınız?\n\n${cityName} ilinde artan fiber internet altyapısı ve dijital içerik talebi, IPTV hizmetlerini vazgeçilmez kılıyor. Spor müsabakalarından dizilere, ${cityName} sakinleri kaliteli ve uygun fiyatlı yayın çözümleri arıyor. Bu talebe Premium Panel altyapısıyla cevap verin.`,
+        `\n\n### ${cityName} IPTV Pazarı Neden Büyüyor?\n\n${region} bölgesindeki internet penetrasyon oranının artmasıyla birlikte, ${cityName} şehrinde dijital yayın talebi her geçen yıl katlanıyor. Geleneksel uydu ve kablo TV'den IPTV'ye geçiş hızlanırken, erken giriş yapan bayiler ciddi avantaj elde ediyor.`,
     ];
-    
-    const secHash = cityName.charCodeAt(0) + cityName.charCodeAt(cityName.length - 1);
-    selectedText += secondaryTexts[secHash % secondaryTexts.length];
-    
-    return selectedText;
+
+    const outroTemplates = [
+        `\n\n### Premium Panel Bayi Avantajları\n\n- **7/24 Teknik Destek** — ${cityName} dahil tüm Türkiye'ye hizmet\n- **Kredili Sistem** — Peşin stok yükü yok, sattığınız kadar ödeyin\n- **Çoklu Cihaz Desteği** — Smart TV, telefon, tablet ve bilgisayar uyumlu\n- **Donmasız Yayın Garantisi** — Yüksek performanslı sunucu altyapısı\n- **Otomatik Panel** — Müşteri oluşturma ve yönetim tamamen otomatik`,
+        `\n\n### ${cityName} Bayileri İçin Özel Destek\n\nPremium Panel olarak ${cityName} ve ${region} bölgesindeki bayilerimize özel satış stratejileri, pazarlama materyalleri ve teknik eğitim desteği sağlıyoruz. Bayi paneliniz üzerinden anlık raporlama, müşteri takibi ve otomatik yenileme işlemlerini kolayca gerçekleştirebilirsiniz.`,
+        `\n\n### Hemen ${cityName}'da Bayiliğe Başlayın\n\nPremium Panel'in sunduğu avantajlarla ${cityName} şehrinde kendi IPTV işinizi kurmanız sadece birkaç dakika sürer. Ücretsiz kayıt olun, kredi yükleyin ve ${region} bölgesindeki potansiyel müşterilerinize ulaşmaya başlayın. Türkiye ve Avrupa genelinde hizmet verebileceğiniz güçlü altyapımızla arkanızdayız.`,
+    ];
+
+    // Deterministic but varied selection per city
+    const h1 = cityName.length + region.length;
+    const h2 = cityName.charCodeAt(0) + cityName.length;
+    const h3 = cityName.charCodeAt(cityName.length - 1) + region.length;
+
+    return [
+        introTemplates[h1 % introTemplates.length],
+        midTemplates[h2 % midTemplates.length],
+        outroTemplates[h3 % outroTemplates.length],
+    ].join('');
 }

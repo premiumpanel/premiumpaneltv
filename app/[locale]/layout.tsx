@@ -31,6 +31,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description: t("description"),
     metadataBase: new URL("https://premiumpaneltv.com"),
+    alternates: {
+      canonical: `https://premiumpaneltv.com/${locale}`,
+      languages: {
+        'tr': 'https://premiumpaneltv.com/tr',
+        'en': 'https://premiumpaneltv.com/en',
+        'de': 'https://premiumpaneltv.com/de',
+        'fr': 'https://premiumpaneltv.com/fr',
+        'nl': 'https://premiumpaneltv.com/nl',
+        'x-default': 'https://premiumpaneltv.com/tr',
+      },
+    },
     keywords: [
       "iptv bayilik", 
       "iptv bayilik satış", 

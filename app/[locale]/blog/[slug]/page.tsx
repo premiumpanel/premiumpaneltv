@@ -13,18 +13,20 @@ export async function generateStaticParams() {
     }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    const { locale, slug } = await params;
     const post = getPost(slug);
     if (!post) return {};
+    const { getAlternates } = await import('@/lib/seo');
     return {
         title: `${post.title} | Premium Panel`,
         description: post.excerpt,
+        alternates: getAlternates(locale, `/blog/${slug}`),
     };
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    const { locale, slug } = await params;
     const post = getPost(slug);
 
     if (!post) {
@@ -50,12 +52,42 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         },
         datePublished: post.date,
         description: post.excerpt,
+        mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `https://premiumpaneltv.com/${locale}/blog/${slug}`,
+        },
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa",
+                "item": `https://premiumpaneltv.com/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": `https://premiumpaneltv.com/${locale}/blog`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": post.title,
+                "item": `https://premiumpaneltv.com/${locale}/blog/${slug}`
+            }
+        ]
     };
 
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">
             <Header />
             <JsonLd data={jsonLd} />
+            <JsonLd data={breadcrumbSchema} />
 
             <article className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
                 <Link href="/blog" className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors text-sm">

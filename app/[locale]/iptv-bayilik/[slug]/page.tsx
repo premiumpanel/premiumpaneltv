@@ -2,6 +2,8 @@ import { cities, getCitySEOContent } from "@/lib/cities";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
+import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -26,8 +28,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t('title', { city: city.name }),
         description: t('description', { city: city.name, region: city.region }),
         alternates: {
-            canonical: `https://premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
-        }
+            canonical: `https://premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+        },
+        ...(locale !== 'tr' && {
+            robots: { index: false, follow: true },
+        }),
     }
 }
 
@@ -46,14 +51,72 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
     
     const formattedContent = rawContent
         .replace(/\n\n### (.*?)\n\n/g, '<h3>$1</h3>')
-        .replace(/\n\n1\. (.*?)\n2\. (.*?)\n3\. (.*?)\n4\. (.*?)$/g, '<ol class="mt-4 list-decimal list-outside ml-6 space-y-2"><li>$1</li><li>$2</li><li>$3</li><li>$4</li></ol>')
+        .replace(/\n(\d+)\. \*\*(.*?)\*\* — (.*?)(?=\n|$)/g, '<li><strong class="text-white">$2</strong> — $3</li>')
+        .replace(/(<li>.*?<\/li>\n?)+/g, '<ol class="mt-4 list-decimal list-outside ml-6 space-y-2">$&</ol>')
+        .replace(/\n- \*\*(.*?)\*\* — (.*?)(?=\n|$)/g, '<li><strong class="text-white">$1</strong> — $2</li>')
         .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
 
     const t = await getTranslations({ locale, namespace: 'iptv_bayilik_page' });
 
+    // Related cities from same region (max 6, excluding current)
+    const relatedCities = cities
+        .filter(c => c.region === region && c.slug !== slug)
+        .slice(0, 6);
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa",
+                "item": `https://premiumpaneltv.com/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "IPTV Bayilik",
+                "item": `https://premiumpaneltv.com/${locale}/iptv-bayilik`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": `${name} IPTV Bayilik`,
+                "item": `https://premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
+            }
+        ]
+    };
+
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": `${name} IPTV Bayilik Hizmeti`,
+        "provider": {
+            "@type": "Organization",
+            "name": "Premium Panel"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": name
+        },
+        "description": t('hero_desc', { name }),
+    };
+
     return (
         <main className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col pt-32">
             <Header />
+            <JsonLd data={breadcrumbSchema} />
+            <JsonLd data={localBusinessSchema} />
+
+            {/* Breadcrumb Navigation */}
+            <nav className="container mx-auto px-4 max-w-4xl pt-4" aria-label="Breadcrumb">
+                <ol className="flex items-center text-sm text-slate-400 space-x-2">
+                    <li><Link href={`/${locale}`} className="hover:text-[#d5900a] transition-colors">Ana Sayfa</Link></li>
+                    <li className="text-slate-600">/</li>
+                    <li><span className="text-slate-300">{name} IPTV Bayilik</span></li>
+                </ol>
+            </nav>
 
             {/* Hero Section */}
             <section className="relative py-20 overflow-hidden">
@@ -109,6 +172,28 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                     </article>
                 </div>
             </section>
+
+            {/* Related Cities - Internal Linking */}
+            {relatedCities.length > 0 && (
+                <section className="py-12 bg-slate-950">
+                    <div className="container mx-auto px-4 max-w-4xl">
+                        <h3 className="text-xl font-bold text-white mb-6">
+                            {region} Bölgesinde IPTV Bayilik
+                        </h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            {relatedCities.map(c => (
+                                <Link
+                                    key={c.slug}
+                                    href={`/${locale}/iptv-bayilik/${c.slug}`}
+                                    className="text-sm text-slate-400 hover:text-[#d5900a] transition-colors py-2 px-4 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#d5900a]/30"
+                                >
+                                    {c.name} IPTV Bayilik
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             <Footer />
         </main>
