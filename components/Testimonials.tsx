@@ -29,9 +29,9 @@ export default function Testimonials() {
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <ScrollReveal textClassName="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                        <h1 className="pb-2">
+                        <h2 className="pb-2">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d5900a] via-amber-200 to-[#d5900a] animate-gradient-x">{firstWord}</span> {restOfTitle}
-                        </h1>
+                        </h2>
                     </ScrollReveal>
                     <ScrollReveal textClassName="text-slate-400 text-lg">
                         <p>{t("subtitle")}</p>
