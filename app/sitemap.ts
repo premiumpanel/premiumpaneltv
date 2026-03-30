@@ -4,9 +4,9 @@ import { blogPosts } from '@/lib/blog';
 import { cities } from '@/lib/cities';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://premiumpaneltv.com';
+    const baseUrl = 'https://www.premiumpaneltv.com';
     const locales = ['tr', 'en', 'de', 'fr', 'nl'];
-    const siteLastUpdated = new Date('2026-03-19');
+    const siteLastUpdated = new Date();
 
     const baseRoutes = [
         { path: '', priority: 1.0, changeFreq: 'weekly' as const },
@@ -50,13 +50,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }))
     );
 
-    // City pages - only Turkish locale (other locales have same Turkish content = duplicate)
-    const cityPages = cities.map(city => ({
-        url: `${baseUrl}/tr/iptv-bayilik/${city.slug}`,
-        lastModified: siteLastUpdated,
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-    }));
+    // City pages - all locales with hreflang, TR prioritized
+    const cityPages = locales.flatMap(locale =>
+        cities.map(city => ({
+            url: `${baseUrl}/${locale}/iptv-bayilik/${city.slug}`,
+            lastModified: siteLastUpdated,
+            changeFrequency: 'monthly' as const,
+            priority: locale === 'tr' ? 0.7 : 0.4,
+            alternates: {
+                languages: Object.fromEntries([
+                    ...locales.map(loc => [loc, `${baseUrl}/${loc}/iptv-bayilik/${city.slug}`]),
+                    ['x-default', `${baseUrl}/tr/iptv-bayilik/${city.slug}`],
+                ]),
+            },
+        }))
+    );
 
     return [...localizedRoutes, ...localizedPosts, ...cityPages];
 }

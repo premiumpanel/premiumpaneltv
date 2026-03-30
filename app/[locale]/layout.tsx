@@ -30,16 +30,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       default: t("title"),
     },
     description: t("description"),
-    metadataBase: new URL("https://premiumpaneltv.com"),
+    metadataBase: new URL("https://www.premiumpaneltv.com"),
     alternates: {
-      canonical: `https://premiumpaneltv.com/${locale}`,
+      canonical: `https://www.premiumpaneltv.com/${locale}`,
       languages: {
-        'tr': 'https://premiumpaneltv.com/tr',
-        'en': 'https://premiumpaneltv.com/en',
-        'de': 'https://premiumpaneltv.com/de',
-        'fr': 'https://premiumpaneltv.com/fr',
-        'nl': 'https://premiumpaneltv.com/nl',
-        'x-default': 'https://premiumpaneltv.com/tr',
+        'tr': 'https://www.premiumpaneltv.com/tr',
+        'en': 'https://www.premiumpaneltv.com/en',
+        'de': 'https://www.premiumpaneltv.com/de',
+        'fr': 'https://www.premiumpaneltv.com/fr',
+        'nl': 'https://www.premiumpaneltv.com/nl',
+        'x-default': 'https://www.premiumpaneltv.com/tr',
       },
     },
     keywords: [
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: "https://premiumpaneltv.com",
+      url: "https://www.premiumpaneltv.com",
       siteName: "Premium Panel",
       locale: locale === "tr" ? "tr_TR" : locale === "en" ? "en_US" : locale === "de" ? "de_DE" : locale === "fr" ? "fr_FR" : "nl_NL",
       type: "website",

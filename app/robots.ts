@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/private/', '/api/', '/_next/'],
             },
         ],
-        sitemap: 'https://premiumpaneltv.com/sitemap.xml',
-        host: 'https://premiumpaneltv.com',
+        sitemap: 'https://www.premiumpaneltv.com/sitemap.xml',
+        host: 'https://www.premiumpaneltv.com',
     };
 }

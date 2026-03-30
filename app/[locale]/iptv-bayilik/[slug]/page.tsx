@@ -28,11 +28,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t('title', { city: city.name }),
         description: t('description', { city: city.name, region: city.region }),
         alternates: {
-            canonical: `https://premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+            canonical: `https://www.premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`,
+            languages: {
+                'tr': `https://www.premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+                'en': `https://www.premiumpaneltv.com/en/iptv-bayilik/${slug}`,
+                'de': `https://www.premiumpaneltv.com/de/iptv-bayilik/${slug}`,
+                'fr': `https://www.premiumpaneltv.com/fr/iptv-bayilik/${slug}`,
+                'nl': `https://www.premiumpaneltv.com/nl/iptv-bayilik/${slug}`,
+                'x-default': `https://www.premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+            },
         },
-        ...(locale !== 'tr' && {
-            robots: { index: false, follow: true },
-        }),
     }
 }
 
@@ -71,19 +76,19 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Ana Sayfa",
-                "item": `https://premiumpaneltv.com/${locale}`
+                "item": `https://www.premiumpaneltv.com/${locale}`
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "IPTV Bayilik",
-                "item": `https://premiumpaneltv.com/${locale}/iptv-bayilik`
+                "item": `https://www.premiumpaneltv.com/${locale}/iptv-bayilik`
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": `${name} IPTV Bayilik`,
-                "item": `https://premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
+                "item": `https://www.premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
             }
         ]
     };

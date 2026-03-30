@@ -1,4 +1,4 @@
-const BASE_URL = 'https://premiumpaneltv.com';
+const BASE_URL = 'https://www.premiumpaneltv.com';
 const LOCALES = ['tr', 'en', 'de', 'fr', 'nl'] as const;
 
 const LOCALE_TO_HREFLANG: Record<string, string> = {

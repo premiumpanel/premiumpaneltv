@@ -37,7 +37,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         headline: post.title,
-        image: `https://premiumpaneltv.com${post.image}`,
+        image: `https://www.premiumpaneltv.com${post.image}`,
         author: {
             "@type": "Person",
             name: "Admin",
@@ -47,14 +47,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
             name: "Premium Panel",
             logo: {
                 "@type": "ImageObject",
-                url: "https://premiumpaneltv.com/assets/images/logo.png",
+                url: "https://www.premiumpaneltv.com/assets/images/logo.png",
             },
         },
         datePublished: post.date,
         description: post.excerpt,
         mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `https://premiumpaneltv.com/${locale}/blog/${slug}`,
+            "@id": `https://www.premiumpaneltv.com/${locale}/blog/${slug}`,
         },
     };
 
@@ -66,19 +66,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Ana Sayfa",
-                "item": `https://premiumpaneltv.com/${locale}`
+                "item": `https://www.premiumpaneltv.com/${locale}`
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": `https://premiumpaneltv.com/${locale}/blog`
+                "item": `https://www.premiumpaneltv.com/${locale}/blog`
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": post.title,
-                "item": `https://premiumpaneltv.com/${locale}/blog/${slug}`
+                "item": `https://www.premiumpaneltv.com/${locale}/blog/${slug}`
             }
         ]
     };
