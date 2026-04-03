@@ -32,14 +32,22 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t("description"),
     metadataBase: new URL("https://www.premiumpaneltv.com"),
     alternates: {
-      canonical: `https://www.premiumpaneltv.com/${locale}`,
+      canonical: `https://www.premiumpaneltv.com${locale === 'tr' ? '' : `/${locale}`}`,
       languages: {
-        'tr': 'https://www.premiumpaneltv.com/tr',
+        'tr': 'https://www.premiumpaneltv.com',
         'en': 'https://www.premiumpaneltv.com/en',
         'de': 'https://www.premiumpaneltv.com/de',
         'fr': 'https://www.premiumpaneltv.com/fr',
         'nl': 'https://www.premiumpaneltv.com/nl',
-        'x-default': 'https://www.premiumpaneltv.com/tr',
+        'x-default': 'https://www.premiumpaneltv.com',
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
       },
     },
     keywords: [

@@ -17,18 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/gizlilik', priority: 0.3, changeFreq: 'yearly' as const },
         { path: '/kullanim', priority: 0.3, changeFreq: 'yearly' as const },
         { path: '/blog', priority: 0.8, changeFreq: 'weekly' as const },
+        { path: '/iptv-bayilik', priority: 0.8, changeFreq: 'monthly' as const },
     ];
 
     const localizedRoutes = locales.flatMap(locale =>
         baseRoutes.map(route => ({
-            url: `${baseUrl}/${locale}${route.path}`,
+            url: `${baseUrl}${locale === 'tr' ? '' : `/${locale}`}${route.path}`,
             lastModified: siteLastUpdated,
             changeFrequency: route.changeFreq,
             priority: route.priority,
             alternates: {
                 languages: Object.fromEntries([
-                    ...locales.map(loc => [loc, `${baseUrl}/${loc}${route.path}`]),
-                    ['x-default', `${baseUrl}/tr${route.path}`],
+                    ...locales.map(loc => [loc, `${baseUrl}${loc === 'tr' ? '' : `/${loc}`}${route.path}`]),
+                    ['x-default', `${baseUrl}${route.path}`],
                 ]),
             },
         }))
@@ -37,14 +38,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog posts (per locale) - with hreflang alternates
     const localizedPosts = locales.flatMap(locale =>
         blogPosts.map(post => ({
-            url: `${baseUrl}/${locale}/blog/${post.slug}`,
+            url: `${baseUrl}${locale === 'tr' ? '' : `/${locale}`}/blog/${post.slug}`,
             lastModified: new Date(post.date),
             changeFrequency: 'monthly' as const,
             priority: 0.6,
             alternates: {
                 languages: Object.fromEntries([
-                    ...locales.map(loc => [loc, `${baseUrl}/${loc}/blog/${post.slug}`]),
-                    ['x-default', `${baseUrl}/tr/blog/${post.slug}`],
+                    ...locales.map(loc => [loc, `${baseUrl}${loc === 'tr' ? '' : `/${loc}`}/blog/${post.slug}`]),
+                    ['x-default', `${baseUrl}/blog/${post.slug}`],
                 ]),
             },
         }))
@@ -53,14 +54,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // City pages - all locales with hreflang, TR prioritized
     const cityPages = locales.flatMap(locale =>
         cities.map(city => ({
-            url: `${baseUrl}/${locale}/iptv-bayilik/${city.slug}`,
+            url: `${baseUrl}${locale === 'tr' ? '' : `/${locale}`}/iptv-bayilik/${city.slug}`,
             lastModified: siteLastUpdated,
             changeFrequency: 'monthly' as const,
             priority: locale === 'tr' ? 0.7 : 0.4,
             alternates: {
                 languages: Object.fromEntries([
-                    ...locales.map(loc => [loc, `${baseUrl}/${loc}/iptv-bayilik/${city.slug}`]),
-                    ['x-default', `${baseUrl}/tr/iptv-bayilik/${city.slug}`],
+                    ...locales.map(loc => [loc, `${baseUrl}${loc === 'tr' ? '' : `/${loc}`}/iptv-bayilik/${city.slug}`]),
+                    ['x-default', `${baseUrl}/iptv-bayilik/${city.slug}`],
                 ]),
             },
         }))

@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
 import JsonLd from "@/components/JsonLd";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -28,14 +28,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: t('title', { city: city.name }),
         description: t('description', { city: city.name, region: city.region }),
         alternates: {
-            canonical: `https://www.premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`,
+            canonical: `https://www.premiumpaneltv.com${locale === 'tr' ? '' : `/${locale}`}/iptv-bayilik/${slug}`,
             languages: {
-                'tr': `https://www.premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+                'tr': `https://www.premiumpaneltv.com/iptv-bayilik/${slug}`,
                 'en': `https://www.premiumpaneltv.com/en/iptv-bayilik/${slug}`,
                 'de': `https://www.premiumpaneltv.com/de/iptv-bayilik/${slug}`,
                 'fr': `https://www.premiumpaneltv.com/fr/iptv-bayilik/${slug}`,
                 'nl': `https://www.premiumpaneltv.com/nl/iptv-bayilik/${slug}`,
-                'x-default': `https://www.premiumpaneltv.com/tr/iptv-bayilik/${slug}`,
+                'x-default': `https://www.premiumpaneltv.com/iptv-bayilik/${slug}`,
             },
         },
     }
@@ -76,19 +76,19 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Ana Sayfa",
-                "item": `https://www.premiumpaneltv.com/${locale}`
+                "item": `https://www.premiumpaneltv.com${locale === 'tr' ? '' : `/${locale}`}`
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "IPTV Bayilik",
-                "item": `https://www.premiumpaneltv.com/${locale}/iptv-bayilik`
+                "item": `https://www.premiumpaneltv.com${locale === 'tr' ? '' : `/${locale}`}/iptv-bayilik`
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": `${name} IPTV Bayilik`,
-                "item": `https://www.premiumpaneltv.com/${locale}/iptv-bayilik/${slug}`
+                "item": `https://www.premiumpaneltv.com${locale === 'tr' ? '' : `/${locale}`}/iptv-bayilik/${slug}`
             }
         ]
     };
@@ -117,7 +117,9 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
             {/* Breadcrumb Navigation */}
             <nav className="container mx-auto px-4 max-w-4xl pt-4" aria-label="Breadcrumb">
                 <ol className="flex items-center text-sm text-slate-400 space-x-2">
-                    <li><Link href={`/${locale}`} className="hover:text-[#d5900a] transition-colors">Ana Sayfa</Link></li>
+                    <li><Link href="/" className="hover:text-[#d5900a] transition-colors">Ana Sayfa</Link></li>
+                    <li className="text-slate-600">/</li>
+                    <li><Link href="/iptv-bayilik" className="hover:text-[#d5900a] transition-colors">IPTV Bayilik</Link></li>
                     <li className="text-slate-600">/</li>
                     <li><span className="text-slate-300">{name} IPTV Bayilik</span></li>
                 </ol>
@@ -189,7 +191,7 @@ export default async function CityPage({ params }: { params: Promise<{ locale: s
                             {relatedCities.map(c => (
                                 <Link
                                     key={c.slug}
-                                    href={`/${locale}/iptv-bayilik/${c.slug}`}
+                                    href={`/iptv-bayilik/${c.slug}`}
                                     className="text-sm text-slate-400 hover:text-[#d5900a] transition-colors py-2 px-4 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#d5900a]/30"
                                 >
                                     {c.name} IPTV Bayilik
