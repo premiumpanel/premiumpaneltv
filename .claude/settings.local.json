@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx next:*)"
+      "Bash(npx next:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx --yes tsx --version)",
+      "Bash(npx tsx:*)",
+      "Bash(echo \"EXIT=$?\")"
     ]
   }
 }
